@@ -1,0 +1,81 @@
+19|fēmina|fēminae, v.|de vrouw|Fr. la femme, féminin|zelfstandig naamwoord
+20|canis|can-is, m.|de hond|Fr. Royal Canin, Chien|zelfstandig naamwoord
+21|iuvenis|iuven-is, m.|de jongeman|junior, juventus|zelfstandig naamwoord
+22|mercātor|mercātōr-is, m.|de handelaar|mercado, marchand|zelfstandig naamwoord
+23|mīles|mīlit-is, m.|de soldaat|Fr. militaire|zelfstandig naamwoord
+24|senātor|senātōr-is, m.|de senator|Fr. senateur|zelfstandig naamwoord
+25|nox|noct-is, v.|de nacht|Fr. la nuit (nocturne)|zelfstandig naamwoord
+26|caput|capit-is, o.|het hoofd; het hoofdstuk|Fr. chef, capitaine, capuchon|zelfstandig naamwoord
+27|est|(werkwoord)|(hij, zij, het, er) is|Fr. (il, elle) est|werkwoord
+28|sunt|(werkwoord)|(zij er) zijn|Fr. (ils, elles) sont|werkwoord
+29|ibi|(bijwoord)|daar||bijwoord
+30|saepe|(bijwoord)|dikwijls||bijwoord
+31|aut|(voegwoord)|of||voegwoord
+32|et|(voegwoord)|en; ook||voegwoord
+33|-que|(voegwoord)|en||voegwoord
+34|sed|(voegwoord)|maar||voegwoord
+35|avus|avī, m.|de grootvader|Fr. aïeul|zelfstandig naamwoord
+36|rosa|rosae, v.|de roos|Fr. rose|zelfstandig naamwoord
+37|dōnum|dōnī, o.|het geschenk|Fr. donner|zelfstandig naamwoord
+38|dux|duc-is, m.|de leider|Fr. le duc|zelfstandig naamwoord
+39|māter|mātr-is, v.|de moeder|Fr. mère (maternité)|zelfstandig naamwoord
+40|corpus|corpor-is, o.|het lichaam|Fr. le corps|zelfstandig naamwoord
+41|iam|(bijwoord)|al; dadelijk|-|bijwoord
+42|interdum|(bijwoord)|soms|-|bijwoord
+43|quoque|(bijwoord)|ook|-|bijwoord
+44|enim|(voegwoord)|want|-|voegwoord
+45|cūria|cūriae|de curia (het Romeinse senaatsgebouw)|-|zelfstandig naamwoord
+46|fābula|fābulae|het verhaal; het toneelstuk|Fr. fable, Ndl.fable|zelfstandig naamwoord
+47|lūna|lūnae|de maan|Fr. la lune (lundi, lunatique)|zelfstandig naamwoord
+48|forum|forī|het forum (het Romeinse marktplein)|fr. la foire|zelfstandig naamwoord
+49|iūdex|iūdic-is, m.|de rechter|Fr. juge (judiciaire), En. Judge|zelfstandig naamwoord
+50|onus|oner-is, o.|de last|-|zelfstandig naamwoord
+51|tempus|tempor-is, o.|de tijd; het moment|Fr. le temps (temporel)|zelfstandig naamwoord
+52|nōn|(ontkenning / négation)|niet|Fr. non|bijwoord
+53|semper|(bijwoord)|altijd|Esp. siempre|bijwoord
+54|statua|statuae|het standbeeld|Fr.statue|zelfstandig naamwoord
+55|eques|equit-is, m.|de ruiter; de ridder|Fr.ecuyer, Lat. equus (stamverwant)|zelfstandig naamwoord
+56|labōrāre|labōrō|werken; lijden|labour, Lat. laboratorium, Fr. Labeur|werkwoord
+57|appārēre|appāreō|verschijnen; blijken|Fr. apparaitre, Eng. to appear|werkwoord
+58|dormīre|dormiō|slapen|Fr. dormir|werkwoord
+59|domī|(bijwoord)|thuis|Fr. domicile, dominimus|bijwoord
+60|etiam|(bijwoord)|ook; zelfs||bijwoord
+61|nōndum|(bijwoord)|nog niet||bijwoord
+62|nōn iam|(bijwoord)|niet meer||bijwoord
+63|nunc|(bijwoord)|nu||bijwoord
+64|theātrum|theātri|het theater|Fr. théâtre|zelfstandig naamwoord
+65|mulier|mulier-is, v.|de vrouw|Esp. mujer|zelfstandig naamwoord
+66|uxor|uxōr-is, v.|de echtgenote||zelfstandig naamwoord
+67|cōgitāre|cōgitō|(na)denken|Cogito, ergo sum, Fr. Cogiter|werkwoord
+68|dare|dō|geven|Fr. don|werkwoord
+69|nārrāre|nārrō|vertellen|Fr. narrateur, Eng. narrator|werkwoord
+70|properāre|properō|zich haasten||werkwoord
+71|rogāre|rogō|vragen|Fr. interroger|werkwoord
+72|spectāre|spectō|(be)kijken; op het oog hebben|Spieken, Fr. spectacle|werkwoord
+73|stāre|stō|staan; blijven staan|Fr. statue|werkwoord
+74|gaudēre|gaudeō|blij zijn||werkwoord
+75|habēre|habeō|hebben; beschouwen als||werkwoord
+76|respondēre|respondeō|antwoorden|Fr. répondre|werkwoord
+77|sedēre|sedeō|zitten|sedes|werkwoord
+78|vidēre|videō|zien|Ndl. video, televisie|werkwoord
+79|aperīre|aperiō|openen; onthullen|het aperitief|werkwoord
+80|venīre|veniō|komen|Fr. venir|werkwoord
+81|esse|sum|zijn; bestaan||werkwoord
+82|cūr?|bijwoord|waarom?||bijwoord
+83|domum|bijwoord|naar huis||bijwoord
+84|ideō|bijwoord|daarom||bijwoord
+85|intereā|bijwoord|intussen||bijwoord
+119|ūnus|ūna, ūnum|één; enig|Fr. un, It. uno|telwoord
+120|duo|duo, duae, duo|twee|Fr. deux, It. duo|telwoord
+121|trēs|trēs, tria|drie|Fr. trois, Esp. tres|telwoord
+122|quattuor|quattuor|vier|Fr. quatre, Ndl. Kwartier|telwoord
+123|quīnque|quīnque|vijf|Fr. cinq|telwoord
+124|sex|sex|zes|Fr. six|telwoord
+125|septem|septem|zeven|Fr. sept, septembre|telwoord
+126|octō|octō|acht|Fr. huit, octobre|telwoord
+127|novem|novem|negen|Fr. neuf, novembre|telwoord
+128|decem|decem|tien|Fr. dix, decembre|telwoord
+129|centum|centum|honderd|Fr. cent, centime|telwoord
+130|mille|mille|duizend|Fr. mille|telwoord
+131|mīlia|mīlia, mīlium, o. mv.|... duizend|Fr. mille|telwoord
+

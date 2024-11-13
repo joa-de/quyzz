@@ -1,0 +1,85 @@
+132|mūrus|mūrī|de muur|le mur|zelfstandig naamwoord
+133|Cūra|Cūrae|de zorg|(mani/pedi)cure|zelfstandig naamwoord
+134|tergum|tergī|de rug||zelfstandig naamwoord
+135|Princeps|Princip-is, m.|de voornaamste; de keizer|Ndl: de prins, Fr: principe|zelfstandig naamwoord
+136|appellāre|appellō|aanspreken; noemen|Fr. appeler|werkwoord
+137|Interrogāre|Interrogō|(onder)vragen|interrogation, interroger|werkwoord
+138|intrāre|Intrō|Binnengaan|Fr. entrer|werkwoord
+139|ōrnāre|ōrnō|versieren; in orde brengen|ornament|werkwoord
+140|dēbēre|dēbeō|moeten; verschuldigd zijn|devoir, debet|werkwoord
+141|inquit||zegt (hij, zij)||werkwoord
+142|iterum|(bijwoord)|opnieuw||bijwoord
+143|sīc|(bijwoord)|zo||bijwoord
+144|autem|(voegwoord)|maar||voegwoord
+145|-ne?|(vraagpartikel)|(wordt niet vertaald)||partikel
+146|abesse|absum|afwezig zijn; verwijderd zijn|absent|werkwoord
+147|adesse|adsum|aanwezig zijn; helpen||werkwoord
+148|superesse|supersum|overblijven||werkwoord
+149|posse|possum|kunnen||werkwoord
+150|calidus|~a, ~um|warm|opposé de frigidus, Fr. chaud|bijvoeglijk naamwoord
+151|certus|~a, ~um|Zeker|Fr. Certain|bijvoeglijk naamwoord
+152|dignus|~a, ~um|waardig; passend|Fr. digne, dignité, Engels: dignity|bijvoeglijk naamwoord
+153|fessus|~a, ~um|vermoeid||bijvoeglijk naamwoord
+154|frīgidus|~a, ~um|koud; koel|Ndl. fris, Fr. Froid|bijvoeglijk naamwoord
+155|Graecus|~a, ~um|Grieks|Fr. grec, grecque, Engels: greek|bijvoeglijk naamwoord
+156|Grātus|~a, ~um|dankbaar; aangenaam|Espagnol: gracias, Italien: grazie|bijvoeglijk naamwoord
+157|iūcundus|~a, ~um|Aangenaam|Fr. La joconde|bijvoeglijk naamwoord
+158|Iūstus|~a, ~um|rechtvaardig|Ndl. de justitie, Fr: jury|bijvoeglijk naamwoord
+159|sānus|~a, ~um|gezond|Fr. la santé|bijvoeglijk naamwoord
+160|dolēre|doleō|lijden; wenen (om)|Fr. douleur|werkwoord
+161|Annus|Anni|het jaar|Fr. l'an, l'année, Anniversaire|zelfstandig naamwoord
+162|hortus|horti|de tuin|horticulture|zelfstandig naamwoord
+163|Taurus|Tauri|de stier|Fr. le taureau, Le Minautaure|zelfstandig naamwoord
+164|Īnsula|Insulae|het eiland|Fr. Île, Insulaire, Engels: Island|zelfstandig naamwoord
+165|Rēgia|rēgiae|het paleis||zelfstandig naamwoord
+166|caelum|Caeli|de hemel|fr. ciel, céleste|zelfstandig naamwoord
+167|Mōnstrum|Mōnstrī|het wonder; het monster||zelfstandig naamwoord
+168|Perīculum|Perīculī|het gevaar|It: periculosp, Fr: péril|zelfstandig naamwoord
+169|homō|homin-is, m|de mens; man|Fr. l'homme, Homo Sapiens|zelfstandig naamwoord
+170|rēx|rēg-is, m.|de koning|fr. Roi, Italien: Regia|zelfstandig naamwoord
+171|Urbs|urb-is, v.|de stad|urbain|zelfstandig naamwoord
+172|exspectāre|exspectō|(op)wachten; verwachten|engels: expecting|werkwoord
+173|Habitāre|Habitō|Wonen|Fr. habitat, habiter|werkwoord
+174|Parāre|Parō|klaarmaken; verwerven|Fr. préparer, prête|werkwoord
+175|Postulāre|Postulō|Eisen|Fr. postuler|werkwoord
+176|Servāre|servō|bewaren; redden|Fr. sauver, Nl. Conservatief, de conserven|werkwoord
+177|vocāre|vocō|roepen; noemen|Lat. vox, clamare|werkwoord
+178|manēre|maneō|blijven|engels: to remain|werkwoord
+179|Possidēre|Possideō|bezitten; beheersen|Fr. posséder, possession|werkwoord
+180|Rīdēre|Rīdeō|(uit)lachen|Fr. rire|werkwoord
+181|reperīre|reperiō|vinden; te weten komen|Fr. repérer|werkwoord
+182|Scīre|Sciō|Weten|Fr. science|werkwoord
+183|Nescīre|nesciō|niet weten||werkwoord
+184|Nēmō|(onbepaald vnw.) m.|niemand||voornaamwoord
+185|nihil|(onbepaald vnw.) o.|niets||voornaamwoord
+186|maximē|(bijwoord)|zeer; het meest|Ndl. maximal|bijwoord
+187|sī|(voegwoord)|als|Fr. si|voegwoord
+188|ecce!|(tussenwerpsel)|kijk!||tussenwerpsel
+189|Capillus|Capillī|De haar|Lat: caput, Fr. Capillaire|zelfstandig naamwoord
+190|Porta|Portae|De poort|Fr. La porte, Portaal|zelfstandig naamwoord
+191|Prōvincia|Prōvinciae|De provincie|Fr: provence|zelfstandig naamwoord
+192|Terra|Terrae|De aarde; het land|Fr. La terre|zelfstandig naamwoord
+193|Fōns|Fōnt-is, m.|De bron|Ndl: fontein|zelfstandig naamwoord
+194|Pēs|Ped-is, m.|De voet (als lengtemaat: 30cm)|Ndl: de pedicure, Fr. Le pied|zelfstandig naamwoord
+195|Vigilāre|Vigilō|Waken|Fr. Vigilant|werkwoord
+196|Terrēre|Terrēo|Bang maken|Ndl: de terreur, terrorist|werkwoord
+197|Timēre|Timēo|Vrezen, bang zijn|Lat: timidus, Fr. Timide|werkwoord
+198|Primūm|(bijwoord)|eerst; voor het eerst|premiere, primer|bijwoord
+199|Deinde|(bijwoord)|daarna||bijwoord
+200|Dēnique|(bijwoord)|ten slotte||bijwoord
+201|Numquam|(bijwoord)|nooit||bijwoord
+202|Tandem|(bijwoord)|(uit)eindelijk||bijwoord
+203|at|(voegwoord)|maar||voegwoord
+204|Cum|(voegwoord)|toen; wanneer||voegwoord
+205|Sōlus|~a, ~um|alleen; eenzaam|Fr. Seul|bijvoeglijk naamwoord
+206|superbus|~a, ~um|trots; prachtig|superbe(Fr)/Superb(engels)|bijvoeglijk naamwoord
+207|Ego|(persoonlijk vnw.)|ik|Fr. Tu, Ndl. de egoist|voornaamwoord
+208|tū|(persoonlijk vnw.)|jij||voornaamwoord
+209|is, ea, id|(persoonlijk vnw.)|hij, zij, het||voornaamwoord
+210|nōs|(persoonlijk vnw.)|Wij|Fr. Nous|voornaamwoord
+211|vōs|(persoonlijk vnw.)|jullie|Fr. Vous|voornaamwoord
+212|ii, eae, ea|(persoonlijk vnw.)|zij||voornaamwoord
+213|magis|(bijwoord)|meer|magnus|bijwoord
+214|Tantum|(bijwoord)|zoveel; alleen maar|Fr. tant (de...)|bijwoord
+215|nōnne?|(vraagpartikel)|toch wel?||partikel
+216|num?|(vraagpartikel)|toch niet?||partikel
