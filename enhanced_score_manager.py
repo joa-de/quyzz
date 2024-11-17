@@ -78,7 +78,8 @@ class EnhancedScoreManager:
         level_data = vocab_data["levels"][level_str]
 
         # Calculate EMA
-        alpha = 2 / (period + 1)
+        alpha = 0.1
+
         if level_data["games_played"] == 0:
             level_data["ema"] = new_score
         else:

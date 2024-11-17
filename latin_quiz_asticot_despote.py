@@ -9,33 +9,16 @@ import os
 from time import sleep
 
 from display_feedback import display_feedback
-from load_vocabulary_enhanced import load_vocabulary, load_vocabulary2
+from load_vocabulary_enhanced import load_vocabulary
 from display_roman_intro import display_roman_intro
+from player_management import select_player, load_players, save_players
+
 from score_manager import ScoreManager
 from enhanced_score_manager import EnhancedScoreManager
 from colorama import init, Fore, Style
 
 # Initialize colorama
 init()
-
-# Define the list of players
-players = ["Zélie", "Denis"]
-
-
-def select_player():
-    print("Select a player:")
-    for i, player in enumerate(players, 1):
-        print(f"{i}. {player}")
-    while True:
-        try:
-            choice = int(input("Enter the player number: "))
-            if 1 <= choice <= len(players):
-                selected_player = players[choice - 1]
-                print(f"Selected player: {selected_player}\n")
-                return selected_player
-            print("Please select a valid player number.")
-        except ValueError:
-            print("Please enter a valid number.")
 
 
 def select_level():
@@ -199,7 +182,7 @@ def main():
         player_name = select_player()
         score_manager.display_player_stats(player_name)
 
-        vocabulary, vocab_files = load_vocabulary2()
+        vocabulary, vocab_files = load_vocabulary()
         level = select_level()
 
         score, total_questions = play_quiz(player_name, level, vocabulary)
