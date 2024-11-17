@@ -220,6 +220,7 @@ def main():
 
         # Prompts the player to enter their name.
         player_name = select_player()
+        score_manager.display_player_stats(player_name)
 
         # Loads the vocabulary for the quiz
         vocabulary, vocab_files = load_vocabulary()
