@@ -22,6 +22,18 @@ init()
 
 
 def select_level():
+    """
+    Prompts the user to select a difficulty level for the quiz.
+
+    Levels:
+    1. Level 1 (hint displayed before answering)
+    2. Level 2 (hint displayed after answering)
+    3. Level 3 (options of the same word type, hint after answering)
+
+    Returns:
+        int: The selected level (1, 2, or 3).
+    """
+
     print("Select a level:")
     print("1. Level 1 (hint displayed before answering)")
     print("2. Level 2 (hint displayed after answering)")
@@ -89,6 +101,22 @@ def get_random_options(correct_answer, vocabulary, word_type=None):
 
 
 def play_quiz(player_name, level, vocabulary):
+    """
+    Conducts a Latin vocabulary quiz for the player.
+    Args:
+        player_name (str): The name of the player.
+        level (int): The difficulty level of the quiz (1, 2, or 3).
+        vocabulary (dict): A dictionary containing Latin words and their details.
+            The keys are word IDs, and the values are dictionaries with the following keys:
+                - 'word': The Latin word.
+                - 'form': The grammatical form of the word.
+                - 'translation': The Dutch translation of the word.
+                - 'hint': A hint for the word.
+                - 'word_type' (optional): The type of the word (used for level 3).
+    Returns:
+        tuple: A tuple containing the final score and the total number of questions.
+    """
+
     score = 0
     total_questions = 10
 
@@ -175,26 +203,42 @@ def play_quiz(player_name, level, vocabulary):
 
 
 def main():
+    """
+    Main function to run the Latin quiz game.
+    This function displays the Roman introduction, initializes the score manager,
+    and enters a loop where the player can select their name, load vocabulary,
+    select a level, and play the quiz. After each quiz, the player's score is
+    updated and displayed. The player is then asked if they want to play again.
+    The loop continues until the player chooses not to play again.
+    """
+
+    # Displays the introduction to the game.
     display_roman_intro()
     score_manager = ScoreManager()
 
     while True:
+
+        # Prompts the player to enter their name.
         player_name = select_player()
 
+        # Loads the vocabulary for the quiz
         vocabulary, vocab_files = load_vocabulary()
+
+        # Prompts the player to select a difficulty level.
         level = select_level()
 
+        # play_quizz
         score, total_questions = play_quiz(player_name, level, vocabulary)
         percentage = (score / total_questions) * 100
 
         # Update score with vocabulary information
-        new_ema = score_manager.update_score(
-            player_name, vocab_files, level, percentage
-        )
+        score_manager.update_score(player_name, vocab_files, level, percentage)
 
+        # Displays the player's statistics.
         print(f"\n{Fore.CYAN}Updated Statistics:{Style.RESET_ALL}")
         score_manager.display_player_stats(player_name)
 
+        # The loop continues until the player chooses not to play again.
         play_again = input(
             f"\n{Fore.CYAN}Would you like to play again? (yes/no): {Style.RESET_ALL}"
         ).lower()
