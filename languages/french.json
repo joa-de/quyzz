@@ -17,5 +17,7 @@
     "statistics_for": "Statistiques pour",
     "last_played": "Dernière partie",
     "level": "Niveau",
-    "average": "Moyenne"
+    "average": "Moyenne",
+    "play_again_prompt": "Souhaitez vous rejouer? (yes/no):",
+    "thanks_for_playing": "Merci d'avoir joué! Vale!"
 }

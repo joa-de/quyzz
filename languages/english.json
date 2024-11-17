@@ -17,6 +17,8 @@
     "statistics_for": "Statistics for",
     "last_played": "Last played",
     "level": "Level",
-    "average": "Average"
+    "average": "Average",
+    "play_again_prompt": "Would you like to play again? (yes/no):",
+    "thanks_for_playing": "Thanks for playing! Vale!"
     
 }

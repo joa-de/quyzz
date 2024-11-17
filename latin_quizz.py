@@ -51,7 +51,7 @@ def select_level():
             print("Please enter a valid number.")
 
 
-def play_quizz(player_name, level, vocabulary, lang_manager):
+def play_quiz(player_name, level, vocabulary, lang_manager):
     """
     Conducts a Latin vocabulary quiz for the player.
     Args:
@@ -212,9 +212,7 @@ def main():
         level = select_level()
 
         # play_quizz
-        score, total_questions = play_quizz(
-            player_name, level, vocabulary, lang_manager
-        )
+        score, total_questions = play_quiz(player_name, level, vocabulary, lang_manager)
         percentage = (score / total_questions) * 100
 
         # Update score with vocabulary information
@@ -224,12 +222,14 @@ def main():
         print(f"\n{Fore.CYAN}Updated Statistics:{Style.RESET_ALL}")
         score_manager.display_player_stats(player_name, lang_manager)
 
-        # The loop continues until the player chooses not to play again.
+        # Ask the player if they want to play again
         play_again = input(
-            f"\n{Fore.CYAN}Would you like to play again? (yes/no): {Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{lang_manager.get('play_again_prompt')} {Style.RESET_ALL}"
         ).lower()
         if play_again not in ["yes", "y", "Y"]:
-            print(f"{Fore.GREEN}Thanks for playing! Vale!{Style.RESET_ALL}")
+            print(
+                f"{Fore.GREEN}{lang_manager.get('thanks_for_playing')}{Style.RESET_ALL}"
+            )
             break
 
 
