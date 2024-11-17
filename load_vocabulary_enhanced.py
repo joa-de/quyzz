@@ -2,8 +2,7 @@ import os
 from pathlib import Path
 
 # Description: Load vocabulary from a file and return it as a dictionary.
-# Copyright (c) 2024 Denis Joassin
-# All rights reserved.
+# Denis Joassin 2024
 
 
 def load_vocabulary():
