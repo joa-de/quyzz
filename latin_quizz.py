@@ -14,7 +14,7 @@ from display_roman_intro import display_roman_intro
 from player_management import select_player, load_players, save_players
 
 from score_manager import ScoreManager
-from enhanced_score_manager import EnhancedScoreManager
+from score_manager import ScoreManager
 from colorama import init, Fore, Style
 
 # Initialize colorama
@@ -176,7 +176,7 @@ def play_quiz(player_name, level, vocabulary):
 
 def main():
     display_roman_intro()
-    score_manager = EnhancedScoreManager()
+    score_manager = ScoreManager()
 
     while True:
         player_name = select_player()

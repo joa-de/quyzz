@@ -12,7 +12,7 @@ from display_feedback import display_feedback
 from load_vocabulary_enhanced import load_vocabulary, load_vocabulary2
 from display_roman_intro import display_roman_intro
 from score_manager import ScoreManager
-from enhanced_score_manager import EnhancedScoreManager
+from score_manager import ScoreManager
 from colorama import init, Fore, Style
 
 init()
@@ -241,7 +241,7 @@ def main2():
 
 def main3():
     display_roman_intro()
-    score_manager = EnhancedScoreManager()
+    score_manager = ScoreManager()
 
     while True:
         player_name = select_player()
