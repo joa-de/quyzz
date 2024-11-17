@@ -20,12 +20,19 @@ def save_players(players):
         json.dump(players, file, indent=4)
 
 
-def select_player():
+def get_and_display_players_selection():
+
     players = load_players()
     print("Select a player:")
     for i, player in enumerate(players, 1):
         print(f"{i}. {player}")
     print(f"{len(players) + 1}. Add a new player")
+    return players
+
+
+def select_player():
+
+    players = get_and_display_players_selection()
 
     while True:
         try:
@@ -40,6 +47,7 @@ def select_player():
                     players.append(new_player)
                     save_players(players)
                     print(f"Player {new_player} added successfully!")
+                    players = get_and_display_players_selection()
                 else:
                     print("Player name cannot be empty.")
             else:

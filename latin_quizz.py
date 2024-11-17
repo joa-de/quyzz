@@ -180,7 +180,6 @@ def main():
 
     while True:
         player_name = select_player()
-        score_manager.display_player_stats(player_name)
 
         vocabulary, vocab_files = load_vocabulary()
         level = select_level()

@@ -131,17 +131,11 @@ class ScoreManager:
 
                 # Color coding based on EMA score
                 if ema >= 80:
-                    score_str = (
-                        f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played} games)"
-                    )
+                    score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played})"
                 elif ema >= 60:
-                    score_str = (
-                        f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played} games)"
-                    )
+                    score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played})"
                 else:
-                    score_str = (
-                        f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played} games)"
-                    )
+                    score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played})"
 
                 # Add score to the row
                 row.append(score_str)
