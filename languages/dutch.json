@@ -1,0 +1,21 @@
+{
+    "welcome_message": "Welkom bij de Latijnse Woordenschat Quiz!",
+    "quiz_intro": "Kies de juiste vertaling voor het gegeven Latijnse woord.",
+    "question_label": "Vraag",
+    "latin_word": "Latijns woord",
+    "word_type": "Woordtype",
+    "hint": "Hint",
+    "enter_answer": "Voer je antwoord in",
+    "enter_valid_number": "Voer een geldig nummer in tussen 1 en 4.",
+    "quiz_completed": "Quiz voltooid!",
+    "final_score": "Eindscore",
+    "percentage": "Percentage",
+    "perfect_score": "Perfecte score! Uitstekend werk!",
+    "great_job": "Goed gedaan!",
+    "good_effort": "Goede inspanning! Blijf oefenen!",
+    "keep_studying": "Blijf studeren! Je zult verbeteren!",
+    "statistics_for": "Statistieken voor",
+    "last_played": "Laatst gespeeld",
+    "level": "Niveau",
+    "average": "Gemiddelde"
+}

@@ -1,0 +1,22 @@
+{
+    "welcome_message": "Welcome to the Latin Vocabulary Quiz!",
+    "quiz_intro": "Choose the correct translation for the given Latin word.",
+    "question_label": "Question",
+    "latin_word": "Latin word",
+    "word_type": "Word type",
+    "hint": "Hint",
+    "enter_answer": "Enter your answer",
+    "enter_valid_number": "Please enter a valid number between 1 and 4.",
+    "quiz_completed": "Quiz completed!",
+    "final_score": "Final score",
+    "percentage": "Percentage",
+    "perfect_score": "Perfect score! Excellent work!",
+    "great_job": "Great job!",
+    "good_effort": "Good effort! Keep practicing!",
+    "keep_studying": "Keep studying! You'll improve!",
+    "statistics_for": "Statistics for",
+    "last_played": "Last played",
+    "level": "Level",
+    "average": "Average"
+    
+}

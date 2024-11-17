@@ -10,7 +10,7 @@ def load_players():
     if not os.path.exists(PLAYER_FILE):
         # Create a file with default players if it doesn't exist
         save_players(["Zélie"])
-    with open(PLAYER_FILE, "r") as file:
+    with open(PLAYER_FILE, "r", encoding="utf-8") as file:
         return json.load(file)
 
 

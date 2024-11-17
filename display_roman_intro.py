@@ -51,6 +51,12 @@ def display_roman_intro():
 -::::::::::::::::::::::::::::::::::::::::::::::::::::::={GREEN}++{RESET}::::::::::::::::::::::{GREEN}-#########-{RESET}:::--::::     
     """
     print(roman_intro)
+    print("\n")
+    print("quizz.py Copyright (C) 2024 Denis Joassin")
+    print("This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.")
+    print("This is free software, and you are welcome to redistribute it")
+    print("under certain conditions; type `show c' for details.")
+    print("\n")
 
 
 if __name__ == "__main__":

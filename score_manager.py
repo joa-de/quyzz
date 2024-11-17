@@ -22,13 +22,13 @@ class ScoreManager:
     def _load_scores(self):
         """Load scores from JSON file, create if doesn't exist"""
         if os.path.exists(self.filename):
-            with open(self.filename, "r") as f:
+            with open(self.filename, "r", encoding="utf-8") as f:
                 return json.load(f)
         return {}
 
     def _save_scores(self):
         """Save scores to JSON file"""
-        with open(self.filename, "w") as f:
+        with open(self.filename, "w", encoding="utf-8") as f:
             json.dump(self.scores, f, indent=4)
 
     def get_player_scores(self, player_name):
@@ -92,28 +92,31 @@ class ScoreManager:
         self._save_scores()
         return level_data["ema"]
 
-    def display_player_stats(self, player_name):
+    def display_player_stats(self, player_name, lang_manager):
         """Display player's statistics in a formatted table with levels as rows, vocabularies as columns, and averages."""
 
         player_data = self.get_player_scores(player_name)
 
-        print(f"\n{Fore.CYAN}Statistics for {player_name}:{Style.RESET_ALL}")
+        print(
+            f"\n{Fore.CYAN}{lang_manager.get('statistics_for')} {player_name}:{Style.RESET_ALL}"
+        )
         if player_data["last_played"]:
-            print(f"Last played: {player_data['last_played']}")
+            print(f"{lang_manager.get('last_played')}: {player_data['last_played']}")
         print()
 
-        # Prepare table headers and data
+        # Prepare table headers
         vocabularies = sorted(player_data["vocabularies"].keys())
-        headers = ["Level"] + vocabularies
+        headers = (
+            [lang_manager.get("level")] + vocabularies + [lang_manager.get("average")]
+        )
         table_data = []
 
         # Collect totals for calculating averages
         vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
 
-        # Iterate through levels
         for level in ["1", "2", "3"]:
-            row = [f"Level {level}"]
+            row = [f"{lang_manager.get('level')} {level}"]
             level_total = 0
             level_count = 0
 
@@ -121,29 +124,24 @@ class ScoreManager:
                 vocab_data = player_data["vocabularies"][vocab_id]
                 level_data = vocab_data["levels"][level]
                 ema = level_data["ema"]
-                played = level_data["games_played"]
 
-                # Update totals for averages
                 level_total += ema
                 level_count += 1
                 vocabulary_totals[vocab_id] += ema
                 vocabulary_counts[vocab_id] += 1
 
-                # Color coding based on EMA score
                 if ema >= 80:
-                    score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played})"
+                    score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL}"
                 elif ema >= 60:
-                    score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played})"
+                    score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL}"
                 else:
-                    score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played})"
+                    score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL}"
 
-                # Add score to the row
                 row.append(score_str)
 
             table_data.append(row)
 
-        # Add a final row for vocabulary averages
-        avg_row = ["Average"]
+        avg_row = [lang_manager.get("average")]
         for vocab_id in vocabularies:
             vocab_avg = vocabulary_totals[vocab_id] / vocabulary_counts[vocab_id]
             avg_color = (
@@ -156,7 +154,7 @@ class ScoreManager:
                 )
             )
             avg_row.append(avg_color)
+
         table_data.append(avg_row)
 
-        # Display table using tabulate
         print(tabulate(table_data, headers=headers, tablefmt="grid", stralign="center"))
