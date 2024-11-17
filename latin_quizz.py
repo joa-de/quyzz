@@ -9,7 +9,7 @@ import os
 from time import sleep
 
 from display_feedback import display_feedback
-from load_vocabulary_enhanced import load_vocabulary
+from load_vocabulary import load_vocabulary
 from display_roman_intro import display_roman_intro
 from player_management import select_player, load_players, save_players
 

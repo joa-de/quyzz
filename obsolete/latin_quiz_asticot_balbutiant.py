@@ -9,7 +9,7 @@ import os
 from time import sleep
 
 from display_feedback import display_feedback
-from load_vocabulary_enhanced import load_vocabulary, load_vocabulary2
+from load_vocabulary import load_vocabulary, load_vocabulary2
 from display_roman_intro import display_roman_intro
 from score_manager import ScoreManager
 from score_manager import ScoreManager
