@@ -36,7 +36,7 @@ def select_level():
         int: The selected level (1, 2, or 3).
     """
 
-    print("Select a level:")
+    print("\nSelect a level:")
     print("1. Level 1 (hint displayed before answering)")
     print("2. Level 2 (hint displayed after answering)")
     print("3. Level 3 (options of the same word type, hint after answering)")
