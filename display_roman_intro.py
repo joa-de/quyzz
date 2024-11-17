@@ -1,6 +1,5 @@
 # Description: Display the Roman Intro
-# Copywrite (c) 2024 Denis Joassin
-# All rights reserved.
+# Denis Joassin 2024
 
 from colorama import Fore, Style
 
