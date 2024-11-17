@@ -12,16 +12,16 @@ def load_vocabulary():
             print("No .txt files found in the current directory.")
             exit(1)
         print("\nAvailable vocabulary lists:")
+        print(f"{0}: All chapters combined")
         for i, file in enumerate(files):
             print(f"{i + 1}: {file[:-4]}")
-        print(f"{len(files) + 1}: All chapters combined")
 
         while True:
             try:
-                choice = int(input("Enter the number of the file: ")) - 1
-                if 0 <= choice < len(files):
+                choice = int(input("Enter the number of the file: "))
+                if 0 < choice <= len(files):
                     return [files[choice]], files[choice]
-                elif choice == len(files):
+                elif choice == 0:
                     return files, "all_chapters"
                 print("Invalid choice.")
             except ValueError:

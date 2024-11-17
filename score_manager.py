@@ -124,6 +124,7 @@ class ScoreManager:
                 vocab_data = player_data["vocabularies"][vocab_id]
                 level_data = vocab_data["levels"][level]
                 ema = level_data["ema"]
+                played = level_data["games_played"]
 
                 level_total += ema
                 level_count += 1
@@ -131,11 +132,11 @@ class ScoreManager:
                 vocabulary_counts[vocab_id] += 1
 
                 if ema >= 80:
-                    score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL}"
+                    score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played})"
                 elif ema >= 60:
-                    score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL}"
+                    score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played})"
                 else:
-                    score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL}"
+                    score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played})"
 
                 row.append(score_str)
 
