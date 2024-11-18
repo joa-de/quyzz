@@ -1,0 +1,21 @@
+217|nūntius|nūntiī|de bode; het bericht|Fr. le messager|zelfstandig naamwoord
+218|sapientia|sapientiae|de wijsheid|Fr. sagesse|zelfstandig naamwoord
+219|unda|undae|de golf|Fr. onde|zelfstandig naamwoord
+220|bellum|bellī|de oorlog|Lat. inter-bellum|zelfstandig naamwoord
+221|amor|amōr-is, m.|de liefde|Fr. l'amour|zelfstandig naamwoord
+222|auctor|auctōr-is, m.|de dader|Ndl. de auteur|zelfstandig naamwoord
+223|frāter|frātr-is, m.|de broer|Fr. le frère|zelfstandig naamwoord
+224|ignis|ign-is, m.|het vuur|Fr. ignition|zelfstandig naamwoord
+225|Iuppiter|Iov-is, m.|Jupiter|Fr. Jupiter|eigennaam
+226|mōns|mont-is, m.|de berg|Fr. la montagne|zelfstandig naamwoord
+227|lūx|lūc-is, v.|het licht|Fr. lumière|zelfstandig naamwoord
+228|soror|sorōr-is, v.|de zus|Fr. la sœur|zelfstandig naamwoord
+229|Venus|Vener-is, v.|Venus|Fr. Vénus|eigennaam
+230|nōmen|nōmin-is, o.|de naam|Fr. le nom|zelfstandig naamwoord
+231|scelus|sceler-is, o.|de misdaad|Fr. le crime|zelfstandig naamwoord
+232|adiuvāre|adiuvō|helpen|Ndl. helpen|werkwoord
+233|cūrāre|cūrō|zorgen voor|Lat. cūra|werkwoord
+234|mōnstrāre|mōnstrō|wijzen|Fr. montrer|werkwoord
+235|alius|alia, aliud|(een) andere|Lat. alius|bijvoeglijk naamwoord
+236|cēterī|~ae, ~a|de overige|Lat. et cetera|bijvoeglijk naamwoord
+237|sīcut|(voegwoord)|zoals|Ndl. zoals|voegwoord
