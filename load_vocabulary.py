@@ -20,7 +20,7 @@ def load_vocabulary():
             try:
                 choice = int(input("Enter the number of the file: "))
                 if 0 < choice <= len(files):
-                    return [files[choice]], files[choice]
+                    return [files[choice - 1]]
                 elif choice == 0:
                     return files, "all_chapters"
                 print("Invalid choice.")
@@ -28,7 +28,7 @@ def load_vocabulary():
                 print("Please enter a valid number.")
 
     directory = Path("./vocabularies")
-    filenames, selected_vocab = choose_file(directory)
+    filenames = choose_file(directory)
     vocabulary = {}
 
     try:
