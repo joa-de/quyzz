@@ -41,8 +41,10 @@ class ScoreManager:
         """Create a unique identifier for a vocabulary combination."""
         if isinstance(filenames, str):
             filenames = [filenames]
-        # Sort and join filenames without .txt extension
-        return "+".join(sorted([f[:-4] for f in filenames]))
+        if len(filenames) == 1:
+            return filenames[0]
+        else:
+            return "all_files"
 
     def ensure_vocabulary_scores(self, player_name, vocab_id):
         """Ensure vocabulary scores exist for the player."""

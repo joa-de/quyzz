@@ -22,7 +22,7 @@ def load_vocabulary():
                 if 0 < choice <= len(files):
                     return [files[choice - 1]]
                 elif choice == 0:
-                    return files, "all_chapters"
+                    return files  # return all files
                 print("Invalid choice.")
             except ValueError:
                 print("Please enter a valid number.")

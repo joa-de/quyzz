@@ -100,7 +100,7 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
         word_data = vocabulary[word_id]
 
         # Get options for multiple choice, using word type for level 3
-        if level == 3:
+        if level == 3 or level == 4:
             options = get_random_options(
                 word_data["translation"], vocabulary, word_data.get("word_type")
             )

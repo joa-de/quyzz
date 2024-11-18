@@ -44,8 +44,8 @@
         "total_attempts": 0
     },
     "30": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "31": {
         "correct_attempts": 0,
@@ -112,8 +112,8 @@
         "total_attempts": 0
     },
     "47": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "48": {
         "correct_attempts": 0,
@@ -148,8 +148,8 @@
         "total_attempts": 0
     },
     "56": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "57": {
         "correct_attempts": 0,
@@ -184,8 +184,8 @@
         "total_attempts": 0
     },
     "65": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "66": {
         "correct_attempts": 0,
@@ -228,8 +228,8 @@
         "total_attempts": 0
     },
     "76": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "77": {
         "correct_attempts": 0,
@@ -348,8 +348,8 @@
         "total_attempts": 0
     },
     "139": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "140": {
         "correct_attempts": 0,
@@ -568,20 +568,20 @@
         "total_attempts": 0
     },
     "194": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "195": {
         "correct_attempts": 0,
         "total_attempts": 0
     },
     "196": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "197": {
-        "correct_attempts": 0,
-        "total_attempts": 0
+        "correct_attempts": 1,
+        "total_attempts": 1
     },
     "198": {
         "correct_attempts": 0,
@@ -605,7 +605,7 @@
     },
     "203": {
         "correct_attempts": 0,
-        "total_attempts": 0
+        "total_attempts": 1
     },
     "204": {
         "correct_attempts": 0,
