@@ -20,7 +20,8 @@ def load_mastery_data(user_name, vocab_dir="vocabularies"):
     Returns:
         dict: Mastery data for all words in the vocabulary files.
     """
-    mastery_file = f"{user_name}_vocabulary_mastery.json"
+    file_name = f"{user_name}_vocabulary_mastery.json"
+    mastery_file = Path("./user_data") / file_name
 
     # Load existing mastery data if available
     if os.path.exists(mastery_file):
@@ -62,7 +63,9 @@ def load_mastery_data(user_name, vocab_dir="vocabularies"):
 
 def save_mastery_data(user_name, mastery_data):
     """Save the mastery data for the given user."""
-    mastery_file = f"{user_name}_vocabulary_mastery.json"
+    file_name = f"{user_name}_vocabulary_mastery.json"
+    mastery_file = Path("./user_data") / file_name
+
     with open(mastery_file, "w", encoding="utf-8") as file:
         json.dump(mastery_data, file, indent=4)
 

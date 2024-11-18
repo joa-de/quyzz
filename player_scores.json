@@ -64,8 +64,8 @@
             "hoofdstuck3": {
                 "levels": {
                     "4": {
-                        "ema": 82.587890625,
-                        "games_played": 6
+                        "ema": 87.62611627578735,
+                        "games_played": 12
                     },
                     "1": {
                         "ema": 0.0,
@@ -82,7 +82,7 @@
                 }
             }
         },
-        "last_played": "2024-11-18 23:43:52"
+        "last_played": "2024-11-19 00:02:14"
     },
     "Z\u00e9lie": {
         "vocabularies": {
