@@ -10,50 +10,19 @@ from time import sleep
 
 from display_feedback import display_feedback
 from load_vocabulary import load_vocabulary
-from get_random_options import get_random_options, get_random_options_master
+from get_random_options import get_random_options
 from display_roman_intro import display_roman_intro
-from player_management import select_player, load_players, save_players
+from player_management import select_player
 from mastery_management import load_mastery_data, save_mastery_data, weighted_choice
+from level_management import select_level
 
 from language_manager import LanguageManager
 from score_manager import ScoreManager
-from score_manager import ScoreManager
+
 from colorama import init, Fore, Style
 
 # Initialize colorama
 init()
-
-
-def select_level():
-    """
-    Prompts the user to select a difficulty level for the quiz.
-
-    Levels:
-    1. Level 1 (hint displayed before answering)
-    2. Level 2 (hint displayed after answering)
-    3. Level 3 (options of the same word type, hint after answering)
-    4. Level 4 (options of the same word type, word prioritized by user mastery)
-    5. Level 5 (options of the same word type, word and options by user mastery) - not implemented
-
-    Returns:
-        int: The selected level (1, 2, 3, 4 or 5).
-    """
-
-    print("\nSelect a level:")
-    print("1. Level 1 GALLEY SLAVE")
-    print("2. Level 2 LEGIONARY")
-    print("3. Level 3 CENTURION")
-    print("4. Level 4 SENATOR")
-
-    while True:
-        try:
-            level = int(input("Enter the level number (1, 2, 3, or 4): "))
-            if level in [1, 2, 3, 4]:
-                print(f"Selected level: {level}\n")
-                return level
-            print("Please enter 1, 2, 3, or 4.")
-        except ValueError:
-            print("Please enter a valid number.")
 
 
 def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):

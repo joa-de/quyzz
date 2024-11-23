@@ -42,7 +42,7 @@ class ScoreManager:
         if isinstance(filenames, str):
             filenames = [filenames]
         if len(filenames) == 1:
-            return filenames[0]
+            return filenames[0].strip(".txt")
         else:
             return "all_files"
 
