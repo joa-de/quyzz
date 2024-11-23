@@ -132,7 +132,12 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
         if is_correct:
             score += 1
         display_feedback(
-            is_correct, word_data["translation"], word_data["hint"], score, question_num
+            is_correct,
+            word_data["translation"],
+            word_data["hint"],
+            score,
+            question_num,
+            lang_manager,
         )
 
         # Update mastery data
@@ -205,7 +210,7 @@ def main():
         score_manager.display_player_stats(player_name, lang_manager)
 
         # Loads the vocabulary for the quiz
-        vocabulary, vocab_files = load_vocabulary()
+        vocabulary, vocab_files = load_vocabulary(lang_manager)
 
         # Prompts the player to select a difficulty level.
         level = select_level(lang_manager)

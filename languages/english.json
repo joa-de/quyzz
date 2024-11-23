@@ -58,5 +58,12 @@
         "no_files_found": "No .txt files found in the current directory.",
         "file_not_found": "Error: Could not find vocabulary file '{filename}'",
         "loading_error": "Error loading vocabulary: {error}"
+    },
+    "feedback": {
+        "correct": "Correct!",
+        "incorrect": "Incorrect!",
+        "correct_answer_was": "The correct answer was",
+        "hint": "Hint",
+        "current_score": "Current score"
     }
 }

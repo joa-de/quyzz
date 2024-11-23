@@ -37,8 +37,7 @@ def get_word_id_range(directory, filenames):
     return min_id, max_id
 
 
-def load_vocabulary():
-    lang = LanguageManager()
+def load_vocabulary(lang: LanguageManager):
 
     def choose_file_or_custom(directory):
         """
@@ -125,9 +124,7 @@ def load_vocabulary():
         )
         exit(1)
     except Exception as e:
-        print(
-            lang.get("vocabulary_management.loading_error").format(error=str(e))
-        )
+        print(lang.get("vocabulary_management.loading_error").format(error=str(e)))
         exit(1)
 
     # Ensure vocabulary is sorted by word_id
