@@ -20,6 +20,7 @@
         "level": "Niveau",
         "average": "Moyenne",
         "play_again_prompt": "Voulez-vous rejouer ? (oui/non) :",
+        "updated_statistics": "Statistiques de {player} mises à jour:",
         "thanks_for_playing": "Merci d'avoir joué ! Vale !"
     },
     "level_management": {
