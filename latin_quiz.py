@@ -225,7 +225,9 @@ def main():
         score_manager.update_score(player_name, vocab_files, level, percentage)
 
         # Displays the player's statistics.
-        print(f"\n{Fore.CYAN}{lang_manager.get("core.updated_statistics").format(player=player_name)}:{Style.RESET_ALL}")
+        print(
+            f"\n{Fore.CYAN}{lang_manager.get('core.updated_statistics').format(player=player_name)}:{Style.RESET_ALL}"
+        )
         score_manager.display_player_stats(player_name, lang_manager)
 
         # Ask the player if they want to play again
