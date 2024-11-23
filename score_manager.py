@@ -112,16 +112,20 @@ class ScoreManager:
         player_data = self.get_player_scores(player_name)
 
         print(
-            f"\n{Fore.CYAN}{lang_manager.get('statistics_for')} {player_name}:{Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{lang_manager.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
         )
         if player_data["last_played"]:
-            print(f"{lang_manager.get('last_played')}: {player_data['last_played']}")
+            print(
+                f"{lang_manager.get('score.last_played')}: {player_data['last_played']}"
+            )
         print()
 
         # Prepare table headers
         vocabularies = sorted(player_data["vocabularies"].keys())
         headers = (
-            [lang_manager.get("level")] + vocabularies + [lang_manager.get("average")]
+            [lang_manager.get("score.level")]
+            + vocabularies
+            + [lang_manager.get("score.average")]
         )
         table_data = []
 
@@ -130,7 +134,7 @@ class ScoreManager:
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
 
         for level in ["1", "2", "3", "4"]:
-            row = [f"{lang_manager.get('level')} {level}"]
+            row = [f"{lang_manager.get('score.level')} {level}"]
             level_total = 0
             level_count = 0
 
@@ -157,7 +161,7 @@ class ScoreManager:
 
             table_data.append(row)
 
-        avg_row = [lang_manager.get("average")]
+        avg_row = [lang_manager.get("score.average")]
         for vocab_id in vocabularies:
             vocab_avg = vocabulary_totals[vocab_id] / vocabulary_counts[vocab_id]
             avg_color = (

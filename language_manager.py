@@ -31,5 +31,16 @@ class LanguageManager:
             self.strings = {}
 
     def get(self, key, default=""):
-        """Retrieve a language string by key, with an optional default."""
-        return self.strings.get(key, default)
+        """
+        Retrieve a language string by key, with an optional default.
+        Key can be in format "section.key" for nested strings.
+        """
+        if "." in key:
+            section, subkey = key.split(".", 1)
+            return self.strings.get(section, {}).get(subkey, default)
+        else:
+            # For backward compatibility, look in all sections
+            for section in self.strings.values():
+                if isinstance(section, dict) and key in section:
+                    return section[key]
+            return default

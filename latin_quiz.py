@@ -42,9 +42,9 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
     total_questions = 10
 
     print(
-        f"\n{Fore.CYAN}{lang_manager.get('welcome_message', 'Welcome')} {player_name}!"
+        f"\n{Fore.CYAN}{lang_manager.get('core.welcome_message', 'Welcome')} {player_name}!"
     )
-    print(lang_manager.get("quiz_intro", "Choose the correct translation."))
+    print(lang_manager.get("core.quiz_intro", "Choose the correct translation."))
     print("-" * 50 + Style.RESET_ALL)
 
     vocab_items = list(vocabulary.items())
@@ -79,21 +79,21 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
 
         # Display question
         print(
-            f"\n{Fore.YELLOW}{lang_manager.get('question_label', 'Question')} {question_num + 1}/{total_questions}"
+            f"\n{Fore.YELLOW}{lang_manager.get('core.question_label', 'Question')} {question_num + 1}/{total_questions}"
         )
         print(
-            f"{lang_manager.get('latin_word', 'Latin word')}: {word_data['word']} ({word_data['form']})"
+            f"{lang_manager.get('core.latin_word', 'Latin word')}: {word_data['word']} ({word_data['form']})"
         )
         if level == 3:
             print(
-                f"{lang_manager.get('word_type', 'Word type')}: {word_data.get('word_type', '')}{Style.RESET_ALL}"
+                f"{lang_manager.get('core.word_type', 'Word type')}: {word_data.get('word_type', '')}{Style.RESET_ALL}"
             )
         else:
             print(Style.RESET_ALL, end="")
 
         # Display hint based on level
         if level == 1:
-            print(f"{lang_manager.get('hint', 'Hint')}: {word_data['hint']}")
+            print(f"{lang_manager.get('core.hint', 'Hint')}: {word_data['hint']}")
 
         # Display options
         for i, option in enumerate(options, 1):
@@ -104,28 +104,28 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
             try:
                 answer = int(
                     input(
-                        f"\n{lang_manager.get('enter_answer', 'Enter your answer')} (1-4): "
+                        f"\n{lang_manager.get('core.enter_answer', 'Enter your answer')} (1-4): "
                     )
                 )
                 if 1 <= answer <= 4:
                     break
                 print(
                     lang_manager.get(
-                        "enter_valid_number",
+                        "core.enter_valid_number",
                         "Please enter a valid number between 1 and 4.",
                     )
                 )
             except ValueError:
                 print(
                     lang_manager.get(
-                        "enter_valid_number",
+                        "core.enter_valid_number",
                         "Please enter a valid number between 1 and 4.",
                     )
                 )
 
         # Display hint after answering for levels 2 and 3
         if level in [2, 3]:
-            print(f"{lang_manager.get('hint', 'Hint')}: {word_data['hint']}")
+            print(f"{lang_manager.get('core.hint', 'Hint')}: {word_data['hint']}")
 
         # Check answer and display feedback
         is_correct = options[answer - 1] == word_data["translation"]
@@ -147,30 +147,30 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
     # Final score with color
     percentage = (score / total_questions) * 100
     print(
-        f"\n{Fore.CYAN}{lang_manager.get('quiz_completed', 'Quiz completed')} {player_name}!"
+        f"\n{Fore.CYAN}{lang_manager.get('core.quiz_completed', 'Quiz completed')} {player_name}!"
     )
     print(
-        f"{lang_manager.get('final_score', 'Final score')}: {score}/{total_questions}"
+        f"{lang_manager.get('core.final_score', 'Final score')}: {score}/{total_questions}"
     )
     print(
-        f"{lang_manager.get('percentage', 'Percentage')}: {percentage:.1f}%{Style.RESET_ALL}"
+        f"{lang_manager.get('core.percentage', 'Percentage')}: {percentage:.1f}%{Style.RESET_ALL}"
     )
 
     if percentage == 100:
         print(
-            f"{Fore.GREEN}{lang_manager.get('perfect_score', 'Perfect score! Excellent work!')}{Style.RESET_ALL}"
+            f"{Fore.GREEN}{lang_manager.get('core.perfect_score', 'Perfect score! Excellent work!')}{Style.RESET_ALL}"
         )
     elif percentage >= 80:
         print(
-            f"{Fore.GREEN}{lang_manager.get('great_job', 'Great job!')}{Style.RESET_ALL}"
+            f"{Fore.GREEN}{lang_manager.get('core.great_job', 'Great job!')}{Style.RESET_ALL}"
         )
     elif percentage >= 60:
         print(
-            f"{Fore.YELLOW}{lang_manager.get('good_effort', 'Good effort! Keep practicing!')}{Style.RESET_ALL}"
+            f"{Fore.YELLOW}{lang_manager.get('core.good_effort', 'Good effort! Keep practicing!')}{Style.RESET_ALL}"
         )
     else:
         print(
-            f"{Fore.RED}{lang_manager.get('keep_studying', 'Keep studying!')}{Style.RESET_ALL}"
+            f"{Fore.RED}{lang_manager.get('core.keep_studying', 'Keep studying!')}{Style.RESET_ALL}"
         )
 
     return score, total_questions
@@ -204,7 +204,7 @@ def main():
         vocabulary, vocab_files = load_vocabulary()
 
         # Prompts the player to select a difficulty level.
-        level = select_level()
+        level = select_level(lang_manager)
 
         # play_quizz
         score, total_questions = play_quiz(
@@ -221,11 +221,11 @@ def main():
 
         # Ask the player if they want to play again
         play_again = input(
-            f"\n{Fore.CYAN}{lang_manager.get('play_again_prompt')} {Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{lang_manager.get('core.play_again_prompt')} {Style.RESET_ALL}"
         ).lower()
         if play_again not in ["yes", "y", "Y"]:
             print(
-                f"{Fore.GREEN}{lang_manager.get('thanks_for_playing')}{Style.RESET_ALL}"
+                f"{Fore.GREEN}{lang_manager.get('core.thanks_for_playing')}{Style.RESET_ALL}"
             )
             break
 

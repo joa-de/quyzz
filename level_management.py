@@ -1,4 +1,7 @@
-def select_level():
+from language_manager import LanguageManager
+
+
+def select_level(lang_manager: LanguageManager):
     """
     Prompts the user to select a difficulty level for the quiz.
 
@@ -11,20 +14,26 @@ def select_level():
 
     Returns:
         int: The selected level (1, 2, 3, 4 or 5).
+
+    # note : update to use the language manager
     """
 
-    print("\nSelect a level:")
-    print("1. Level 1 GALLEY SLAVE")
-    print("2. Level 2 LEGIONARY")
-    print("3. Level 3 CENTURION")
-    print("4. Level 4 SENATOR")
+    print(f"\n{lang_manager.get('level_management.select_level_prompt')}")
+    print(f"1. {lang_manager.get('level_management.level_1_name')}")
+    print(f"2. {lang_manager.get('level_management.level_2_name')}")
+    print(f"3. {lang_manager.get('level_management.level_3_name')}")
+    print(f"4. {lang_manager.get('level_management.level_4_name')}")
 
     while True:
         try:
-            level = int(input("Enter the level number (1, 2, 3, or 4): "))
+            level = int(input(lang_manager.get("level_management.enter_level_number")))
             if level in [1, 2, 3, 4]:
-                print(f"Selected level: {level}\n")
+                print(
+                    lang_manager.get("level_management.selected_level").format(
+                        level=level
+                    )
+                )
                 return level
-            print("Please enter 1, 2, 3, or 4.")
+            print(lang_manager.get("level_management.invalid_level_number"))
         except ValueError:
-            print("Please enter a valid number.")
+            print(lang_manager.get("level_management.invalid_input"))
