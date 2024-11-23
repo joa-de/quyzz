@@ -234,7 +234,7 @@ def main():
         play_again = input(
             f"\n{Fore.CYAN}{lang_manager.get('core.play_again_prompt')} {Style.RESET_ALL}"
         ).lower()
-        if play_again not in ["yes", "y", "Y"]:
+        if play_again not in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]:
             print(
                 f"{Fore.GREEN}{lang_manager.get('core.thanks_for_playing')}{Style.RESET_ALL}"
             )
