@@ -1,3 +1,21 @@
+1|amicus|amīcī, m.|de vriend|Fr. l’ami|zelfstandig naamwoord
+2|deus|deī, m.|de god|Fr. le dieu|zelfstandig naamwoord
+3|dominus|dominī, m.|de meester|Ndl. domineren, Fr. dominant|zelfstandig naamwoord
+4|equus|equī, m.|het paard|Fr. équitation|zelfstandig naamwoord
+5|fīlius|fīliī, m.|de zoon|Fr. le fils|zelfstandig naamwoord
+6|servus|servī, m.|de slaaf|Fr. serviteur, service|zelfstandig naamwoord
+7|aqua|aquae, v.|het water|Ndl. aquarium|zelfstandig naamwoord
+8|famīlia|famīliae, v.|het gezin; het personeel|Ndl. familie|zelfstandig naamwoord
+9|via|viae, v.|de weg|Ndl. viaduct|zelfstandig naamwoord
+10|monumentum|monumentī, o.|het monument; het aandenken||zelfstandig naamwoord
+11|templum|templī, o.|de tempel|Fr. temple|zelfstandig naamwoord
+12|vīnum|vīnī, o.|de wijn|Fr. le vin|zelfstandig naamwoord
+13|pater|patr-is, m.|de vader|Lat. pater familias|zelfstandig naamwoord
+14|senex|sen-is, m.|de oude man|Ndl. seniel|zelfstandig naamwoord
+15|virgō|virgin-is, v.|de maagd; het meisje|Fr. vierge|zelfstandig naamwoord
+16|vōx|vōc-is, v.|de stem; het woord|Fr. la voix|zelfstandig naamwoord
+17|flūmen|flūmin-is, o.|de rivier|Fr. fleuve|zelfstandig naamwoord
+18|sīdus|sīder-is, o.|de ster; het sterrenbeeld||zelfstandig naamwoord
 19|fēmina|fēminae, v.|de vrouw|Fr. la femme, féminin|zelfstandig naamwoord
 20|canis|can-is, m.|de hond|Fr. Royal Canin, Chien|zelfstandig naamwoord
 21|iuvenis|iuven-is, m.|de jongeman|junior, juventus|zelfstandig naamwoord
