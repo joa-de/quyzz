@@ -20,6 +20,7 @@
         "level": "Level",
         "average": "Average",
         "play_again_prompt": "Would you like to play again? (yes/no):",
+        "updated_statistics": "Updated statistics for {player}:",
         "thanks_for_playing": "Thanks for playing! Vale!"
     },
     "level_management": {

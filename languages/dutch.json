@@ -19,6 +19,7 @@
         "last_played": "Laatst gespeeld",
         "level": "Niveau",
         "average": "Gemiddelde",
+        "updated_statistics": "Geüpdatete statistieken van {player}:",
         "play_again_prompt": "Wil je nog een keer spelen? (ja/nee):",
         "thanks_for_playing": "Bedankt voor het spelen! Vale!"
     },
