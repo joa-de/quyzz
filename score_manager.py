@@ -6,6 +6,9 @@ from tabulate import tabulate
 from colorama import Fore, Style
 
 
+PLAYER_DIR = Path("./user_data")
+
+
 class ScoreManager:
     def __init__(self, filename="player_scores.json", default_period=10):
         """
@@ -15,7 +18,7 @@ class ScoreManager:
             filename: JSON file to store scores.
             default_period: Default period for EMA calculation.
         """
-        self.filename = filename
+        self.filename = PLAYER_DIR / filename
         self.default_period = default_period
         self.scores = self._load_scores()
 

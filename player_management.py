@@ -1,22 +1,24 @@
 import json
 import os
+from pathlib import Path
 
 # Path to the JSON file
+USER_DATA_PATH = Path("./user_data")
 PLAYER_FILE = "players.json"
 
 
 def load_players():
     """Load players from a JSON file."""
-    if not os.path.exists(PLAYER_FILE):
+    if not os.path.exists(USER_DATA_PATH / PLAYER_FILE):
         # Create a file with default players if it doesn't exist
         save_players(["Zélie"])
-    with open(PLAYER_FILE, "r", encoding="utf-8") as file:
+    with open(USER_DATA_PATH / PLAYER_FILE, "r", encoding="utf-8") as file:
         return json.load(file)
 
 
 def save_players(players):
     """Save players to a JSON file."""
-    with open(PLAYER_FILE, "w") as file:
+    with open(USER_DATA_PATH / PLAYER_FILE, "w") as file:
         json.dump(players, file, indent=4)
 
 
