@@ -48,12 +48,12 @@
                         "games_played": 13
                     },
                     "1": {
-                        "ema": 100.0,
-                        "games_played": 1
+                        "ema": 92.5,
+                        "games_played": 2
                     },
                     "2": {
-                        "ema": 70.0,
-                        "games_played": 1
+                        "ema": 75.0,
+                        "games_played": 2
                     },
                     "3": {
                         "ema": 100.0,
@@ -102,7 +102,7 @@
                 }
             }
         },
-        "last_played": "2024-11-23 13:45:49"
+        "last_played": "2024-11-23 14:10:22"
     },
     "Z\u00e9lie": {
         "vocabularies": {

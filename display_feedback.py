@@ -6,7 +6,7 @@ from colorama import Fore, Style
 
 
 def display_feedback(is_correct, correct_answer, hint, current_score, question_num):
-    """Display feedback with colors and play sound."""
+    """Display feedback with colors."""
     if is_correct:
         # play_sound(True)
         print(f"\n{Fore.GREEN}Correct! ✓{Style.RESET_ALL}")

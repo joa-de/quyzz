@@ -43,5 +43,20 @@
         "empty_name_error": "Player name cannot be empty.",
         "invalid_option": "Please select a valid option.",
         "invalid_number": "Please enter a valid number."
+    },
+    "vocabulary_management": {
+        "available_lists": "Available vocabulary lists:",
+        "all_chapters": "All chapters combined",
+        "custom_range": "Custom range of word IDs (from all files, range {min_id}-{max_id})",
+        "file_selection": "Enter the number of the file: ",
+        "enter_range": "Enter a range of word IDs (e.g., '{min_id}-{max_id}'): ",
+        "invalid_range": "Invalid range. Please enter a range within {min_id}-{max_id}.",
+        "invalid_range_order": "Invalid range. Start must be less than or equal to end.",
+        "invalid_range_format": "Invalid format. Please enter a range like '123-152'.",
+        "invalid_choice": "Invalid choice.",
+        "enter_valid_number": "Please enter a valid number.",
+        "no_files_found": "No .txt files found in the current directory.",
+        "file_not_found": "Error: Could not find vocabulary file '{filename}'",
+        "loading_error": "Error loading vocabulary: {error}"
     }
 }

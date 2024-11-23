@@ -196,8 +196,12 @@ def main():
     while True:
 
         # Prompts the player to enter their name.
-        player_name = select_player()
+        player_name = select_player(lang_manager)
+
+        # Load player vocabulary mastery data
         mastery_data = load_mastery_data(player_name)
+
+        # Displays the player's statistics.
         score_manager.display_player_stats(player_name, lang_manager)
 
         # Loads the vocabulary for the quiz
