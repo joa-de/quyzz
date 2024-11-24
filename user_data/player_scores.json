@@ -16,8 +16,8 @@
                         "games_played": 1
                     },
                     "4": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 90.0,
+                        "games_played": 1
                     }
                 }
             },
@@ -36,8 +36,8 @@
                         "games_played": 3
                     },
                     "4": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 80.0,
+                        "games_played": 1
                     }
                 }
             },
@@ -52,8 +52,8 @@
                         "games_played": 2
                     },
                     "2": {
-                        "ema": 75.0,
-                        "games_played": 2
+                        "ema": 84.140625,
+                        "games_played": 5
                     },
                     "3": {
                         "ema": 100.0,
@@ -102,7 +102,7 @@
                 }
             }
         },
-        "last_played": "2024-11-23 15:22:33"
+        "last_played": "2024-11-23 18:56:32"
     },
     "Z\u00e9lie": {
         "vocabularies": {

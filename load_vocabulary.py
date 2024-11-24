@@ -130,7 +130,4 @@ def load_vocabulary(lang: LanguageManager):
     # Ensure vocabulary is sorted by word_id
     vocabulary = dict(sorted(vocabulary.items()))
 
-    if custom_range:
-        filenames = ["custom"]
-
     return vocabulary, filenames
