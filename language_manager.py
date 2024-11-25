@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
 
-imp
-
 # Path to the default language file
 LANGUAGE_FILE = "french.json"
 
