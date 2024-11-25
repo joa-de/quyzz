@@ -83,7 +83,7 @@ target/
 .ipynb_checkpoints
 
 # user data
-user_data/*.json
+user_data/
 
 # IPython
 profile_default/
