@@ -18,6 +18,7 @@ from level_management import select_level
 
 from language_manager import LanguageManager
 from score_manager import ScoreManager
+from config_manager import config_manager
 
 from colorama import init, Fore, Style
 
@@ -191,7 +192,9 @@ def main():
     The loop continues until the player chooses not to play again.
     """
 
-    lang_manager = LanguageManager()
+    config = config_manager("config.yaml")
+    language_file = config.get("language_file")
+    lang_manager = LanguageManager(language_file)
 
     # Displays the introduction to the game.
     display_roman_intro()
