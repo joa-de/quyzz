@@ -19,6 +19,13 @@ def select_level(lang_manager: LanguageManager):
     """
 
     print(f"\n{lang_manager.get('level_management.select_level_prompt')}")
+
+    if lang_manager.language != "dutch":
+        print(f"0. {lang_manager.get('level_management.level_0_name')}")
+        levels = [0, 1, 2, 3, 4]
+    else:
+        levels = [1, 2, 3, 4]
+
     print(f"1. {lang_manager.get('level_management.level_1_name')}")
     print(f"2. {lang_manager.get('level_management.level_2_name')}")
     print(f"3. {lang_manager.get('level_management.level_3_name')}")
@@ -27,7 +34,7 @@ def select_level(lang_manager: LanguageManager):
     while True:
         try:
             level = int(input(lang_manager.get("level_management.enter_level_number")))
-            if level in [1, 2, 3, 4]:
+            if level in levels:
                 print(
                     lang_manager.get("level_management.selected_level").format(
                         level=level

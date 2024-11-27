@@ -25,7 +25,8 @@
     },
     "level_management": {
         "select_level_prompt": "Select a level:",
-        "level_1_name": "Level 1 GALLEY SLAVE",
+        "level_0_name": "Level 0 GALLEY SLAVE",
+        "level_1_name": "Level 1 GLADIATOR",
         "level_2_name": "Level 2 LEGIONARY",
         "level_3_name": "Level 3 CENTURION",
         "level_4_name": "Level 4 SENATOR",

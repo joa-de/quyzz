@@ -25,7 +25,8 @@
     },
     "level_management": {
         "select_level_prompt": "Sélectionnez un niveau :",
-        "level_1_name": "Niveau 1 GALÉRIEN",
+        "level_0_name": "Niveau 0 GALÉRIEN",
+        "level_1_name": "Niveau 1 GLADIATEUR",
         "level_2_name": "Niveau 2 LÉGIONNAIRE",
         "level_3_name": "Niveau 3 CENTURION",
         "level_4_name": "Niveau 4 SÉNATEUR",

@@ -9,11 +9,13 @@ class LanguageManager:
     """Manages the loading and retrieval of language strings."""
 
     def __init__(self, language_file=LANGUAGE_FILE):
-        language_directory = Path(__file__).parent / "languages"
-        self.language_file = language_directory / language_file
+        self.language_directory = Path(__file__).parent / "languages"
+        self.language_file = self.language_directory / language_file
         self.language = language_file.strip(".json")
         self.strings = {}
         self.load_language()
+        if self.language != "dutch":
+            self.load_translations()
 
     def load_language(self):
         """Load the language strings from the specified JSON file."""
@@ -45,3 +47,28 @@ class LanguageManager:
                 if isinstance(section, dict) and key in section:
                     return section[key]
             return default
+
+    def load_translations(self):
+        """
+        Load translations from a file.
+
+        Returns:
+            dict: A dictionary mapping word IDs to  translations.
+        """
+        translations = {}
+        filepath = self.language_directory
+        filename = self.language + "-translations.txt"
+        try:
+            with open(filepath / filename, "r", encoding="utf-8") as file:
+                for line in file:
+                    parts = line.strip().split("|")
+                    if len(parts) == 2:
+                        word_id = int(parts[0])
+                        translations[word_id] = parts[1]
+        except FileNotFoundError:
+            print(f"Error: Translation file '{filename}' not found.")
+            exit(1)
+        except Exception as e:
+            print(f"Error loading translations: {e}")
+            exit(1)
+        self.translations = translations

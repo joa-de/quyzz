@@ -26,7 +26,9 @@ from colorama import init, Fore, Style
 init()
 
 
-def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
+def play_quiz(
+    player_name, level, vocabulary, lang_manager, mastery_data, total_questions=10
+):
     """
     Conducts a Latin vocabulary quiz for the player.
     Args:
@@ -40,7 +42,6 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
         tuple: A tuple containing the final score and the total number of questions.
     """
     score = 0
-    total_questions = 10
 
     print(
         f"\n{Fore.CYAN}{lang_manager.get('core.welcome_message', 'Welcome')} {player_name}!"
@@ -71,19 +72,24 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
 
         # Get options for multiple choice, using word type for level 3
         if level == 3 or level == 4:
-            options = get_random_options(
-                word_data["translation"], vocabulary, word_data.get("word_type")
+            options, options_id = get_random_options(
+                word_data["translation"],
+                word_id,
+                vocabulary,
+                word_data.get("word_type"),
             )
 
         else:
-            options = get_random_options(word_data["translation"], vocabulary)
+            options, options_id = get_random_options(
+                word_data["translation"], word_id, vocabulary
+            )
 
         # Display question
         print(
-            f"\n{Fore.YELLOW}{lang_manager.get('core.question_label', 'Question')} {question_num + 1}/{total_questions}"
+            f"\n{Fore.YELLOW}{lang_manager.get('core.question_label', 'Question')} {question_num + 1}/{total_questions}{Style.RESET_ALL}"
         )
         print(
-            f"{lang_manager.get('core.latin_word', 'Latin word')}: {word_data['word']} ({word_data['form']})"
+            f"{lang_manager.get('core.latin_word', 'Latin word')}: {Fore.MAGENTA}{word_data['word']} ({word_data['form']}){Style.RESET_ALL}"
         )
         if level == 3:
             print(
@@ -96,9 +102,19 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
         if level == 1:
             print(f"{lang_manager.get('core.hint', 'Hint')}: {word_data['hint']}")
 
-        # Display options
-        for i, option in enumerate(options, 1):
-            print(f"{i}. {option}")
+        if level == 0:
+            print(f"{lang_manager.get('core.hint', 'Hint')}: {word_data['hint']}")
+            for i, option_and_id in enumerate(zip(options, options_id), 1):
+                translation = lang_manager.translations.get(
+                    int(option_and_id[1]), "Unknown"
+                )
+                print(
+                    f"{i}. {option_and_id[0]} - {Fore.CYAN}{translation}{Style.RESET_ALL}"
+                )
+        else:
+            # Normal options display for other levels
+            for i, option in enumerate(options, 1):
+                print(f"{i}. {option}")
 
         # Get user answer
         while True:
@@ -125,7 +141,7 @@ def play_quiz(player_name, level, vocabulary, lang_manager, mastery_data):
                 )
 
         # Display hint after answering for levels 2 and 3
-        if level in [2, 3]:
+        if level in [2, 3, 4]:
             print(f"{lang_manager.get('core.hint', 'Hint')}: {word_data['hint']}")
 
         # Check answer and display feedback
@@ -194,6 +210,7 @@ def main():
 
     config = config_manager("config.yaml")
     language_file = config.get("language_file")
+    total_questions = config.get("total_questions", 10)
     lang_manager = LanguageManager(language_file)
 
     # Displays the introduction to the game.
@@ -220,7 +237,7 @@ def main():
 
         # play_quizz
         score, total_questions = play_quiz(
-            player_name, level, vocabulary, lang_manager, mastery_data
+            player_name, level, vocabulary, lang_manager, mastery_data, total_questions
         )
         percentage = (score / total_questions) * 100
 
