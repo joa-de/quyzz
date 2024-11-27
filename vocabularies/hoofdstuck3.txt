@@ -20,8 +20,8 @@
 236|cēterī|~ae, ~a|de overige|Lat. et cetera|bijvoeglijk naamwoord
 237|sīcut|(voegwoord)|zoals||voegwoord
 238|umbra|umbrae|de schaduw; de schim|Fr. ombre|zelfstandig naamwoord
-239|clārus|~a, ~um|helder; beroemd||bijvoeglijk naamwoord
-240|aedificāre|aedificō|bouwen||werkwoord
+239|clārus|~a, ~um|helder; beroemd|Ndl. klaar, Fr. clair|bijvoeglijk naamwoord
+240|aedificāre|aedificō|bouwen|Fr. édifier, lat. aedificium|werkwoord
 241|eius|(voornaamwoord)|zijn, haar||voornaamwoord
 242|eōrum, eārum|(voornaamwoord)|hun||voornaamwoord
 243|meus|~a, ~um|mijn|Fr. mon, ma, mes|voornaamwoord
@@ -29,32 +29,32 @@
 245|suus|~a, ~um|zijn, haar, hun (eigen)|Fr. son, sa, ses|voornaamwoord
 246|gladius|gladiī|het zwaard|Ndl. de gladiator|zelfstandig naamwoord
 247|hasta|hastae|de lans||zelfstandig naamwoord
-248|sagitta|sagittae|de pijl||zelfstandig naamwoord
+248|sagitta|sagittae|de pijl|sagittarias|zelfstandig naamwoord
 249|parvus|~a, ~um|klein||bijvoeglijk naamwoord
 250|ita|(bijwoord)|zo||bijwoord
 251|tamen|(bijwoord)|toch||bijwoord
 252|itaque|(bijwoord/voegwoord)|daarom; en zo||bijwoord/voegwoord
-253|cīvis|cīv-is, m.|de burger||zelfstandig naamwoord
-254|comes|comit-is, m.|de kameraad||zelfstandig naamwoord
-255|lapis|lapid-is, m.|de steen||zelfstandig naamwoord
-256|mors|mort-is, v.|de dood|Fr. la mort|zelfstandig naamwoord
-257|prīmus|~a, ~um|eerste; de eerste van||bijvoeglijk naamwoord
-258|capere|capiō|(in)nemen||werkwoord
+253|cīvis|cīv-is, m.|de burger|Ndl. civiel, civilia|zelfstandig naamwoord
+254|comes|comit-is, m.|de kameraad|Fr. le comité|zelfstandig naamwoord
+255|lapis|lapid-is, m.|de steen|Lat. lapidarium, Fr. lapis lazuli|zelfstandig naamwoord
+256|mors|mort-is, v.|de dood|Ndl. morsdood, Fr. la mort, mortel|zelfstandig naamwoord
+257|prīmus|~a, ~um|eerste; de eerste van|Fr. le premier|bijvoeglijk naamwoord
+258|capere|capiō|(in)nemen|Ndl. kopen|werkwoord
 259|accipere|accipiō|ontvangen; vernemen|Ndl. accepteren|werkwoord
 260|incipere|incipiō|beginnen||werkwoord
-261|cupere|cupiō|verlangen; (graag) willen|Fr. cupide|werkwoord
+261|cupere|cupiō|verlangen; (graag) willen|Fr. cupide, cupidon|werkwoord
 262|facere|faciō|maken; doen|Fr. faire|werkwoord
 263|interficere|interficiō|doden||werkwoord
-264|fugere|fugiō|(ont)vluchten||werkwoord
-265|iacere|iaciō|werpen||werkwoord
+264|fugere|fugiō|(ont)vluchten|Fr. fuir, fugueur|werkwoord
+265|iacere|iaciō|werpen|Fr. injection|werkwoord
 266|abicere|abiciō|wegwerpen; neerwerpen||werkwoord
 267|rapere|rapiō|grijpen; roven||werkwoord
 268|corripere|corripiō|vastgrijpen; meesleuren||werkwoord
 269|ēripere|ēripiō|wegrukken||werkwoord
-270|spicere|spiciō|kijken||werkwoord
+270|spicere|spiciō|kijken|Fr. spectacle, spieken|werkwoord
 271|adspicere|adspiciō|aankijken||werkwoord
 272|cōnspicere|cōnspiciō|bekijken; bemerken||werkwoord
 273|respicere|respiciō|omkijken; rekening houden met|Ndl. respecteren|werkwoord
-274|satis|(bijwoord)|genoeg; nogal||bijwoord
+274|satis|(bijwoord)|genoeg; nogal|Fr. satisfaire; satisfaction|bijwoord
 275|statim|(bijwoord)|dadelijk||bijwoord
 
