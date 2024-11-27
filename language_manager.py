@@ -11,6 +11,7 @@ class LanguageManager:
     def __init__(self, language_file=LANGUAGE_FILE):
         language_directory = Path(__file__).parent / "languages"
         self.language_file = language_directory / language_file
+        self.language = language_file.strip(".json")
         self.strings = {}
         self.load_language()
 

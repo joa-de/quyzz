@@ -83,6 +83,39 @@
 83|domum|bijwoord|naar huis||bijwoord
 84|ideō|bijwoord|daarom||bijwoord
 85|intereā|bijwoord|intussen||bijwoord
+86|pecunia|pecuniae, v.|het geld|Engl. penny, pound; Fr. pécuniaire|
+87|aedificium|aedificii, o.|het gebouw|Fr. Edifice|
+88|spectaculum|spectaculi, o.|het schouwspel|Ndl. spektakel; Fr. spectacle, spectaculaire|
+89|finis|fin-is, m.|de grens; het einde; het doel|Fr. la fin / Eng. the finish|
+90|iter|itiner-is, o.|de reis; de weg|Fr. itinéraire|
+91|laetus|-a, -um|vrolijk||
+92|latus|-a, -um|breed; uitgestrekt|Fr. large, latitude|
+93|longus|-a, -um|lang|Fr. long|
+94|magnus|-a, -um|groot; belangrijk|magnum|
+95|optimus|-a, -um|beste; zeer goed|Ndl. de optimist, optimaal|
+96|timidus|-a, -um|bang|Ndl. timide, intimideren|
+97|clamare|clamo|roepen|Fr. réclame|
+98|invenire|inveniō|vinden; ontdekken|Ndl. uitvinden, inventie, inventeur|
+99|tum(bijwoord)| op dat moment||
+100|dum(voegwoord)|terwijl||
+101|amare|amō|beminnen; houden van|Fr. aimer, amour|
+102|monere|moneō|waarschuwen||
+103|audire|audiō|horen; luisteren naar|Ndl. de auditie; Fr. audio|
+104|altus|-a, -um|hoog; diep|Fr. altitude|
+105|magnificus|-a, -um|prachtig|Ndl. magnifiek ; Fr.magnifique|
+106|multi|-ae, -a|veel|Fr. nouveau|
+107|novus|-a, -um|nieuw||
+108|Romanus|-a, -um|Romeins||
+109|subito(bijwoord)|plotseling|Fr.subitement|
+110|antiquus|-a, -um|oud|Ndl. antiek, antiquair|
+111|malus|-a, -um|slecht|Fr. mal|
+112|totus|-a, -um|geheel|Ndl. totaal|
+113|nam(voegwoord)|want||
+114|quod(voegwoord)|omdat||
+115|bonus|-a, -um|goed|Fr. bon|
+116|iratus|-a, -um|woedend||
+117|stultus|-a, -um|dwaas, dom|Fr. bien|
+118|bene(bijwoord)|goed|Fr. bien|
 119|ūnus|ūna, ūnum|één; enig|Fr. un, It. uno|telwoord
 120|duo|duo, duae, duo|twee|Fr. deux, It. duo|telwoord
 121|trēs|trēs, tria|drie|Fr. trois, Esp. tres|telwoord

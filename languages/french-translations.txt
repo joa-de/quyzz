@@ -1,0 +1,275 @@
+1|l'ami
+2|le dieu
+3|le maître
+4|le cheval
+5|le fils
+6|le serviteur
+7|l'eau
+8|la famille
+9|la voie
+10|le monument
+11|le temple
+12|le vin
+13|le père
+14|le vieillard
+15|la vierge
+16|la voix
+17|le fleuve
+18|l'astre
+19|la femme
+20|le chien
+21|le jeune homme
+22|le marchand
+23|le soldat
+24|le sénateur
+25|la nuit
+26|la tête
+27|est
+28|sont
+29|là
+30|souvent
+31|ou
+32|et
+33|et
+34|mais
+35|le grand-père
+36|la rose
+37|le don
+38|le duc
+39|la mère
+40|le corps
+41|déjà
+42|parfois
+43|aussi
+44|car
+45|la curie
+46|la fable
+47|la lune
+48|le forum
+49|le juge
+50|le fardeau
+51|le temps
+52|ne ... pas
+53|toujours
+54|la statue
+55|l'écuyer
+56|travailler
+57|apparaître
+58|dormir
+59|à la maison
+60|aussi; même
+61|pas encore
+62|plus maintenant
+63|maintenant
+64|le théâtre
+65|la femme
+66|l'épouse
+67|penser
+68|donner
+69|raconter
+70|se hâter
+71|demander
+72|regarder
+73|rester
+74|être content
+75|avoir
+76|répondre
+77|s'asseoir
+78|voir
+79|ouvrir
+80|venir
+81|être
+82|pourquoi?
+83|à la maison (vers la maison)
+84|donc
+85|pendant ce temps
+86|l'argent
+87|le bâtiment
+88|le spectacle
+89|la fin
+90|l'itinéraire
+91|joyeux
+92|large
+93|long
+94|grand
+95|le meilleur
+96|timide
+97|crier
+98|trouver
+99|alors, à ce moment
+100|pendant que
+101|aimer
+102|avertir
+103|écouterr
+104|haut; profond
+105|magnifique
+106|beaucoup
+107|nouveau
+108|romain
+109|soudain
+110|ancien
+111|mauvais
+112|tout
+113|car
+114|parce que
+115|bon
+116|en colère
+117|stupide
+118|bien
+119|un; unique
+120|deux
+121|trois
+122|quatre
+123|cinq
+124|six
+125|sept
+126|huit
+127|neuf
+128|dix
+129|cent
+130|mille
+131|mille
+132|le mur
+133|la cure
+134|le dos
+135|le prince
+136|appeler
+137|interroger
+138|entrer
+139|orner
+140|devoir
+141|dit
+142|à nouveau
+143|ainsi
+144|mais
+145|n'est-ce pas?
+146|être absent
+147|être présent
+148|rester
+149|pouvoir
+150|chaud
+151|certain
+152|digne
+153|fatigué
+154|froid
+155|grec
+156|reconnaissant
+157|agréable
+158|juste
+159|sain
+160|souffrir
+161|l'an
+162|le jardin
+163|le taureau
+164|l'île
+165|le palais
+166|le ciel
+167|le monstre
+168|le danger
+169|l'homme
+170|le roi
+171|la ville
+172|attendre
+173|habiter
+174|préparer
+175|exiger
+176|sauver
+177|appeler
+178|rester
+179|posséder
+180|rire
+181|repérer
+182|savoir
+183|ne pas savoir
+184|personne
+185|rien
+186|maximalement
+187|si
+188|voici!
+189|les cheveux
+190|la porte
+191|la province
+192|la terre
+193|la source
+194|le pied
+195|veiller
+196|terroriser
+197|craindre
+198|premièrement
+199|ensuite
+200|finalement
+201|jamais
+202|enfin
+203|mais
+204|quand
+205|seul
+206|superbe
+207|je
+208|tu
+209|il/elle/il
+210|nous
+211|vous
+212|ils/elles
+213|plus
+214|tant
+215|n'est-ce pas?
+216|n'est-ce pas?
+217|le messager
+218|la sagesse
+219|l'onde
+220|la guerre
+221|l'amour
+222|l'auteur
+223|le frère
+224|le feu
+225|Jupiter
+226|la montagne
+227|la lumière
+228|la sœur
+229|Vénus
+230|le nom
+231|le crime
+232|aider
+233|soigner
+234|montrer
+235|autre
+236|les autres
+237|comme
+238|l'ombre
+239|clair
+240|construire
+241|son/sa
+242|leurs
+243|mon/ma/mes
+244|ton/ta/tes
+245|son/sa/ses
+246|le glaive
+247|la lance
+248|la flèche
+249|petit
+250|ainsi
+251|pourtant
+252|donc
+253|le citoyen
+254|le compagnon
+255|la pierre
+256|la mort
+257|premier
+258|prendre
+259|recevoir
+260|commencer
+261|désirer
+262|faire
+263|tuer
+264|fuir
+265|jeter
+266|jeter
+267|saisir
+268|saisir
+269|arracher
+270|regarder
+271|regarder
+272|observer
+273|considérer
+274|suffisamment
+275|immédiatement
