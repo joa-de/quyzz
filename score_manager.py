@@ -21,6 +21,7 @@ class ScoreManager:
         self.filename = PLAYER_DIR / filename
         self.default_period = default_period
         self.scores = self._load_scores()
+        self.player_levels = self.read_player_availaible_levels()
 
     def _load_scores(self):
         """Load scores from JSON file, create if it doesn't exist."""
@@ -28,6 +29,18 @@ class ScoreManager:
             with open(self.filename, "r", encoding="utf-8") as f:
                 return json.load(f)
         return {}
+
+    def read_player_availaible_levels(self):
+        player_levels = {}
+        for player in self.scores:
+            player_levels[player] = []
+            for vocab in self.scores[player]["vocabularies"]:
+                for level in self.scores[player]["vocabularies"][vocab]["levels"]:
+                    if level not in player_levels[player]:
+                        player_levels[player].append(level)
+            player_levels[player] = sorted(player_levels[player], key=int)
+
+        return player_levels
 
     def _save_scores(self):
         """Save scores to JSON file."""
@@ -133,7 +146,7 @@ class ScoreManager:
         vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
 
-        for level in ["1", "2", "3", "4"]:
+        for level in self.player_levels[player_name]:
             row = [f"{lang_manager.get('score.level')} {level}"]
             level_total = 0
             level_count = 0
