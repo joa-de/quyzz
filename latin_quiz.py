@@ -9,7 +9,6 @@ import os
 from time import sleep
 
 from display_feedback import display_feedback
-from load_vocabulary import load_vocabulary
 from get_random_options import get_random_options
 from display_roman_intro import display_roman_intro
 from player_management import select_player
@@ -19,6 +18,8 @@ from level_management import select_level
 from language_manager import LanguageManager
 from score_manager import ScoreManager
 from config_manager import config_manager
+
+from models.load_vocabulary import Vocabulary
 
 from colorama import init, Fore, Style
 
@@ -212,6 +213,7 @@ def main():
     language_file = config.get("language_file")
     total_questions = config.get("total_questions", 10)
     lang_manager = LanguageManager(language_file)
+    vocab_manager = Vocabulary(lang_manager=lang_manager)
 
     # Displays the introduction to the game.
     display_roman_intro()
@@ -230,7 +232,7 @@ def main():
         score_manager.display_player_stats(player_name, lang_manager)
 
         # Loads the vocabulary for the quiz
-        vocabulary, vocab_files = load_vocabulary(lang_manager)
+        vocabulary, vocab_files = vocab_manager.load_vocabulary()
 
         # Prompts the player to select a difficulty level.
         level = select_level(lang_manager)

@@ -57,3 +57,33 @@
 273|respicere|respiciō|omkijken; rekening houden met|Ndl. respecteren|werkwoord
 274|satis|(bijwoord)|genoeg; nogal|Fr. satisfaire; satisfaction|bijwoord
 275|statim|(bijwoord)|dadelijk||bijwoord
+276|arma|armōrum, o. mv.|de wapens||zelfstandig naamwoord
+277|castra|castrōrum, o. mv.|het kamp||zelfstandig naamwoord
+278|parentēs|parent-um, m. mv.|de ouders|Fr. les parents|zelfstandig naamwoord
+279|fierī|fīō|worden; gebeuren; gemaakt worden||werkwoord
+280|īre|eō|gaan||werkwoord
+281|abīre|abeō|weggaan||werkwoord
+282|adīre|adeō|gaan naar; bezoeken||werkwoord
+283|exīre|exeō|buitengaan; eindigen|Eng. the exit|werkwoord
+284|inīre|ineō|binnengaan; beginnen||werkwoord
+285|praeterīre|praetereō|voorbijgaan||werkwoord
+286|redīre|redeō|terugkeren||werkwoord
+287|trānsīre|trānseō|oversteken||werkwoord
+288|silva|silvae|het bos||zelfstandig naamwoord
+289|vīta|vītae|het leven|Ndl. de vitamine|zelfstandig naamwoord
+290|leō|leōn-is, m.|de leeuw|Fr. le lion / Eng. the lion|zelfstandig naamwoord
+291|pars|part-is, v.|het deel; de kant||zelfstandig naamwoord
+292|necāre|necō|vermoorden||werkwoord
+293|pugnāre|pugnō|vechten||werkwoord
+294|tacēre|taceō|zwijgen||werkwoord
+295|tenēre|teneō|(vast)houden|Fr. tenir|werkwoord
+296|quārē?|--|waarom?||bijwoord
+297|ante(ā)|--|vroeger||bijwoord
+298|cottīdiē|--|dagelijks||bijwoord
+299|crās|--|morgen||bijwoord
+300|heri|--|gisteren||bijwoord
+301|hodiē|--|vandaag||bijwoord
+302|māne|--|'s morgens||bijwoord
+303|post(eā)|--|later||bijwoord
+304|posterō diē|--|de volgende dag||bijwoord
+305|quōdam diē|--|op een dag||bijwoord

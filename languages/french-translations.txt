@@ -273,3 +273,34 @@
 273|considérer
 274|suffisamment
 275|immédiatement
+276|les armes
+277|le camp
+278|les parents
+279|devenir; être fait
+280|aller
+281|s'en aller
+282|aller vers; visiter
+283|sortir; finir
+284|entrer; commencer
+285|passer
+286|retourner
+287|traverser
+288|la forêt
+289|la vie
+290|le lion
+291|la part; le côté
+292|tuer
+293|combattre
+294|se taire
+295|tenir
+296|pourquoi?
+297|auparavant
+298|quotidiennement
+299|demain
+300|hier
+301|aujourd'hui
+302|le matin
+303|plus tard
+304|le jour suivant
+305|un certain jour
+

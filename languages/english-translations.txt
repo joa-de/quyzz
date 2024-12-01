@@ -274,3 +274,33 @@
 273|to consider
 274|enough
 275|immediately
+276|the weapons
+277|the camp
+278|the parents
+279|to become; to be made
+280|to go
+281|to go away
+282|to go to; to visit
+283|to go out; to end
+284|to enter; to begin
+285|to pass by
+286|to return
+287|to cross over
+288|the forest
+289|the life
+290|the lion
+291|the part; the side
+292|to kill
+293|to fight
+294|to be silent
+295|to hold
+296|why?
+297|previously
+298|daily
+299|tomorrow
+300|yesterday
+301|today
+302|in the morning
+303|later
+304|the next day
+305|on a certain day
