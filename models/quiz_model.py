@@ -8,6 +8,7 @@ class QuizModel:
     def __init__(self):
         pass
 
+    @staticmethod
     def get_random_options(
         correct_answer, correct_answer_id, vocabulary, word_type=None
     ):

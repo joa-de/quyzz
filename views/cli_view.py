@@ -1,5 +1,7 @@
 from colorama import Fore, Style
-from models.language_manager import LanguageManager
+from models.language_model import LanguageManager
+from tabulate import tabulate
+from colorama import Fore, Style
 
 
 class CLIView:
@@ -220,3 +222,88 @@ class CLIView:
                 print("Please enter a valid number between 1 and 4.")
             except ValueError:
                 print("Please enter a valid number between 1 and 4.")
+
+    @staticmethod
+    def display_player_stats(
+        self,
+        player_name,
+        player_data,
+        players_with_scores,
+        player_levels,
+        lang_manager: LanguageManager,
+    ):
+        """Display player's statistics in a formatted table with levels as rows, vocabularies as columns, and averages."""
+
+        if player_name not in players_with_scores:
+            print(
+                f"{Fore.CYAN}{lang_manager.get('score.no_score_available', 'No score avalaible')}{Style.RESET_ALL}"
+            )
+            return
+
+        print(
+            f"\n{Fore.CYAN}{lang_manager.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
+        )
+        if player_data["last_played"]:
+            print(
+                f"{lang_manager.get('score.last_played')}: {player_data['last_played']}"
+            )
+        print()
+
+        # Prepare table headers
+        vocabularies = sorted(player_data["vocabularies"].keys())
+        headers = (
+            [lang_manager.get("score.level")]
+            + vocabularies
+            + [lang_manager.get("score.average")]
+        )
+        table_data = []
+
+        # Collect totals for calculating averages
+        vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
+        vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
+
+        for level in player_levels[player_name]:
+            row = [f"{lang_manager.get('score.level')} {level}"]
+            level_total = 0
+            level_count = 0
+
+            for vocab_id in vocabularies:
+                vocab_data = player_data["vocabularies"][vocab_id]
+                # self.ensure_level_scores(vocab_data, level)
+                level_data = vocab_data["levels"][level]
+                ema = level_data["ema"]
+                played = level_data["games_played"]
+
+                level_total += ema
+                level_count += 1
+                vocabulary_totals[vocab_id] += ema
+                vocabulary_counts[vocab_id] += 1
+
+                if ema >= 80:
+                    score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played})"
+                elif ema >= 60:
+                    score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played})"
+                else:
+                    score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played})"
+
+                row.append(score_str)
+
+            table_data.append(row)
+
+        avg_row = [lang_manager.get("score.average")]
+        for vocab_id in vocabularies:
+            vocab_avg = vocabulary_totals[vocab_id] / vocabulary_counts[vocab_id]
+            avg_color = (
+                f"{Fore.GREEN}{vocab_avg:.1f}%{Style.RESET_ALL}"
+                if vocab_avg >= 80
+                else (
+                    f"{Fore.YELLOW}{vocab_avg:.1f}%{Style.RESET_ALL}"
+                    if vocab_avg >= 60
+                    else f"{Fore.RED}{vocab_avg:.1f}%{Style.RESET_ALL}"
+                )
+            )
+            avg_row.append(avg_color)
+
+        table_data.append(avg_row)
+
+        print(tabulate(table_data, headers=headers, tablefmt="grid", stralign="center"))

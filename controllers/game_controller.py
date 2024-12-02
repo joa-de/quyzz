@@ -5,8 +5,12 @@ from models.vocabulary_model import Vocabulary
 from views.cli_view import CLIView
 from controllers.vocabulary_controller import VocabularyController
 from models.language_model import LanguageManager
-from mastery_management import load_mastery_data, save_mastery_data, weighted_choice
-from score_manager import ScoreManager
+from legacy.mastery_management import (
+    load_mastery_data,
+    save_mastery_data,
+    weighted_choice,
+)
+from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
 from utilities.logging_util import logger  # Import the logger we just created
 

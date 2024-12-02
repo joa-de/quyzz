@@ -13,10 +13,10 @@ sys.path.insert(0, project_root)
 
 from controllers.game_controller import GameController
 from views.cli_view import CLIView
-from models.vocabulary import Vocabulary
+from models.vocabulary_model import Vocabulary
 from controllers.vocabulary_controller import VocabularyController
-from models.language_manager import LanguageManager
-from score_manager import ScoreManager
+from models.language_model import LanguageManager
+from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
 from utilities.logging_util import logger
 

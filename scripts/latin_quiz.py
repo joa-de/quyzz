@@ -12,17 +12,18 @@ from legacy.display_feedback import display_feedback
 from legacy.get_random_options import get_random_options
 from legacy.display_roman_intro import display_roman_intro
 from legacy.player_management import select_player
-from mastery_management import load_mastery_data, save_mastery_data, weighted_choice
+from legacy.mastery_management import (
+    load_mastery_data,
+    save_mastery_data,
+    weighted_choice,
+)
 from legacy.level_management import select_level
 
-from score_manager import ScoreManager
+from models.language_model import LanguageManager
+from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
 
-from models.language_model import LanguageManager
-from models.vocabulary_model import Vocabulary
-from views.cli_view import CLIView
-from controllers.vocabulary_controller import VocabularyController
-
+from legacy.load_vocabulary import Vocabulary
 
 from colorama import init, Fore, Style
 
@@ -215,14 +216,11 @@ def main():
     config = config_manager("config.yaml")
     language_file = config.get("language_file")
     total_questions = config.get("total_questions", 10)
-
-    view = CLIView()
     lang_manager = LanguageManager(language_file)
-    vocabulary_model = Vocabulary()
-    vocab_controller = VocabularyController(vocabulary_model, view, lang_manager)
+    vocab_manager = Vocabulary(lang_manager=lang_manager)
 
     # Displays the introduction to the game.
-    view.display_roman_intro()
+    display_roman_intro()
     score_manager = ScoreManager()
     # Load mastery data
 
@@ -238,7 +236,7 @@ def main():
         score_manager.display_player_stats(player_name, lang_manager)
 
         # Loads the vocabulary for the quiz
-        vocabulary, vocab_files = vocab_controller.load_vocabulary()
+        vocabulary, vocab_files = vocab_manager.load_vocabulary()
 
         # Prompts the player to select a difficulty level.
         level = select_level(lang_manager)
