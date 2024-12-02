@@ -15,7 +15,7 @@ from legacy.player_management import select_player
 from mastery_management import load_mastery_data, save_mastery_data, weighted_choice
 from legacy.level_management import select_level
 
-from models.language_manager import LanguageManager
+from models.language_model import LanguageManager
 from score_manager import ScoreManager
 from legacy.config_manager import config_manager
 

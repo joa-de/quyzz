@@ -1,7 +1,7 @@
 import json
 import os
 from pathlib import Path
-from models.language_manager import LanguageManager
+from models.language_model import LanguageManager
 
 # Path to the JSON file
 USER_DATA_PATH = Path("./user_data")

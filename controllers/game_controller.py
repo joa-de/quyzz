@@ -1,10 +1,10 @@
 import random
 from typing import Dict, Tuple
 
-from models.vocabulary import Vocabulary
+from models.vocabulary_model import Vocabulary
 from views.cli_view import CLIView
 from controllers.vocabulary_controller import VocabularyController
-from models.language_manager import LanguageManager
+from models.language_model import LanguageManager
 from mastery_management import load_mastery_data, save_mastery_data, weighted_choice
 from score_manager import ScoreManager
 from legacy.config_manager import config_manager

@@ -2,7 +2,7 @@
 # Denis Joassin 2024
 
 from colorama import Fore, Style
-from models.language_manager import LanguageManager
+from models.language_model import LanguageManager
 
 
 def display_feedback(
