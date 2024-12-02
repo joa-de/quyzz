@@ -1,4 +1,4 @@
-from language_manager import LanguageManager
+from models.language_manager import LanguageManager
 
 
 def select_level(lang_manager: LanguageManager):

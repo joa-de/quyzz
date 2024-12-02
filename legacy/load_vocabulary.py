@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from language_manager import LanguageManager
+from models.language_manager import LanguageManager
 
 # Description: Load vocabulary from a file and return it as a dictionary.
 # Denis Joassin 2024

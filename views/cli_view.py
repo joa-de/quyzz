@@ -1,4 +1,5 @@
 from colorama import Fore, Style
+from models.language_manager import LanguageManager
 
 
 class CLIView:
@@ -154,8 +155,48 @@ class CLIView:
             except ValueError:
                 print(lang_manager.get("level_management.invalid_input"))
 
+    @staticmethod
+    def display_feedback(
+        is_correct: bool,
+        correct_answer: str,
+        hint: str,
+        current_score: int,
+        question_num: int,
+        lang: LanguageManager,
+    ):
+        """Display feedback with colors."""
+
+        if is_correct:
+            print(f"\n{Fore.GREEN}{lang.get('feedback.correct')} ✓{Style.RESET_ALL}")
+        else:
+            print(f"\n{Fore.RED}{lang.get('feedback.incorrect')} ✗")
+            print(
+                f"{lang.get('feedback.correct_answer_was')}: {correct_answer}{Style.RESET_ALL}"
+            )
+
+        print(f"{lang.get('feedback.hint')}: {hint}")
+        print(
+            f"{lang.get('feedback.current_score')}: {current_score}/{question_num + 1}"
+        )
+        print("-" * 50)
+
+    @staticmethod
+    def play_again(lang_manager: LanguageManager) -> bool:
+        """Ask if player wants to play again"""
+        play_again = input(
+            f"\n{Fore.CYAN}{lang_manager.get('core.play_again_prompt')} {Style.RESET_ALL}"
+        ).lower()
+        return play_again in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]
+
+    @staticmethod
+    def display_thanks(lang_manager: LanguageManager):
+        print(
+            f"{Fore.GREEN}{lang_manager.get('core.thanks_for_playing')}{Style.RESET_ALL}"
+        )
+
+    @staticmethod
     def display_question(
-        self, question_num: int, word_data: Dict, options: List[str], level: int
+        question_num: int, word_data: dict, options: list[str], level: int
     ) -> int:
         """Display a quiz question and get user's answer"""
         print(f"\n{Fore.YELLOW}Question {question_num}/10{Style.RESET_ALL}")
@@ -179,29 +220,3 @@ class CLIView:
                 print("Please enter a valid number between 1 and 4.")
             except ValueError:
                 print("Please enter a valid number between 1 and 4.")
-
-    def display_feedback(
-        self,
-        is_correct: bool,
-        correct_answer: str,
-        hint: str,
-        current_score: int,
-        question_num: int,
-    ):
-        """Display feedback after each question"""
-        if is_correct:
-            print(f"\n{Fore.GREEN}Correct! ✓{Style.RESET_ALL}")
-        else:
-            print(f"\n{Fore.RED}Incorrect ✗")
-            print(f"Correct answer was: {correct_answer}{Style.RESET_ALL}")
-
-        print(f"Hint: {hint}")
-        print(f"Current Score: {current_score}/{question_num + 1}")
-        print("-" * 50)
-
-    def play_again(self) -> bool:
-        """Ask if player wants to play again"""
-        play_again = input(
-            f"\n{Fore.CYAN}Do you want to play again? (yes/no) {Style.RESET_ALL}"
-        ).lower()
-        return play_again in ["yes", "y", "o", "oui"]
