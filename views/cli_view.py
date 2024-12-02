@@ -92,3 +92,116 @@ class CLIView:
         print("\n")
         print("QUYZZ Copyright (C) 2024 Denis Joassin")
         print("\n")
+
+    @staticmethod
+    def select_player(lang_manager) -> str:
+        """Prompt and return player name"""
+        print(
+            f"\n{Fore.CYAN}{lang_manager.get('core.welcome_message', 'Welcome to Latin Quiz!')}{Style.RESET_ALL}"
+        )
+        while True:
+            player_name = input(
+                lang_manager.get("core.enter_name", "Enter your name: ")
+            ).strip()
+            if player_name:
+                return player_name
+            print(lang_manager.get("core.invalid_name", "Please enter a valid name."))
+
+    @staticmethod
+    def select_level(lang_manager: LanguageManager):
+        """
+        Prompts the user to select a difficulty level for the quiz.
+
+        Levels:
+        1. Level 1 (hint displayed before answering)
+        2. Level 2 (hint displayed after answering)
+        3. Level 3 (options of the same word type, hint after answering)
+        4. Level 4 (options of the same word type, word prioritized by user mastery)
+        5. Level 5 (options of the same word type, word and options by user mastery) - not implemented
+
+        Returns:
+            int: The selected level (1, 2, 3, 4 or 5).
+
+        # note : update to use the language manager
+        """
+
+        print(f"\n{lang_manager.get('level_management.select_level_prompt')}")
+
+        if lang_manager.language != "dutch":
+            print(f"0. {lang_manager.get('level_management.level_0_name')}")
+            levels = [0, 1, 2, 3, 4]
+        else:
+            levels = [1, 2, 3, 4]
+
+        print(f"1. {lang_manager.get('level_management.level_1_name')}")
+        print(f"2. {lang_manager.get('level_management.level_2_name')}")
+        print(f"3. {lang_manager.get('level_management.level_3_name')}")
+        print(f"4. {lang_manager.get('level_management.level_4_name')}")
+
+        while True:
+            try:
+                level = int(
+                    input(lang_manager.get("level_management.enter_level_number"))
+                )
+                if level in levels:
+                    print(
+                        lang_manager.get("level_management.selected_level").format(
+                            level=level
+                        )
+                    )
+                    return level
+                print(lang_manager.get("level_management.invalid_level_number"))
+            except ValueError:
+                print(lang_manager.get("level_management.invalid_input"))
+
+    def display_question(
+        self, question_num: int, word_data: Dict, options: List[str], level: int
+    ) -> int:
+        """Display a quiz question and get user's answer"""
+        print(f"\n{Fore.YELLOW}Question {question_num}/10{Style.RESET_ALL}")
+        print(
+            f"Latin word: {Fore.MAGENTA}{word_data['word']} ({word_data['form']}){Style.RESET_ALL}"
+        )
+
+        if level == 3:
+            print(f"Word type: {word_data.get('word_type', '')}")
+
+        # Display options
+        for i, option in enumerate(options, 1):
+            print(f"{i}. {option}")
+
+        # Get user answer
+        while True:
+            try:
+                answer = int(input("\nEnter your answer (1-4): "))
+                if 1 <= answer <= 4:
+                    return answer
+                print("Please enter a valid number between 1 and 4.")
+            except ValueError:
+                print("Please enter a valid number between 1 and 4.")
+
+    def display_feedback(
+        self,
+        is_correct: bool,
+        correct_answer: str,
+        hint: str,
+        current_score: int,
+        question_num: int,
+    ):
+        """Display feedback after each question"""
+        if is_correct:
+            print(f"\n{Fore.GREEN}Correct! ✓{Style.RESET_ALL}")
+        else:
+            print(f"\n{Fore.RED}Incorrect ✗")
+            print(f"Correct answer was: {correct_answer}{Style.RESET_ALL}")
+
+        print(f"Hint: {hint}")
+        print(f"Current Score: {current_score}/{question_num + 1}")
+        print("-" * 50)
+
+    def play_again(self) -> bool:
+        """Ask if player wants to play again"""
+        play_again = input(
+            f"\n{Fore.CYAN}Do you want to play again? (yes/no) {Style.RESET_ALL}"
+        ).lower()
+        return play_again in ["yes", "y", "o", "oui"]
