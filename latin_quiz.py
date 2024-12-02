@@ -19,7 +19,7 @@ from language_manager import LanguageManager
 from score_manager import ScoreManager
 from config_manager import config_manager
 
-from models.load_vocabulary import Vocabulary
+from legacy.load_vocabulary import Vocabulary
 
 from colorama import init, Fore, Style
 
