@@ -17,8 +17,8 @@ from models.vocabulary import Vocabulary
 from controllers.vocabulary_controller import VocabularyController
 from models.language_manager import LanguageManager
 from score_manager import ScoreManager
-from config_manager import config_manager
-from logging_util import logger
+from legacy.config_manager import config_manager
+from utilities.logging_util import logger
 
 
 def main():

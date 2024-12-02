@@ -11,13 +11,13 @@ from time import sleep
 from legacy.display_feedback import display_feedback
 from get_random_options import get_random_options
 from legacy.display_roman_intro import display_roman_intro
-from player_management import select_player
+from legacy.player_management import select_player
 from mastery_management import load_mastery_data, save_mastery_data, weighted_choice
 from legacy.level_management import select_level
 
 from models.language_manager import LanguageManager
 from score_manager import ScoreManager
-from config_manager import config_manager
+from legacy.config_manager import config_manager
 
 from models.vocabulary import Vocabulary
 from views.cli_view import CLIView

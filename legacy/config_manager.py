@@ -8,7 +8,7 @@ import yaml
 
 class config_manager:
     def __init__(self, config_file="config.yaml"):
-        config_directory = Path(__file__).parent / "config"
+        config_directory = Path(__file__).parent.parent / "config"
         self.config_file = config_directory / config_file
         self.config = {}
         self.load_config()
