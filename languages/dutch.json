@@ -65,6 +65,10 @@
         "incorrect": "Onjuist!",
         "correct_answer_was": "Het juiste antwoord was",
         "hint": "Hint",
-        "current_score": "Huidige score"
+        "current_score": "Huidige score",
+        "score.no_score_available": "Geen score beschikbaar"
+    },
+    "score":{
+        "no_score_available": "Geen score beschikbaar"
     }
 }

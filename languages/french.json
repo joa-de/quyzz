@@ -66,6 +66,8 @@
         "incorrect": "Incorrect !",
         "correct_answer_was": "La bonne réponse était",
         "hint": "Indice",
-        "current_score": "Score actuel"
+        "current_score": "Score actuel"},
+    "score": {
+        "no_score_available": "Aucune statistique disponible"
     }
 }

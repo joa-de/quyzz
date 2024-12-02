@@ -21,7 +21,8 @@ class ScoreManager:
         self.filename = PLAYER_DIR / filename
         self.default_period = default_period
         self.scores = self._load_scores()
-        self.player_levels = self.read_player_availaible_levels()
+        self._load_players_with_scores()
+        self._read_player_availaible_levels()
 
     def _load_scores(self):
         """Load scores from JSON file, create if it doesn't exist."""
@@ -30,7 +31,10 @@ class ScoreManager:
                 return json.load(f)
         return {}
 
-    def read_player_availaible_levels(self):
+    def _load_players_with_scores(self):
+        self.players_with_scores = list(self.scores.keys())
+
+    def _read_player_availaible_levels(self):
         player_levels = {}
         for player in self.scores:
             player_levels[player] = []
@@ -40,7 +44,7 @@ class ScoreManager:
                         player_levels[player].append(level)
             player_levels[player] = sorted(player_levels[player], key=int)
 
-        return player_levels
+        self.player_levels = player_levels
 
     def _save_scores(self):
         """Save scores to JSON file."""
@@ -51,6 +55,8 @@ class ScoreManager:
         """Get all scores for a player."""
         if player_name not in self.scores:
             self.scores[player_name] = {"vocabularies": {}, "last_played": None}
+            self._load_players_with_scores()
+            self._save_scores()
         return self.scores[player_name]
 
     def get_vocabulary_identifier(self, filenames):
@@ -122,6 +128,12 @@ class ScoreManager:
     def display_player_stats(self, player_name, lang_manager):
         """Display player's statistics in a formatted table with levels as rows, vocabularies as columns, and averages."""
 
+        if player_name not in self.players_with_scores:
+            print(
+                f"{Fore.CYAN}{lang_manager.get('score.no_score_available', 'No score avalaible')}{Style.RESET_ALL}"
+            )
+            return
+
         player_data = self.get_player_scores(player_name)
 
         print(
@@ -145,6 +157,8 @@ class ScoreManager:
         # Collect totals for calculating averages
         vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
+
+        self._read_player_availaible_levels()
 
         for level in self.player_levels[player_name]:
             row = [f"{lang_manager.get('score.level')} {level}"]
