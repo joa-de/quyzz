@@ -303,4 +303,42 @@
 303|plus tard
 304|le jour suivant
 305|un certain jour
+306|le légat
+307|le jeu; l'école
+308|le peuple
+309|l'empereur
+310|le soleil
+311|la légion
+312|la paix
+313|la tâche; le don
+314|nu
+315|exciter
+316|commander
+317|confier
+318|porter
+319|avoir l'habitude
+320|lier
+321|presque
+322|quand
+323|le garçon
+324|les enfants
+325|l'homme
+326|le champ
+327|le livre
+328|le maître
+329|libre
+330|misérable
+331|malade
+332|noir
+333|beau
+334|sacré
+335|notre
+336|votre
+337|la nourriture
+338|la gloire
+339|le combat
+340|la victoire
+341|le bienfait
+342|la récompense
+343|maximal; le plus grand
 

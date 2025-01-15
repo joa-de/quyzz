@@ -94,7 +94,7 @@ print("Current Directory:", current_dir)
 
 
 with open(
-    current_dir / "vocabularies" / "hoofdstuck1.txt", "r", encoding="utf-8"
+    current_dir / "vocabularies" / "hoofdstuck4.txt", "r", encoding="utf-8"
 ) as file:
     vocab_list = file.readlines()
 
@@ -110,10 +110,10 @@ vocab_list = [line.strip() for line in vocab_list if "|" in line]
 
 # Generate PDFs
 create_square_pdf(
-    vocab_list, translation_dict, "H1_vocabulary_front_9cm.pdf", is_front=True
+    vocab_list, translation_dict, "H4_vocabulary_front_9cm.pdf", is_front=True
 )
 create_square_pdf(
-    vocab_list, translation_dict, "H1_vocabulary_back_9cm.pdf", is_front=False
+    vocab_list, translation_dict, "H4_vocabulary_back_9cm.pdf", is_front=False
 )
 
 print("PDFs generated: vocabulary_front_9cm.pdf and vocabulary_back_9cm.pdf")

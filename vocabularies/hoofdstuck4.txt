@@ -1,0 +1,38 @@
+306|legatus|legati, m.|de gezant; de onderbevelhebber||zelfstandig naamwoord
+307|ludus|ludi, m.|het spel; de school|Lat. ludicium; Ndl. ludiek|zelfstandig naamwoord
+308|populus|populi, m.|het volk|Fr. population; Ndl. populair|zelfstandig naamwoord
+309|imperator|imperatoris, m.|de opperbevelhebber|Lat. imperium|zelfstandig naamwoord
+310|sol|solis, m.|de zon|Fr. le soleil|zelfstandig naamwoord
+311|legio|legionis, v.|het legioen|Fr. la légion|zelfstandig naamwoord
+312|pax|pacis, v.|de vrede|Lat. pax romana; Fr. la paix|zelfstandig naamwoord
+313|munus|muneris, o.|de taak; het geschenk||zelfstandig naamwoord
+314|nudus|nuda, nudum|naakt; beroofd van|Ndl. nudist|bijvoeglijk naamwoord
+315|excitare|excito|(op)wekken|Engl. exciting, Fr. exciter|werkwoord
+316|imperare|impero|bevelen; opeisen|Lat. imperium, Fr. Imperatif, Harry Potter: Imperio|werkwoord
+317|mandare|mando|toevertrouwen; opdragen|Nl. mandaat, Fr. Mandater|werkwoord
+318|portare|porto|dragen|Fr. porter; Engl. portable|werkwoord
+319|solere|soleo|gewoon zijn||werkwoord
+320|vincire|vincio|binden; boeien||werkwoord
+321|fere|bijwoord|bijna; meestal||bijwoord
+322|ubi|voegwoord|toen; wanneer||voegwoord
+323|puer|pueri, m.|de jongen|Fr. le pueril|zelfstandig naamwoord
+324|liberi|liberorum, m. mv.|de kinderen||zelfstandig naamwoord
+325|vir|viri, m.|de man||zelfstandig naamwoord
+326|ager|agri, m.|het veld|Nl. akker; Fr. agriculture|zelfstandig naamwoord
+327|liber|libri, m.|het boek|Fr. le livre|zelfstandig naamwoord
+328|magister|magistri, m.|de meester|Ndl. magistratuur|zelfstandig naamwoord
+329|liber|libera, liberum|vrij|Fr. libre|bijvoeglijk naamwoord
+330|miser|misera, miserum|ongelukkig|Ndl. de miserie|bijvoeglijk naamwoord
+331|aeger|aegra, aegrum|ziek||bijvoeglijk naamwoord
+332|niger|nigra, nigrum|zwart|Fr. le Niger, le Nigeria|bijvoeglijk naamwoord
+333|pulcher|pulchra, pulchrum|mooi||bijvoeglijk naamwoord
+334|sacer|sacra, sacrum|heilig; gewijd|Ndl. het sacrament|bijvoeglijk naamwoord
+335|noster|nostra, nostrum|ons, onze|Lat. pater noster|bijvoeglijk naamwoord
+336|vester|vestra, vestrum|jullie||bijvoeglijk naamwoord
+337|cibus|cibi, m.|het voedsel||zelfstandig naamwoord
+338|gloria|gloriae, v.|de roem|Fr. la gloire; Engl. glory|zelfstandig naamwoord
+339|pugna|pugnae, v.|het gevecht|Lat. pugnare|zelfstandig naamwoord
+340|victoria|victoriae, v.|de overwinning|Fr. la victoire; Engl. the victory|zelfstandig naamwoord
+341|beneficium|beneficii, o.|de weldaad|Lat. bene + facere, Fr. Bénéfice|zelfstandig naamwoord
+342|praemium|praemii, o.|de beloning|Ndl. de premie|zelfstandig naamwoord
+343|maximus|maxima, maximum|zeer groot; grootste|Lat. magnus; Ndl. maximaal|bijvoeglijk naamwoord

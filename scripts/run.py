@@ -11,13 +11,16 @@ import os
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, project_root)
 
-from controllers.game_controller import GameController
 from views.cli_view import CLIView
-from models.vocabulary_model import Vocabulary
+
+from controllers.game_controller import GameController
 from controllers.vocabulary_controller import VocabularyController
+
 from models.language_model import LanguageManager
+from models.vocabulary_model import Vocabulary
 from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
+
 from utilities.logging_util import logger
 
 
