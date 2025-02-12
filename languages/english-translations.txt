@@ -303,246 +303,147 @@
 302|in the morning
 303|later
 304|the next day
-305|on a certain day
-1|friend
-2|god
-3|master
-4|horse
-5|son
-6|slave
-7|water
-8|family
-9|way
-10|monument
-11|temple
-12|wine
-13|father
-14|old man
-15|virgin
-16|voice
-17|river
-18|star
-19|woman
-20|dog
-21|young man
-22|merchant
-23|soldier
-24|senator
-25|night
-26|head
-27|is
-28|are
-29|there
-30|often
-31|or
-32|and
-33|and
-34|but
-35|grandfather
-36|rose
-37|gift
-38|leader
-39|mother
-40|body
-41|already
-42|sometimes
-43|also
-44|for
-45|senate house
-46|story
-47|moon
-48|forum
-49|judge
-50|burden
-51|time
-52|not
-53|always
-54|statue
-55|knight
-56|to work
-57|to appear
-58|to sleep
-59|at home
-60|also; even
-61|not yet
-62|no longer
-63|now
-64|theater
-65|woman
-66|wife
-67|to think
-68|to give
-69|to tell
-70|to hurry
-71|to ask
-72|to look
-73|to stand
-74|to be happy
-75|to have
-76|to answer
-77|to sit
-78|to see
-79|to open
-80|to come
-81|to be
-82|why?
-83|home
-84|therefore
-85|meanwhile
-119|one; unique
-120|two
-121|three
-122|four
-123|five
-124|six
-125|seven
-126|eight
-127|nine
-128|ten
-129|hundred
-130|thousand
-131|thousand
-132|wall
-133|care
-134|back
-135|prince
-136|to call
-137|to interrogate
-138|to enter
-139|to decorate
-140|to must
-141|says
-142|again
-143|thus
-144|but
-145|isn't it?
-146|to be absent
-147|to be present
-148|to remain
-149|to be able
-150|warm
-151|certain
-152|worthy
-153|tired
-154|cold
-155|Greek
-156|grateful
-157|pleasant
-158|just
-159|healthy
-160|to suffer
-161|year
-162|garden
-163|bull
-164|island
-165|palace
-166|sky
-167|monster
-168|danger
-169|human
-170|king
-171|city
-172|to wait
-173|to live
-174|to prepare
-175|to demand
-176|to save
-177|to call
-178|to stay
-179|to possess
-180|to laugh
-181|to find
-182|to know
-183|to not know
-184|nobody
-185|nothing
-186|most
-187|if
-188|look!
-189|hair
-190|gate
-191|province
-192|earth
-193|source
-194|foot
-195|to watch
-196|to terrify
-197|to fear
-198|first
-199|then
-200|finally
-201|never
-202|at last
-203|but
-204|when
-205|alone
-206|proud
-207|I
-208|you
-209|he/she/it
-210|we
-211|you
-212|they
-213|more
-214|so much
-215|isn't it?
-216|isn't it?
-217|messenger
-218|wisdom
-219|wave
-220|war
-221|love
-222|author
-223|brother
-224|fire
-225|Jupiter
-226|mountain
-227|light
-228|sister
-229|Venus
-230|name
-231|crime
-232|to help
-233|to care for
-234|to show
-235|other
-236|the others
-237|like
-238|shadow
-239|clear
-240|to build
-241|his/her
-242|their
-243|my
-244|your
-245|his/her/their
-246|sword
-247|spear
-248|arrow
-249|small
-250|so
-251|however
-252|therefore
-253|citizen
-254|companion
-255|stone
-256|death
-257|first
-258|to take
-259|to receive
-260|to begin
-261|to desire
-262|to make/do
-263|to kill
-264|to flee
-265|to throw
-266|to throw away
-267|to seize
-268|to catch
-269|to snatch away
-270|to look
-271|to look at
-272|to observe
-273|to consider
-274|enough
-275|immediately
+305|on a certain dayHere are the English translations in the same numbered format:
+306|legate, ambassador, lieutenant
+307|game; school
+308|people
+309|emperor, commander-in-chief
+310|sun
+311|legion
+312|peace
+313|law, right, justice
+314|task; gift
+315|naked; stripped
+316|to excite, to rouse
+317|to command; to demand
+318|to entrust; to assign
+319|to carry
+320|to be accustomed to, to be in the habit of
+321|to bind; to chain
+322|almost; usually
+323|when
+324|boy
+325|children
+326|man
+327|field
+328|book
+329|master, teacher
+330|free
+331|miserable, unhappy
+332|sick, ill
+333|black
+334|beautiful
+335|sacred; holy
+336|our
+337|your (plural)
+338|food
+339|glory
+340|fight, battle
+341|victory
+342|benefit, favor, kindness
+343|reward, prize
+344|very large; greatest
+345|to praise
+346|to announce
+347|to wish, to desire
+348|to obey
+349|to offer, to provide
+350|who?
+351|what?
+352|girl
+353|known
+354|true, real
+355|to try, to test
+356|to burn
+357|to lie (down)
+358|to please
+359|quickly
+360|where to?
+361|therefore
+362|eye
+363|help, aid
+364|arm
+365|word
+366|ear
+367|hard
+368|sad, mournful
+369|alive
+370|to pray; to beseech
+371|to mourn (for)
+372|place; opportunity
+373|branch
+374|cause; process
+375|dinner
+376|hour
+377|villa; estate
+378|council; plan
+379|price
+380|flower
+381|tree
+382|full
+383|to invite
+384|to be attached, to be fixed
+385|the table
+386|the ship; the boat
+387|desirous; eager
+388|wonderful; extraordinary
+389|none; no one
+390|few; some
+391|to drive; to do; to act
+392|to drink
+393|to learn; to recognize
+394|to cease; to stop
+395|to say; to name; to speak
+396|to buy
+397|to understand; to grasp
+398|to read; to choose; to gather
+399|to show; to present
+400|to seek; to ask
+401|to take; to assume
+402|to sell
+403|to live; to exist
+404|the guest; the host
+405|the bridge
+406|summer
+407|to dare
+408|to teach
+409|to cover; to protect
+410|to fear; to dread
+411|to sit down
+412|to learn; to study
+413|to lead; to guide
+414|to play; to mock
+415|to send; to let go
+416|to place; to put down
+417|to put down; to deposit
+418|to leave behind; to abandon
+419|to turn; to transform
+420|to conquer; to surpass
+421|to visit
+422|to receive
+423|here
+424|anger; wrath
+425|punishment; penalty
+426|study; sympathy; zeal
+427|hunger
+428|fraud; deceit
+429|to order; to command
+430|to rise; to get up
+431|to feel; to notice; to think
+432|courage; boldness
+433|constancy; perseverance
+434|silence
+435|winter
+436|virtue; quality; bravery
+437|narrow
+438|safe; secure
+439|to fall
+440|to run
+441|to seek; to ask for
+442|to demand; to require
+443|to wander; to make a mistake
+444|to weep; to cry
+445|to sing; to celebrate in song
+446|to form; to invent
+447|to flow
+448|where?

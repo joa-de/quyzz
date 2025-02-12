@@ -96,9 +96,41 @@
                         "games_played": 1
                     }
                 }
+            },
+            "hoofdstuck4": {
+                "levels": {
+                    "0": {
+                        "ema": 20.0,
+                        "games_played": 1
+                    },
+                    "1": {
+                        "ema": 0.0,
+                        "games_played": 0
+                    },
+                    "2": {
+                        "ema": 0.0,
+                        "games_played": 0
+                    },
+                    "3": {
+                        "ema": 0.0,
+                        "games_played": 0
+                    },
+                    "4": {
+                        "ema": 0.0,
+                        "games_played": 0
+                    }
+                }
+            },
+            "hoofdstuck5": {
+                "levels": {
+                    "4": {
+                        "ema": 70.0,
+                        "games_played": 1
+                    }
+                }
             }
         },
-        "last_played": "2025-01-08 19:54:48"
+        "last_played": "2025-02-12 15:34:23"
     },
     "Z\u00e9lie": {
         "vocabularies": {
@@ -130,23 +162,23 @@
                 "levels": {
                     "1": {
                         "ema": 100.0,
-                        "games_played": 2
+                        "games_played": 3
                     },
                     "2": {
-                        "ema": 92.96875,
-                        "games_played": 4
+                        "ema": 89.7265625,
+                        "games_played": 5
                     },
                     "3": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 80.0,
+                        "games_played": 1
                     },
                     "4": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 90.0,
+                        "games_played": 1
                     },
                     "0": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 80.0,
+                        "games_played": 1
                     }
                 }
             },
@@ -175,6 +207,6 @@
                 }
             }
         },
-        "last_played": "2024-12-01 15:46:32"
+        "last_played": "2025-02-03 20:22:11"
     }
 }

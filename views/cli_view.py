@@ -277,12 +277,16 @@ class CLIView:
                 level_total += ema
                 level_count += 1
                 vocabulary_totals[vocab_id] += ema
-                vocabulary_counts[vocab_id] += 1
+                if ema > 0:
+                    vocabulary_counts[vocab_id] += 1
 
                 if ema >= 80:
                     score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played})"
                 elif ema >= 60:
                     score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played})"
+
+                if ema == 0:
+                    score_str = f"{Fore.WHIAT}--{Style.RESET_ALL} ({played})"
                 else:
                     score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played})"
 
@@ -292,6 +296,7 @@ class CLIView:
 
         avg_row = [lang_manager.get("score.average")]
         for vocab_id in vocabularies:
+
             vocab_avg = vocabulary_totals[vocab_id] / vocabulary_counts[vocab_id]
             avg_color = (
                 f"{Fore.GREEN}{vocab_avg:.1f}%{Style.RESET_ALL}"
