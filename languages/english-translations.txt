@@ -447,3 +447,68 @@
 446|to form; to invent
 447|to flow
 448|where?
+449|to, toward, at
+450|before, in front of
+451|at, near, by
+452|between, among
+453|through, during
+454|after, behind
+455|beyond, except
+456|with
+457|from, about
+458|out of, from
+459|without
+460|under, about
+461|into, against
+462|in, on
+463|rock; boulder
+464|speed; swiftness
+465|human; civilized
+466|to free; to liberate
+467|to fly
+468|to cut; to kill
+469|to descend; to go down
+470|to draw out; to consume
+471|to throw down; to drive away
+472|oneself (reflexive pronoun)
+473|together
+474|quantity; opportunity
+475|conversation; language usage
+476|seer; poet
+477|will
+478|golden
+479|middle; center of
+480|dark; obscure
+481|short; brief
+482|mortal
+483|noble; famous
+484|whole; each
+485|all
+486|sad; mournful
+487|brave; daring
+488|rich
+489|fierce; challenging
+490|enormous; huge
+491|wise; intelligent
+492|swift; fast
+493|to encourage; to incite
+494|to fill
+495|until now; still
+496|for a long time
+497|brave; strong
+498|loot; prey
+499|cruel
+500|difficult
+501|easy
+502|heavy; serious
+503|light
+504|similar to; resembling
+505|useful
+506|terrible; dreadful
+507|happy; fortunate
+508|poor
+509|old
+510|sharp; intense
+511|servant
+512|fate; condition
+513|craftsmanship; art

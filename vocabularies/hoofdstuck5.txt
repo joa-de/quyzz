@@ -62,3 +62,28 @@
 446|fingere|fingō|vormen; verzinnen|fictie|werkwoord
 447|fluere|fluō|vloeien||werkwoord
 448|ubi?|(bijwoord)|waar?||bijwoord
+449|ad + acc.|(voorzetstel)|naar (toe), bij|AI hint: Fr. "à",  Engl. "at/to"
+450|ante + acc.|(voorzetstel)|vóór|AI hint: "antecedent" (Ce qui s'est produit avant)
+451|apud + acc.|(voorzetstel)|bij|
+452|inter + acc.|(voorzetstel)|tussen|AI hint: International = entre nations
+453|per + acc.|(voorzetstel)|door, gedurende|AI hint: "Percoler" = couler à travers
+454|post + acc.|(voorzetstel)|achter, na|AI hint: "postérieur"
+455|praeter + acc.|(voorzetstel)|voorbij, behalve|
+456|cum + abl.|(voorzetstel)|met|AI hint: "accompagner" (être avec)
+457|de + abl.|(voorzetstel)|van, over|AI hint: Think "décrire" (parler de quelque chose)
+458|e/ex + abl.|(voorzetstel)|uit, vanaf|AI hint: "exit" 
+459|sine + abl.|(voorzetstel)|zonder|AI hint: "sine die" (sans date)
+460|sub + abl.|(voorzetstel)|onder, omstreeks|AI hint: "submarine" (sous l'eaur)
+461|in + acc.|(voorzetstel)|naar tegen|
+462|in + abl.|(voorzetstel)|in, op|
+463|saxum|saxi|het rotsblok||zelfstandig naamwoord
+464|celeritas|celeritāt-is, v.|de snelheid||zelfstandig naamwoord
+465|hūmānus|~a, ~um|menselijk; beschaafd|Lat.|bijvoeglijk naamwoord
+466|līberāre|līberō|bevrijden|Lat.|werkwoord
+467|volāre|volō|vliegen|Fr. voler|werkwoord
+468|caedere|caedō|hakken; doden||werkwoord
+469|dēscendere|dēscendō|afdalen|Fr. descendre|werkwoord
+470|haurire|hauriō|uitscheppen; opslokken||werkwoord
+471|dēicere|dēiciō|naar beneden werpen; verdrijven|Lat. de +|werkwoord
+472|sē|(persoonlijk vnw.)|zich|Fr.|voornaamwoord
+473|ūnā|(bijwoord)|samen||bijwoord

@@ -446,5 +446,68 @@
 446|former; inventer
 447|couler; s'écouler
 448|où?
-
-
+449|à, vers
+450|avant, devant
+451|auprès de, chez
+452|entre, parmi
+453|par, pendant
+454|après, derrière
+455|au-delà de, excepté
+456|avec
+457|de, au sujet de
+458|de, depuis
+459|sans
+460|sous, vers
+461|vers, contre
+462|dans, sur
+463|le rocher
+464|la rapidité; la célérité
+465|humain; civilisé
+466|libérer
+467|voler (dans les airs)
+468|trancher; tuer
+469|descendre
+470|puiser; engloutir
+471|jeter vers le bas; chasser
+472|se (pronom réfléchi)
+473|ensemble
+474|la quantité; l'occasion
+475|la conversation; l'usage de la langue
+476|le devin; le poète
+477|la volonté
+478|doré
+479|central; le milieu de
+480|sombre; insignifiant
+481|court; bref
+482|mortel
+483|noble; célèbre
+484|entier; chaque
+485|tous
+486|triste
+487|courageux; téméraire
+488|riche
+489|féroce; provocant
+490|énorme; gigantesque
+491|sage; intelligent
+492|rapide
+493|encourager; inciter
+494|remplir
+495|jusqu'à maintenant; encore toujours
+496|longtemps
+497|courageux; fort
+498|le butin; la proie
+499|cruel
+500|difficile
+501|facile
+502|lourd; grave
+503|léger
+504|semblable à; ressemblant à
+505|utile
+506|terrible; atroce
+507|heureux
+508|pauvre
+509|vieux
+510|aigu; vif
+511|le serviteur
+512|le sort; la condition
+513|l'artisanat; l'art
