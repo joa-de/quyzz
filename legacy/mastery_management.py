@@ -70,6 +70,26 @@ def save_mastery_data(user_name, mastery_data):
         json.dump(mastery_data, file, indent=4)
 
 
+def unplayed_first_choice(available_words, mastery_data):
+    """
+    Select a word ID from the available words, prioritizing unplayed words first.
+
+    Args:
+        available_words (set): Set of available word IDs.
+        mastery_data (dict): User performance data.
+
+    Returns:
+        str: Selected word ID.
+    """
+    # First, check for unplayed words
+    for word_id in available_words:
+        if mastery_data.get(str(word_id), {"total_attempts": 0})["total_attempts"] == 0:
+            return word_id
+
+    # If no unplayed words, return a random choice from available words
+    return random.choice(list(available_words))
+
+
 def weighted_choice(available_words, mastery_data):
     """
     Select a word ID based on mastery data with weighting:

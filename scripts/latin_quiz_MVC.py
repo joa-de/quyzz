@@ -4,24 +4,24 @@
 
 import random
 from colorama import init, Fore, Style
-import platform
-import os
-from time import sleep
 
+# Legacy imports
 from legacy.display_feedback import display_feedback
 from legacy.get_random_options import get_random_options
-from legacy.display_roman_intro import display_roman_intro
 from legacy.player_management import select_player
 from legacy.mastery_management import (
     load_mastery_data,
     save_mastery_data,
     weighted_choice,
+    unplayed_first_choice,
 )
 from legacy.level_management import select_level
 
 from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
 
+
+# MVC imports
 from models.language_model import LanguageManager
 from models.vocabulary_model import Vocabulary
 from views.cli_view import CLIView
@@ -57,7 +57,6 @@ def play_quiz(
     print(lang_manager.get("core.quiz_intro", "Choose the correct translation."))
     print("-" * 50 + Style.RESET_ALL)
 
-    vocab_items = list(vocabulary.items())
     used_words = set()
     available_words = set(vocabulary.keys())
 
@@ -72,7 +71,7 @@ def play_quiz(
             word_id = weighted_choice(list(available_words), mastery_data)
         else:
             # Random choice for other levels
-            word_id = random.choice(list(available_words))
+            word_id = unplayed_first_choice(list(available_words), mastery_data)
 
         available_words.remove(word_id)
         used_words.add(word_id)
