@@ -511,3 +511,178 @@
 511|le serviteur
 512|le sort; la condition
 513|l'artisanat; l'art
+514|l'âne
+515|l'or
+516|la colline
+517|l'ennemi
+518|la liberté
+519|le vêtement
+520|l'être vivant; l'animal
+521|douter; hésiter
+522|placer sur; imposer
+523|porter; apporter
+524|apporter
+525|emporter; enlever
+526|offrir
+527|rapporter; faire rapport
+528|transférer
+529|vouloir
+530|préférer
+531|ne pas vouloir
+532|bientôt
+533|la ruse
+534|la chaleur
+535|l'oiseau
+536|le chant; le poème
+537|le froid
+538|la mer
+539|les remparts
+540|éternel
+541|conquérir
+542|autrement
+543|facilement
+544|beaucoup
+545|et
+546|l'aile
+547|les troupes
+548|le gardien
+549|la citadelle
+550|extraordinaire
+551|deuxième; favorable
+552|silencieux
+553|aller; céder
+554|se séparer; partir
+555|cultiver; habiter; vénérer
+556|garder
+557|pendant ce temps
+558|l'esprit; l'âme; le courage
+559|le médecin
+560|la bête sauvage
+561|la fuite
+562|la langue; la langue (idiome)
+563|la blessure
+564|tous
+565|lent
+566|tranquille
+567|sauvage; cruel
+568|bouger; influencer
+569|s'approcher
+570|saisir
+571|faire descendre; emmener
+572|renvoyer; laisser partir
+573|soi-même; précisément
+574|celui-ci, celle-ci, ceci
+575|loin; de loin
+576|de; par
+577|le vent
+578|l'exemple
+579|le temps; la tempête
+580|la côte
+581|rassembler; contraindre
+582|briser
+583|rendre; faire (devenir)
+584|excepter; recueillir
+585|et ne pas; non plus
+586|ni... ni
+587|le doigt
+588|la main droite
+589|le bouclier
+590|la peau
+591|la région
+592|le bétail
+593|blesser
+594|porter; mener
+595|revêtir; vêtir de
+596|tirer; traîner
+597|finir; limiter
+598|paraître
+599|parce que
+600|comme; que
+601|situé en bas
+602|s'approcher
+603|espérer
+604|désespérer
+605|assiéger; occuper
+606|promettre
+607|écrire
+608|autrefois
+609|le vainqueur
+610|l'autre
+611|l'un... l'autre
+612|très nombreux
+613|si grand
+614|tourmenter
+615|exercer
+616|le commencement
+617|le jugement; le procès
+618|le royaume; la souveraineté
+619|le signe
+620|le sexe; le genre
+621|le siège; la résidence
+622|le combat
+623|la poitrine; le cœur; l'intelligence
+624|le char
+625|la course; le parcours
+626|la peur
+627|la fidélité; la confiance; la parole donnée
+628|l'espoir
+629|chacun; séparément
+630|doux; aimable
+631|tant
+632|lutter
+633|arriver
+634|en même temps
+635|bien que
+636|le fruit
+637|la chose
+638|la maison
+639|la main; le groupe
+640|la chute; l'événement; le hasard
+641|le résultat
+642|l'armée
+643|la magistrature; le magistrat
+644|le pas
+645|le sénat
+646|le tumulte
+647|le visage
+648|le jour
+649|le visage; l'aspect
+650|d'autrui; étranger
+651|droit
+652|royal
+653|de famille; familier
+654|laid; honteux
+655|nourrir
+656|commettre; confier; commencer
+657|tromper; échapper
+658|chasser
+659|placer; établir; décider
+660|livrer; confier
+661|les Enfers
+662|l'époux
+663|la maladie
+664|le mois
+665|l'âge; l'époque
+666|conseiller
+667|cueillir
+668|fermer
+669|croître
+670|tuer
+671|avancer
+672|toucher; atteindre; frapper
+673|être utile
+674|périr
+675|quand?
+676|de nouveau
+677|le rêve
+678|l'averse
+679|tel
+680|le même
+681|nullement; pas du tout
+682|de là; ensuite; c'est pourquoi
+683|le plus souvent
+684|ce; cet; cette
+685|ce; cet; cette
+686|ce; cet; cette; il; elle
+687|la lettre
+688|en outre

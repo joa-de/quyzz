@@ -512,3 +512,179 @@
 511|servant
 512|fate; condition
 513|craftsmanship; art
+514|the donkey
+515|the gold
+516|the hill
+517|the enemy
+518|the freedom
+519|the clothing
+520|the living being; the animal
+521|to doubt; to hesitate
+522|to place on; to impose
+523|to carry; to bring
+524|to bring
+525|to take away; to remove
+526|to offer
+527|to bring back; to report
+528|to transfer
+529|to want
+530|to prefer
+531|to not want
+532|soon
+533|the trick
+534|the heat
+535|the bird
+536|the song; the poem
+537|the cold
+538|the sea
+539|the city walls
+540|eternal
+541|to conquer
+542|otherwise
+543|easily
+544|much
+545|and
+546|the wing
+547|the troops
+548|the guard
+549|the citadel
+550|extraordinary
+551|second; favorable
+552|silent
+553|to go; to yield
+554|to separate; to go away
+555|to cultivate; to inhabit; to worship
+556|to guard
+557|meanwhile
+558|the spirit; the mind; the courage
+559|the doctor
+560|the wild animal
+561|the flight
+562|the tongue; the language
+563|the wound
+564|all
+565|slow
+566|quiet
+567|fierce; cruel
+568|to move; to influence
+569|to approach
+570|to seize
+571|to lead down; to take away
+572|to send away; to let go
+573|self; exactly
+574|he; she; it
+575|far; from afar
+576|from; by
+577|the wind
+578|the example
+579|the time; the storm
+580|the shore
+581|to gather together; to force
+582|to break
+583|to give back; to make (into)
+584|to take out; to catch
+585|and not; also not
+586|neither ... nor
+587|the finger
+588|the right hand
+589|the shield
+590|the skin
+591|the region
+592|the cattle
+593|to wound
+594|to carry; to wage
+595|to put on; to clothe with
+596|to drag; to draw
+597|to finish; to limit
+598|to seem
+599|because
+600|as
+601|low-lying
+602|to approach
+603|to hope for
+604|to despair
+605|to besiege; to occupy
+606|to promise
+607|to write
+608|once
+609|the victor
+610|the other
+611|the one ... the other
+612|very many
+613|so great
+614|to torment
+615|to practice
+616|the beginning
+617|the judgment; the trial
+
+618|the kingdom; the rule
+619|the sign
+620|the race; the people
+621|the seat; the residence
+622|the contest
+623|the breast; the heart; the mind
+624|the chariot
+625|the course; the direction
+626|the fear
+627|the trust; the confidence; the promise
+628|the hope
+629|each one; separately
+630|sweet; dear
+631|so many
+632|to fight
+633|to arrive
+634|at the same time
+635|although
+636|the fruit
+637|the thing
+638|the house
+639|the hand; the group
+640|the fall; the event; the chance
+641|the outcome
+642|the army
+643|the office; the magistrate
+644|the pace
+645|the senate
+646|the tumult
+647|the face
+648|the day
+649|the face; the appearance
+650|of another; foreign
+651|right
+652|royal
+653|of the family; familiar
+654|ugly; shameful
+655|to nourish
+656|to commit; to entrust; to begin
+657|to deceive; to escape
+658|to drive away
+659|to place; to establish; to decide
+660|to hand over; to entrust
+661|the underworld
+662|the husband
+663|the disease
+664|the month
+665|the age; the period
+666|to advise
+667|to pluck
+668|to close
+669|to grow
+670|to kill
+671|to proceed
+672|to touch; to reach; to strike
+673|to be useful
+674|to perish
+675|when?
+676|again
+677|the dream
+678|the rain shower
+679|such
+680|the same
+681|not at all
+682|from there; then; therefore
+683|mostly
+684|this
+685|that
+686|that; he; she
+687|the letter
+688|moreover

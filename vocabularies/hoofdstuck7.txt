@@ -1,0 +1,60 @@
+558|animus|animī|de geest; het gemoed; de moed||substantief
+559|medicus|medicī|de arts|Ndl. medicus|substantief
+560|fera|ferae|het wilde dier|Lat. ferox|substantief
+561|fuga|fugae|de vlucht|Lat. fugere|substantief
+562|lingua|linguae|de tong; de taal|Fr. la langue|substantief
+563|vulnus|vulner-is, o.|de wonde|Lat. vulnerare|substantief
+564|cūnctī|~ae, ~a|alle||adjectief
+565|lentus|~a, ~um|traag|Fr. lent|adjectief
+566|quiētus|~a, ~um|rustig||adjectief
+567|saevus|~a, ~um|woest; wreed||adjectief
+568|movēre|moveō|bewegen; beïnvloeden|Eng. the movie|werkwoord
+569|accēdere|accēdō|naderen|Lat. ad +|werkwoord
+570|comprehendere|comprehendō|grijpen|Fr. comprendre|werkwoord
+571|dēdūcere|dēdūcō|naar beneden brengen; wegbrengen|Lat. de +|werkwoord
+572|dimittere|dimittō|wegzenden; laten gaan|Lat.|werkwoord
+573|ipse|ipsa, ipsum; ipsius|zelf; precies||voornaamwoord
+574|is|ea, id|(aanwijzend vnw.)| |voornaamwoord
+575|procul|(bijwoord)|ver; van ver||bijwoord
+576|ā|+ abl.|van; door||voorzetsel
+577|ventus|ventī|de wind|Fr. le vent; ventilator|substantief
+578|exemplum|exemplī|het voorbeeld|Fr. l'exemple; exemplaar|substantief
+579|tempestās|tempestāt-is, v.|de tijd; de storm|Fr. la tempête|substantief
+580|litus|litor-is, o.|de kust|litoraal|substantief
+581|cōgere|cōgō|bijeenbrengen; dwingen|cum + agere|werkwoord
+582|frangere|frangō|breken|fractio; Fr. fracture|werkwoord
+583|reddere|reddō|teruggeven; maken (tot)|Lat. re + dare; Fr. rendre|werkwoord
+584|excipere|excipiō|uitnemen; opvangen|Lat. ex + capere; exceptio|werkwoord
+585|nec of neque|(voegwoord)|en niet; ook niet||voegwoord
+586|nec ... nec of neque ... neque|(voegwoord)|noch … noch||voegwoord
+587|digitus|digitī|de vinger||substantief
+588|dextra|dextrae|de rechterhand||substantief
+589|scūtum|scūtī|het schild||substantief
+590|pellis|pell-is, v.|de huid|Ndl. de pels|substantief
+591|regiō|regiōn-is, v.|de streek|Ndl. de regio / Fr. la région|substantief
+592|pecus|pecor-is, o.|het vee||substantief
+593|vulnerāre|vulnerō|verwonden||werkwoord
+594|gerere|gerō|dragen; voeren||werkwoord
+595|induere|induō|aantrekken; bekleden met||werkwoord
+596|trahere|trahō|trekken; rekken|Ndl. de tractor|werkwoord
+597|fīnīre|fīniō|beëindigen; begrenzen|Lat.|werkwoord
+598|vidērī|videor|schijnen||werkwoord
+599|quia|(voegwoord)|omdat||voegwoord
+600|ut|(voegwoord)|zoals||voegwoord
+601|īnferus|~a, ~um|laaggelegen||adjectief
+602|appropinquāre|appropinquō|naderen||werkwoord
+603|spērāre|spērō|hopen op||werkwoord
+604|dēspērāre|dēspērō|wanhopen||werkwoord
+605|obsidēre|obsideō|belegeren; bezet houden||werkwoord
+606|prōmittere|prōmittō|beloven|Fr. promettre|werkwoord
+607|scrībere|scrībō|schrijven||werkwoord
+608|ōlim|(bijwoord)|eens||bijwoord
+609|victor|victōr-is, m.|de overwinnaar|Lat.|substantief
+610|alter|altera, alterum|de andere||adjectief
+611|alter ... alter||de ene ... de andere||
+612|plūrimī|~ae, ~a|zeer veel||adjectief
+613|tantus|~a, ~um|zo groot||adjectief
+614|vexāre|vexō|kwellen||werkwoord
+615|exercēre|exerceō|oefenen|Fr. l'exercice|werkwoord
+616|initium|initiī|het begin|Lat. Ndl. het initiatief|substantief
+617|iūdicium|iūdiciī|het oordeel; het proces|Lat.|substantief

@@ -7,43 +7,43 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 
-def split_long_text(text, c, font_name, font_size, max_width=8.5*cm):
+def split_long_text(text, c, font_name, font_size, max_width=8.5 * cm):
     """
     Split text at punctuation marks if it's too wide for the page.
     Returns a list of lines.
     """
     # Set the font to measure text width
     c.setFont(font_name, font_size)
-    
+
     # If text fits, return as single line
     if c.stringWidth(text) <= max_width:
         return [text]
-    
+
     # Look for splitting points
-    split_chars = [';', ',']
-    
+    split_chars = [";", ","]
+
     for split_char in split_chars:
         if split_char in text:
             parts = text.split(split_char)
             # Recombine parts with the split character to maintain punctuation
             lines = []
             current_line = parts[0] + split_char
-            
+
             for part in parts[1:]:
                 part = part.strip()
                 test_line = current_line + " " + part
-                
+
                 if c.stringWidth(test_line) <= max_width:
                     current_line = test_line
                 else:
                     lines.append(current_line)
                     current_line = part
-            
+
             if current_line:
                 lines.append(current_line)
-                
+
             return lines
-    
+
     # If no punctuation found, return as single line
     return [text]
 
@@ -90,6 +90,9 @@ def create_square_pdf(vocab_list, fr_translations, filename, is_front=True):
             if is_front:
                 # Center the number on the front
                 c.drawCentredString(4.5 * cm, (4.5 + 1.0) * cm, number)
+                count_char = len(latin_word)
+                if count_char > 10:
+                    c.setFont(font_name, 36 * 10 / count_char)
                 c.drawCentredString(4.5 * cm, (4.5 - 1.0) * cm, latin_word)
             else:
                 # Calculate initial vertical position
@@ -111,8 +114,12 @@ def create_square_pdf(vocab_list, fr_translations, filename, is_front=True):
                 c.setFont(f"{font_name}Bold", 16)
                 if len(translation_dutch) > 25:
                     c.setFont(f"{font_name}Bold", 12)
-                for line_text in split_long_text(translation_dutch, c, f"{font_name}Bold", 
-                    12 if len(translation_dutch) > 25 else 16):
+                for line_text in split_long_text(
+                    translation_dutch,
+                    c,
+                    f"{font_name}Bold",
+                    12 if len(translation_dutch) > 25 else 16,
+                ):
                     c.drawCentredString(4.5 * cm, start_y, line_text)
                     start_y -= line_spacing
 
@@ -121,8 +128,9 @@ def create_square_pdf(vocab_list, fr_translations, filename, is_front=True):
                 hint_text = f"indice: {hint}"
                 if len(hint_text) > 25:
                     c.setFont(font_name, 12)
-                for line_text in split_long_text(hint_text, c, font_name, 
-                    12 if len(hint_text) > 25 else 16):
+                for line_text in split_long_text(
+                    hint_text, c, font_name, 12 if len(hint_text) > 25 else 16
+                ):
                     c.drawCentredString(4.5 * cm, start_y, line_text)
                     start_y -= line_spacing
 
@@ -150,7 +158,7 @@ print("Current Directory:", current_dir)
 
 
 with open(
-    current_dir / "vocabularies" / "hoofdstuck6.txt", "r", encoding="utf-8"
+    current_dir / "vocabularies" / "hoofdstuck8.txt", "r", encoding="utf-8"
 ) as file:
     vocab_list = file.readlines()
 
@@ -166,10 +174,10 @@ vocab_list = [line.strip() for line in vocab_list if "|" in line]
 
 # Generate PDFs
 create_square_pdf(
-    vocab_list, translation_dict, "H6_vocabulary_front_9cm.pdf", is_front=True
+    vocab_list, translation_dict, "H8_vocabulary_front_9cm.pdf", is_front=True
 )
 create_square_pdf(
-    vocab_list, translation_dict, "H6_vocabulary_back_9cm.pdf", is_front=False
+    vocab_list, translation_dict, "H8_vocabulary_back_9cm.pdf", is_front=False
 )
 
 print("PDFs generated: vocabulary_front_9cm.pdf and vocabulary_back_9cm.pdf")
