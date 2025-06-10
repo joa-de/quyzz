@@ -8,7 +8,7 @@ import os
 from glob import glob
 
 
-class MasteryManager:
+class MasteryModel:
     def __init__(self):
         pass
 

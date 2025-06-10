@@ -1,14 +1,12 @@
 from models.player_model import PlayerModel
 from views.cli_view import CLIView
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 
 
 class PlayerController:
     """Controller for managing player interactions."""
 
-    def __init__(
-        self, model: PlayerModel, view: CLIView, lang_manager: LanguageManager
-    ):
+    def __init__(self, model: PlayerModel, view: CLIView, lang_manager: LanguageModel):
         """
         Initialize PlayerController.
 

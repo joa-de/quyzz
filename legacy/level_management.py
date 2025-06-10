@@ -1,7 +1,7 @@
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 
 
-def select_level(lang_manager: LanguageManager):
+def select_level(lang_manager: LanguageModel):
     """
     Prompts the user to select a difficulty level for the quiz.
 

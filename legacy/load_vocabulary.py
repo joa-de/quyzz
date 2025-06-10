@@ -1,20 +1,18 @@
 import os
 from pathlib import Path
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 
 # Description: Load vocabulary from a file and return it as a dictionary.
 # Denis Joassin 2024
 
 
 class Vocabulary:
-    def __init__(
-        self, directory="./vocabularies", lang_manager: LanguageManager = None
-    ):
+    def __init__(self, directory="./vocabularies", lang_manager: LanguageModel = None):
         self.directory = Path(directory)
         self._set_langage_manager(lang_manager)
         self.data = {}
 
-    def _set_langage_manager(self, lang_manager: LanguageManager):
+    def _set_langage_manager(self, lang_manager: LanguageModel):
         self.lang_manager = lang_manager
 
     def get_word_id_range(self, filenames):

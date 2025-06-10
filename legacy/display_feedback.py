@@ -2,11 +2,11 @@
 # Denis Joassin 2024
 
 from colorama import Fore, Style
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 
 
 def display_feedback(
-    is_correct, correct_answer, hint, current_score, question_num, lang: LanguageManager
+    is_correct, correct_answer, hint, current_score, question_num, lang: LanguageModel
 ):
     """Display feedback with colors."""
 

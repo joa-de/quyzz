@@ -19,7 +19,7 @@ from legacy.mastery_management import (
 )
 from legacy.level_management import select_level
 
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
 
@@ -216,7 +216,7 @@ def main():
     config = config_manager("config.yaml")
     language_file = config.get("language_file")
     total_questions = config.get("total_questions", 10)
-    lang_manager = LanguageManager(language_file)
+    lang_manager = LanguageModel(language_file)
     vocab_manager = Vocabulary(lang_manager=lang_manager)
 
     # Displays the introduction to the game.

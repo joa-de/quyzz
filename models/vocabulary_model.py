@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 
-class Vocabulary:
+class VocabularyModel:
     def __init__(self, directory="./vocabularies"):
         self.directory = Path(directory)
         self.data = {}

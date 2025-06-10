@@ -1,5 +1,5 @@
 from colorama import Fore, Style
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 from tabulate import tabulate
 from colorama import Fore, Style
 
@@ -111,7 +111,7 @@ class CLIView:
             print(lang_manager.get("core.invalid_name", "Please enter a valid name."))
 
     @staticmethod
-    def select_level(lang_manager: LanguageManager):
+    def select_level(lang_manager: LanguageModel):
         """
         Prompts the user to select a difficulty level for the quiz.
 
@@ -164,7 +164,7 @@ class CLIView:
         hint: str,
         current_score: int,
         question_num: int,
-        lang: LanguageManager,
+        lang: LanguageModel,
     ):
         """Display feedback with colors."""
 
@@ -183,7 +183,7 @@ class CLIView:
         print("-" * 50)
 
     @staticmethod
-    def play_again(lang_manager: LanguageManager) -> bool:
+    def play_again(lang_manager: LanguageModel) -> bool:
         """Ask if player wants to play again"""
         play_again = input(
             f"\n{Fore.CYAN}{lang_manager.get('core.play_again_prompt')} {Style.RESET_ALL}"
@@ -191,7 +191,7 @@ class CLIView:
         return play_again in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]
 
     @staticmethod
-    def display_thanks(lang_manager: LanguageManager):
+    def display_thanks(lang_manager: LanguageModel):
         print(
             f"{Fore.GREEN}{lang_manager.get('core.thanks_for_playing')}{Style.RESET_ALL}"
         )
@@ -230,7 +230,7 @@ class CLIView:
         player_data,
         players_with_scores,
         player_levels,
-        lang_manager: LanguageManager,
+        lang_manager: LanguageModel,
     ):
         """Display player's statistics in a formatted table with levels as rows, vocabularies as columns, and averages."""
 

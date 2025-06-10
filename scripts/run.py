@@ -16,8 +16,8 @@ from views.cli_view import CLIView
 from controllers.game_controller import GameController
 from controllers.vocabulary_controller import VocabularyController
 
-from models.language_model import LanguageManager
-from models.vocabulary_model import Vocabulary
+from models.language_model import LanguageModel
+from models.vocabulary_model import VocabularyModel
 from legacy.score_manager import ScoreManager
 from legacy.config_manager import config_manager
 
@@ -35,13 +35,13 @@ def main():
         config = config_manager("config.yaml")
 
         # Initialize language manager
-        lang_manager = LanguageManager(config.get("language_file"))
+        lang_manager = LanguageModel(config.get("language_file"))
 
         # Create view
         view = CLIView(lang_manager)
 
         # Initialize models and controllers
-        vocabulary_model = Vocabulary()
+        vocabulary_model = VocabularyModel()
         vocabulary_controller = VocabularyController(
             vocabulary_model, view, lang_manager
         )

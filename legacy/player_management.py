@@ -1,7 +1,7 @@
 import json
 import os
 from pathlib import Path
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 
 # Path to the JSON file
 USER_DATA_PATH = Path("./user_data")
@@ -25,7 +25,7 @@ def save_players(players):
         json.dump(players, file, indent=4, ensure_ascii=False)
 
 
-def get_and_display_players_selection(lang_manager: LanguageManager):
+def get_and_display_players_selection(lang_manager: LanguageModel):
     """Display player selection menu and return the list of players."""
     players = load_players()
     print(lang_manager.get("player_management.select_player"))
@@ -35,7 +35,7 @@ def get_and_display_players_selection(lang_manager: LanguageManager):
     return players
 
 
-def select_player(lang_manager: LanguageManager):
+def select_player(lang_manager: LanguageModel):
     """Handle player selection and creation."""
     players = get_and_display_players_selection(lang_manager)
 

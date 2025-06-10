@@ -1,10 +1,10 @@
 import random
 from typing import Dict, Tuple
 
-from models.vocabulary_model import Vocabulary
+from models.vocabulary_model import VocabularyModel
 from views.cli_view import CLIView
 from controllers.vocabulary_controller import VocabularyController
-from models.language_model import LanguageManager
+from models.language_model import LanguageModel
 from legacy.mastery_management import (
     load_mastery_data,
     save_mastery_data,
@@ -19,7 +19,7 @@ class GameController:
     def __init__(
         self,
         view: CLIView,
-        lang_manager: LanguageManager,
+        lang_manager: LanguageModel,
         vocabulary_controller: VocabularyController,
         score_manager: ScoreManager,
         config: config_manager,
@@ -159,10 +159,10 @@ class GameController:
 def main():
     """Initialize and start the game."""
     config = config_manager("config.yaml")
-    lang_manager = LanguageManager(config.get("language_file"))
+    lang_manager = LanguageModel(config.get("language_file"))
     view = CLIView(lang_manager)
 
-    vocabulary_model = Vocabulary()
+    vocabulary_model = VocabularyModel()
     vocabulary_controller = VocabularyController(vocabulary_model, view, lang_manager)
     score_manager = ScoreManager()
 

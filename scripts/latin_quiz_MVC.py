@@ -2,7 +2,6 @@
 # Copyright (c) 2024 Denis Joassin
 # All rights reserved.
 
-import random
 from colorama import init, Fore, Style
 
 # Legacy imports
@@ -22,13 +21,13 @@ from legacy.config_manager import config_manager
 
 
 # MVC imports
-from models.language_model import LanguageManager
-from models.vocabulary_model import Vocabulary
+from models.language_model import LanguageModel
+from models.vocabulary_model import VocabularyModel
+
 from views.cli_view import CLIView
+
 from controllers.vocabulary_controller import VocabularyController
 
-
-from colorama import init, Fore, Style
 
 # Initialize colorama
 init()
@@ -220,12 +219,13 @@ def main():
     total_questions = config.get("total_questions", 10)
 
     view = CLIView()
-    lang_manager = LanguageManager(language_file)
-    vocabulary_model = Vocabulary()
+    lang_manager = LanguageModel(language_file)
+    vocabulary_model = VocabularyModel()
     vocab_controller = VocabularyController(vocabulary_model, view, lang_manager)
 
     # Displays the introduction to the game.
     view.display_roman_intro()
+
     score_manager = ScoreManager()
     # Load mastery data
 

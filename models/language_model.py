@@ -5,7 +5,7 @@ from pathlib import Path
 LANGUAGE_FILE = "french.json"
 
 
-class LanguageManager:
+class LanguageModel:
     """Manages the loading and retrieval of language strings."""
 
     def __init__(self, language_file=LANGUAGE_FILE):
