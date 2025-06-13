@@ -1,8 +1,6 @@
 # controllers/game_controller.py
-
+import random
 from colorama import Fore, Style
-from legacy.level_management import select_level
-from legacy.get_random_options import get_random_options
 
 from views.cli_view import CLIView
 from controllers.vocabulary_controller import VocabularyController
@@ -30,6 +28,67 @@ class GameController:
         self.vocab_controller = vocab_controller
         self.score_controller = score_controller
 
+    def get_random_options(
+        correct_answer, correct_answer_id, vocabulary, word_type=None
+    ):
+        """
+        Get random options for multiple choice, with support for word type matching.
+
+        Args:
+            correct_answer: The correct translation
+            vocabulary: The complete vocabulary dictionary
+            word_type: The type of word to match (for level 3)
+        """
+        options = [correct_answer]
+        options_id = [correct_answer_id]
+        vocab_items = list(vocabulary.items())
+
+        if word_type:
+            # Filter vocabulary items to only include words of the same type
+            same_type_items = [
+                item
+                for item in vocab_items
+                if item[1]["word_type"] == word_type
+                and item[1]["translation"] != correct_answer
+            ]
+
+            # If we don't have enough words of the same type, fall back to random words
+            if len(same_type_items) < 3:
+                different_items = [
+                    item
+                    for item in vocab_items
+                    if item[1]["translation"] != correct_answer
+                ]
+                while len(options) < 4:
+                    random_item = random.choice(different_items)
+                    if random_item[1]["translation"] not in options:
+                        options.append(random_item[1]["translation"])
+                        options_id.append(random_item[0])
+            else:
+                # Add three random words of the same type
+                while len(options) < 4:
+                    random_item = random.choice(same_type_items)
+                    if random_item[1]["translation"] not in options:
+                        options.append(random_item[1]["translation"])
+                        options_id.append(random_item[0])
+        else:
+            # Original behavior for levels 1 and 2
+            different_items = [
+                item for item in vocab_items if item[1]["translation"] != correct_answer
+            ]
+            while len(options) < 4:
+                random_item = random.choice(different_items)
+                if random_item[1]["translation"] not in options:
+                    options.append(random_item[1]["translation"])
+                    options_id.append(random_item[0])
+
+        # Shuffle the options
+        combined = list(zip(options, options_id))
+        random.shuffle(combined)
+        options, options_id = zip(*combined)
+
+        return options, options_id
+
     def run(self):
         """Main game loop."""
         self.view.display_roman_intro()
@@ -41,7 +100,7 @@ class GameController:
             self.score_controller.show_player_statistics(player_name)
 
             vocabulary, vocab_files = self.vocab_controller.load_vocabulary()
-            level = select_level(self.lang_model)
+            level = self.view.select_level()
 
             score, total_questions = self.play_quiz(
                 level,
@@ -95,14 +154,14 @@ class GameController:
             word_data = vocabulary[word_id]
 
             if level in [3, 4]:
-                options, options_id = get_random_options(
+                options, options_id = self.get_random_options(
                     word_data["translation"],
                     word_id,
                     vocabulary,
                     word_data.get("word_type"),
                 )
             else:
-                options, options_id = get_random_options(
+                options, options_id = self.get_random_options(
                     word_data["translation"], word_id, vocabulary
                 )
 
