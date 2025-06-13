@@ -123,6 +123,7 @@ class CLIView:
                 )
             )
 
+    # TODO not used yet
     def select_level(self):
         """
         Prompts the user to select a difficulty level for the quiz.
@@ -239,31 +240,31 @@ class CLIView:
     def display_player_stats(self, player_name, player_data, levels):
         if not player_data:
             print(
-                f"{Fore.CYAN}{self.language_model.get('score.no_score_available', 'No score available')}{Style.RESET_ALL}"
+                f"{Fore.CYAN}{self.language_model.get('core.no_score_available', 'No score available')}{Style.RESET_ALL}"
             )
             return
 
         print(
-            f"\n{Fore.CYAN}{self.language_model.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{self.language_model.get('core.statistics_for')} {player_name}:{Style.RESET_ALL}"
         )
         if player_data["last_played"]:
             print(
-                f"{self.language_model.get('score.last_played')}: {player_data['last_played']}"
+                f"{self.language_model.get('core.last_played')}: {player_data['last_played']}"
             )
         print()
 
         vocabularies = sorted(player_data["vocabularies"].keys())
         headers = (
-            [self.language_model.get("score.level")]
+            [self.language_model.get("core.level")]
             + vocabularies
-            + [self.language_model.get("score.average")]
+            + [self.language_model.get("core.average")]
         )
         table_data = []
         vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
 
         for level in levels:
-            row = [f"{self.language_model.get('score.level')} {level}"]
+            row = [f"{self.language_model.get('core.level')} {level}"]
             level_total = 0
             level_count = 0
 
@@ -296,7 +297,7 @@ class CLIView:
 
             table_data.append(row)
 
-        avg_row = [self.language_model.get("score.average")]
+        avg_row = [self.language_model.get("core.average")]
         for vocab_id in vocabularies:
             count = vocabulary_counts[vocab_id] or 1  # avoid div by 0
             vocab_avg = vocabulary_totals[vocab_id] / count

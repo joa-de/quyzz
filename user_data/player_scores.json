@@ -128,8 +128,8 @@
                         "games_played": 2
                     },
                     "0": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 90.0,
+                        "games_played": 1
                     },
                     "1": {
                         "ema": 0.0,
@@ -152,20 +152,20 @@
                         "games_played": 2
                     },
                     "1": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 100.0,
+                        "games_played": 1
                     },
                     "2": {
                         "ema": 100.0,
-                        "games_played": 1
+                        "games_played": 2
                     },
                     "3": {
                         "ema": 98.59375,
                         "games_played": 4
                     },
                     "4": {
-                        "ema": 98.125,
-                        "games_played": 5
+                        "ema": 98.59375,
+                        "games_played": 6
                     }
                 }
             },
@@ -194,7 +194,7 @@
                 }
             }
         },
-        "last_played": "2025-06-13 15:17:27"
+        "last_played": "2025-06-13 15:38:40"
     },
     "Z\u00e9lie": {
         "vocabularies": {
@@ -296,5 +296,18 @@
             }
         },
         "last_played": "2025-06-09 15:37:46"
+    },
+    "test": {
+        "vocabularies": {
+            "hoofdstuck1": {
+                "levels": {
+                    "1": {
+                        "ema": 30.0,
+                        "games_played": 1
+                    }
+                }
+            }
+        },
+        "last_played": "2025-06-13 15:24:44"
     }
 }
