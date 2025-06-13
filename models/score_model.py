@@ -125,7 +125,7 @@ class ScoreModel:
     def get_display_data(self, player_name):
         """Returns data needed to render the score table."""
         if player_name not in self.players_with_scores:
-            return None
+            return None, None
 
         player_data = self.get_player_scores(player_name)
         self._read_player_availaible_levels()

@@ -9,9 +9,10 @@ class ScoreController:
         self.score_model = score_model or ScoreModel()
         self.view = view
 
-    def show_player_statistics(self, player_name, lang_manager):
+    def show_player_statistics(self, player_name):
         player_data, levels = self.score_model.get_display_data(player_name)
-        self.view.display_player_stats(player_name, player_data, levels, lang_manager)
+
+        self.view.display_player_stats(player_name, player_data, levels)
 
     def update_player_score(
         self, player_name, vocab_files, level, new_score, period=None

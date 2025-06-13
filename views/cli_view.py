@@ -1,32 +1,40 @@
-from colorama import Fore, Style
+from colorama import init, Fore, Style
 from models.language_model import LanguageModel
 from tabulate import tabulate
 from colorama import Fore, Style
 
 
 class CLIView:
-    @staticmethod
-    def display_available_files(files, min_id, max_id, lang_manager):
-        print(f"\n{lang_manager.get('vocabulary_management.available_lists')}")
+
+    def __init__(self, language_model: LanguageModel):
+        self.language_model = language_model
+        init()
+
+    def set_language_model(self, language_model: LanguageModel):
+        """Set the language model for the view."""
+        self.language_model = language_model
+
+    def display_available_files(self, files, min_id, max_id):
+        print(f"\n{self.language_model.get('vocabulary_management.available_lists')}")
         print(
-            f"-1: {lang_manager.get('vocabulary_management.custom_range').format(min_id=min_id, max_id=max_id)}"
+            f"-1: {self.language_model.get('vocabulary_management.custom_range').format(min_id=min_id, max_id=max_id)}"
         )
-        print(f"0: {lang_manager.get('vocabulary_management.all_chapters')}")
+        print(f"0: {self.language_model.get('vocabulary_management.all_chapters')}")
         for i, file in enumerate(files):
             print(f"{i + 1}: {file[:-4]}")
 
-    @staticmethod
-    def get_user_vocabulary_choice(lang_manager):
+    def get_user_vocabulary_choice(self):
         try:
-            return int(input(lang_manager.get("vocabulary_management.file_selection")))
+            return int(
+                input(self.language_model.get("vocabulary_management.file_selection"))
+            )
         except ValueError:
-            print(lang_manager.get("vocabulary_management.enter_valid_number"))
+            print(self.language_model.get("vocabulary_management.enter_valid_number"))
             return None
 
-    @staticmethod
-    def get_custom_range(min_id, max_id, lang_manager):
+    def get_custom_range(self, min_id, max_id):
         range_input = input(
-            lang_manager.get("vocabulary_management.enter_range").format(
+            self.language_model.get("vocabulary_management.enter_range").format(
                 min_id=min_id, max_id=max_id
             )
         )
@@ -34,16 +42,18 @@ class CLIView:
             start, end = map(int, range_input.split("-"))
             if start < min_id or end > max_id:
                 print(
-                    lang_manager.get("vocabulary_management.invalid_range").format(
-                        min_id=min_id, max_id=max_id
-                    )
+                    self.language_model.get(
+                        "vocabulary_management.invalid_range"
+                    ).format(min_id=min_id, max_id=max_id)
                 )
             elif start > end:
-                print(lang_manager.get("vocabulary_management.invalid_range_order"))
+                print(
+                    self.language_model.get("vocabulary_management.invalid_range_order")
+                )
             else:
                 return start, end
         except ValueError:
-            print(lang_manager.get("vocabulary_management.invalid_range_format"))
+            print(self.language_model.get("vocabulary_management.invalid_range_format"))
         return None
 
     @staticmethod
@@ -96,22 +106,24 @@ class CLIView:
         print("QUYZZ Copyright (C) 2024 Denis Joassin")
         print("\n")
 
-    @staticmethod
-    def input_player(lang_manager) -> str:
+    def input_player(self) -> str:
         """Prompt and return player name"""
         print(
-            f"\n{Fore.CYAN}{lang_manager.get('core.welcome_message', 'Welcome to Latin Quiz!')}{Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{self.language_model.get('core.welcome_message', 'Welcome to Latin Quiz!')}{Style.RESET_ALL}"
         )
         while True:
             player_name = input(
-                lang_manager.get("core.enter_name", "Enter your name: ")
+                self.language_model.get("core.enter_name", "Enter your name: ")
             ).strip()
             if player_name:
                 return player_name
-            print(lang_manager.get("core.invalid_name", "Please enter a valid name."))
+            print(
+                self.language_model.get(
+                    "core.invalid_name", "Please enter a valid name."
+                )
+            )
 
-    @staticmethod
-    def select_level(lang_manager: LanguageModel):
+    def select_level(self):
         """
         Prompts the user to select a difficulty level for the quiz.
 
@@ -128,72 +140,73 @@ class CLIView:
         # note : update to use the language manager
         """
 
-        print(f"\n{lang_manager.get('level_management.select_level_prompt')}")
+        print(f"\n{self.language_model.get('level_management.select_level_prompt')}")
 
-        if lang_manager.language != "dutch":
-            print(f"0. {lang_manager.get('level_management.level_0_name')}")
+        if self.language_model.language != "dutch":
+            print(f"0. {self.language_model.get('level_management.level_0_name')}")
             levels = [0, 1, 2, 3, 4]
         else:
             levels = [1, 2, 3, 4]
 
-        print(f"1. {lang_manager.get('level_management.level_1_name')}")
-        print(f"2. {lang_manager.get('level_management.level_2_name')}")
-        print(f"3. {lang_manager.get('level_management.level_3_name')}")
-        print(f"4. {lang_manager.get('level_management.level_4_name')}")
+        print(f"1. {self.language_model.get('level_management.level_1_name')}")
+        print(f"2. {self.language_model.get('level_management.level_2_name')}")
+        print(f"3. {self.language_model.get('level_management.level_3_name')}")
+        print(f"4. {self.language_model.get('level_management.level_4_name')}")
 
         while True:
             try:
                 level = int(
-                    input(lang_manager.get("level_management.enter_level_number"))
+                    input(
+                        self.language_model.get("level_management.enter_level_number")
+                    )
                 )
                 if level in levels:
                     print(
-                        lang_manager.get("level_management.selected_level").format(
-                            level=level
-                        )
+                        self.language_model.get(
+                            "level_management.selected_level"
+                        ).format(level=level)
                     )
                     return level
-                print(lang_manager.get("level_management.invalid_level_number"))
+                print(self.language_model.get("level_management.invalid_level_number"))
             except ValueError:
-                print(lang_manager.get("level_management.invalid_input"))
+                print(self.language_model.get("level_management.invalid_input"))
 
-    @staticmethod
     def display_feedback(
+        self,
         is_correct: bool,
         correct_answer: str,
         hint: str,
         current_score: int,
         question_num: int,
-        lang: LanguageModel,
     ):
         """Display feedback with colors."""
 
         if is_correct:
-            print(f"\n{Fore.GREEN}{lang.get('feedback.correct')} ✓{Style.RESET_ALL}")
-        else:
-            print(f"\n{Fore.RED}{lang.get('feedback.incorrect')} ✗")
             print(
-                f"{lang.get('feedback.correct_answer_was')}: {correct_answer}{Style.RESET_ALL}"
+                f"\n{Fore.GREEN}{self.language_model.get('feedback.correct')} ✓{Style.RESET_ALL}"
+            )
+        else:
+            print(f"\n{Fore.RED}{self.language_model.get('feedback.incorrect')} ✗")
+            print(
+                f"{self.language_model.get('feedback.correct_answer_was')}: {correct_answer}{Style.RESET_ALL}"
             )
 
-        print(f"{lang.get('feedback.hint')}: {hint}")
+        print(f"{self.language_model.get('feedback.hint')}: {hint}")
         print(
-            f"{lang.get('feedback.current_score')}: {current_score}/{question_num + 1}"
+            f"{self.language_model.get('feedback.current_score')}: {current_score}/{question_num + 1}"
         )
         print("-" * 50)
 
-    @staticmethod
-    def play_again(lang_manager: LanguageModel) -> bool:
+    def play_again(self) -> bool:
         """Ask if player wants to play again"""
         play_again = input(
-            f"\n{Fore.CYAN}{lang_manager.get('core.play_again_prompt')} {Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{self.language_model.get('core.play_again_prompt')} {Style.RESET_ALL}"
         ).lower()
         return play_again in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]
 
-    @staticmethod
-    def display_thanks(lang_manager: LanguageModel):
+    def display_thanks(self):
         print(
-            f"{Fore.GREEN}{lang_manager.get('core.thanks_for_playing')}{Style.RESET_ALL}"
+            f"{Fore.GREEN}{self.language_model.get('core.thanks_for_playing')}{Style.RESET_ALL}"
         )
 
     @staticmethod
@@ -223,37 +236,34 @@ class CLIView:
             except ValueError:
                 print("Please enter a valid number between 1 and 4.")
 
-    @staticmethod
-    def display_player_stats(
-        player_name, player_data, levels, lang_model: LanguageModel
-    ):
+    def display_player_stats(self, player_name, player_data, levels):
         if not player_data:
             print(
-                f"{Fore.CYAN}{lang_model.get('score.no_score_available', 'No score available')}{Style.RESET_ALL}"
+                f"{Fore.CYAN}{self.language_model.get('score.no_score_available', 'No score available')}{Style.RESET_ALL}"
             )
             return
 
         print(
-            f"\n{Fore.CYAN}{lang_model.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{self.language_model.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
         )
         if player_data["last_played"]:
             print(
-                f"{lang_model.get('score.last_played')}: {player_data['last_played']}"
+                f"{self.language_model.get('score.last_played')}: {player_data['last_played']}"
             )
         print()
 
         vocabularies = sorted(player_data["vocabularies"].keys())
         headers = (
-            [lang_model.get("score.level")]
+            [self.language_model.get("score.level")]
             + vocabularies
-            + [lang_model.get("score.average")]
+            + [self.language_model.get("score.average")]
         )
         table_data = []
         vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
 
         for level in levels:
-            row = [f"{lang_model.get('score.level')} {level}"]
+            row = [f"{self.language_model.get('score.level')} {level}"]
             level_total = 0
             level_count = 0
 
@@ -286,7 +296,7 @@ class CLIView:
 
             table_data.append(row)
 
-        avg_row = [lang_model.get("score.average")]
+        avg_row = [self.language_model.get("score.average")]
         for vocab_id in vocabularies:
             count = vocabulary_counts[vocab_id] or 1  # avoid div by 0
             vocab_avg = vocabulary_totals[vocab_id] / count
@@ -333,3 +343,79 @@ class CLIView:
     def display_message(message: str):
         """Display a message to the user."""
         print(f"{Fore.CYAN}{message}{Style.RESET_ALL}")
+
+    def display_final_score(self, score, total_questions, player_name):
+        percentage = (score / total_questions) * 100
+        print(
+            f"\n{Fore.CYAN}{self.language_model.get('core.quiz_completed', 'Quiz completed')} {player_name}!"
+        )
+        print(
+            f"{self.language_model.get('core.final_score', 'Final score')}: {score}/{total_questions}"
+        )
+        print(
+            f"{self.language_model.get('core.percentage', 'Percentage')}: {percentage:.1f}%{Style.RESET_ALL}"
+        )
+
+        if percentage == 100:
+            print(
+                f"{Fore.GREEN}{self.language_model.get('core.perfect_score', 'Perfect score! Excellent work!')}{Style.RESET_ALL}"
+            )
+        elif percentage >= 80:
+            print(
+                f"{Fore.GREEN}{self.language_model.get('core.great_job', 'Great job!')}{Style.RESET_ALL}"
+            )
+        elif percentage >= 60:
+            print(
+                f"{Fore.YELLOW}{self.language_model.get('core.good_effort', 'Good effort! Keep practicing!')}{Style.RESET_ALL}"
+            )
+        else:
+            print(
+                f"{Fore.RED}{self.language_model.get('core.keep_studying', 'Keep studying!')}{Style.RESET_ALL}"
+            )
+
+    def display_question_header(self, question_num, total_questions):
+        print(
+            f"\n{Fore.YELLOW}{self.language_model.get('core.question_label', 'Question')} {question_num}/{total_questions}{Style.RESET_ALL}"
+        )
+
+    def display_latin_word(self, word_data):
+        print(
+            f"{self.language_model.get('core.latin_word', 'Latin word')}: {Fore.MAGENTA}{word_data['word']} ({word_data['form']}){Style.RESET_ALL}"
+        )
+        if "word_type" in word_data:
+            print(
+                f"{self.language_model.get('core.word_type', 'Word type')}: {word_data['word_type']}{Style.RESET_ALL}"
+            )
+
+    def display_feedback(self, is_correct, correct_answer, hint, score, question_num):
+        if is_correct:
+            print(
+                f"{Fore.GREEN}{self.language_model.get('core.correct', 'Correct!')}{Style.RESET_ALL}"
+            )
+        else:
+            print(
+                f"{Fore.RED}{self.language_model.get('core.incorrect', 'Incorrect!')}{Style.RESET_ALL}"
+            )
+            print(
+                f"{self.language_model.get('core.correct_answer', 'Correct answer')}: {correct_answer}"
+            )
+        print(f"{self.language_model.get('core.hint', 'Hint')}: {hint}")
+        print(
+            f"{self.language_model.get('core.current_score', 'Current score')}: {score}/{question_num + 1}"
+        )
+
+    def display_updated_statistics_message(self, player_name):
+        print(
+            f"\n{Fore.CYAN}{self.language_model.get('core.updated_statistics').format(player=player_name)}:{Style.RESET_ALL}"
+        )
+
+    def ask_play_again(self):
+        response = input(
+            f"\n{Fore.CYAN}{self.language_model.get('core.play_again_prompt')} {Style.RESET_ALL}"
+        ).lower()
+        return response in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]
+
+    def display_thanks_for_playing(self):
+        print(
+            f"{Fore.GREEN}{self.language_model.get('core.thanks_for_playing')}{Style.RESET_ALL}"
+        )

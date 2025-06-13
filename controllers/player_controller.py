@@ -64,7 +64,7 @@ class PlayerController:
                 self.current_player = selected_player
                 self.mastery_data = self.load_mastery_data()
 
-            if choice == len(players) + 1:
+            elif choice == len(players) + 1:
 
                 # Add new player
                 new_player = self._view.get_text_input(
@@ -81,10 +81,10 @@ class PlayerController:
                         )
                     )
 
-            else:
-                self._view.display_message(
-                    self._lang.get("player_management.empty_name_error")
-                )
+                else:
+                    self._view.display_message(
+                        self._lang.get("player_management.empty_name_error")
+                    )
 
     def get_current_player(self) -> str:
         """

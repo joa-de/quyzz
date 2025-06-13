@@ -18,8 +18,8 @@ class VocabularyController:
         min_id, max_id = self.vocabulary_model.get_word_id_range(files)
 
         while True:
-            self.view.display_available_files(files, min_id, max_id, self.lang_manager)
-            choice = self.view.get_user_vocabulary_choice(self.lang_manager)
+            self.view.display_available_files(files, min_id, max_id)
+            choice = self.view.get_user_vocabulary_choice()
 
             if choice is None:
                 continue
@@ -30,9 +30,7 @@ class VocabularyController:
             elif choice == 0:
                 return self.vocabulary_model.load(files), files
             elif choice == -1:
-                custom_range = self.view.get_custom_range(
-                    min_id, max_id, self.lang_manager
-                )
+                custom_range = self.view.get_custom_range(min_id, max_id)
                 if custom_range:
                     return self.vocabulary_model.load(files, custom_range), files
             else:
