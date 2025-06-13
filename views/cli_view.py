@@ -379,6 +379,17 @@ class CLIView:
             f"\n{Fore.YELLOW}{self.language_model.get('core.question_label', 'Question')} {question_num}/{total_questions}{Style.RESET_ALL}"
         )
 
+    def display_welcome_message(self, player_name):
+        print(
+            f"\n{Fore.CYAN}{self.language_model.get('core.welcome_message', 'Welcome')} {player_name}!"
+        )
+        print(
+            self.language_model.get(
+                "core.quiz_intro", "Choose the correct translation."
+            )
+        )
+        print("-" * 50 + Style.RESET_ALL)
+
     def display_latin_word(self, word_data):
         print(
             f"{self.language_model.get('core.latin_word', 'Latin word')}: {Fore.MAGENTA}{word_data['word']} ({word_data['form']}){Style.RESET_ALL}"
@@ -386,6 +397,39 @@ class CLIView:
         if "word_type" in word_data:
             print(
                 f"{self.language_model.get('core.word_type', 'Word type')}: {word_data['word_type']}{Style.RESET_ALL}"
+            )
+
+    def display_hint(self, hint):
+        print(f"{self.language_model.get('core.hint', 'Hint')}: {hint}")
+
+    def display_options(self, options, options_id=None):
+        if options_id:
+            for i, (opt, opt_id) in enumerate(zip(options, options_id), 1):
+                translation = self.language_model.translations.get(
+                    int(opt_id), "Unknown"
+                )
+                print(f"{i}. {opt} - {Fore.CYAN}{translation}{Style.RESET_ALL}")
+        else:
+            for i, opt in enumerate(options, 1):
+                print(f"{i}. {opt}")
+
+    def ask_for_answer(self):
+        while True:
+            try:
+                answer = int(
+                    input(
+                        f"\n{self.language_model.get('core.enter_answer', 'Enter your answer')} (1-4): "
+                    )
+                )
+                if 1 <= answer <= 4:
+                    return answer
+            except ValueError:
+                pass
+            print(
+                self.language_model.get(
+                    "core.enter_valid_number",
+                    "Please enter a valid number between 1 and 4.",
+                )
             )
 
     def display_feedback(self, is_correct, correct_answer, hint, score, question_num):
@@ -420,3 +464,32 @@ class CLIView:
         print(
             f"{Fore.GREEN}{self.language_model.get('core.thanks_for_playing')}{Style.RESET_ALL}"
         )
+
+    def display_final_score(self, score, total_questions, player_name):
+        percentage = (score / total_questions) * 100
+        print(
+            f"\n{Fore.CYAN}{self.language_model.get('core.quiz_completed', 'Quiz completed')} {player_name}!"
+        )
+        print(
+            f"{self.language_model.get('core.final_score', 'Final score')}: {score}/{total_questions}"
+        )
+        print(
+            f"{self.language_model.get('core.percentage', 'Percentage')}: {percentage:.1f}%{Style.RESET_ALL}"
+        )
+
+        if percentage == 100:
+            print(
+                f"{Fore.GREEN}{self.language_model.get('core.perfect_score', 'Perfect score! Excellent work!')}{Style.RESET_ALL}"
+            )
+        elif percentage >= 80:
+            print(
+                f"{Fore.GREEN}{self.language_model.get('core.great_job', 'Great job!')}{Style.RESET_ALL}"
+            )
+        elif percentage >= 60:
+            print(
+                f"{Fore.YELLOW}{self.language_model.get('core.good_effort', 'Good effort! Keep practicing!')}{Style.RESET_ALL}"
+            )
+        else:
+            print(
+                f"{Fore.RED}{self.language_model.get('core.keep_studying', 'Keep studying!')}{Style.RESET_ALL}"
+            )

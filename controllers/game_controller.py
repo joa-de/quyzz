@@ -15,7 +15,6 @@ class GameController:
         self,
         view: CLIView,
         lang_model: LanguageModel,
-        # TODO move lang_model use to view
         config_controller: ConfigController,
         player_controller: PlayerController,
         vocab_controller: VocabularyController,
@@ -28,6 +27,7 @@ class GameController:
         self.vocab_controller = vocab_controller
         self.score_controller = score_controller
 
+    @staticmethod
     def get_random_options(
         correct_answer, correct_answer_id, vocabulary, word_type=None
     ):
@@ -126,13 +126,7 @@ class GameController:
         score = 0
         player_name = self.player_controller.get_current_player()
 
-        #####TODO: Move this to the view
-        print(
-            f"\n{Fore.CYAN}{self.lang_model.get('core.welcome_message', 'Welcome')} {player_name}!"
-        )
-        print(self.lang_model.get("core.quiz_intro", "Choose the correct translation."))
-        print("-" * 50 + Style.RESET_ALL)
-        #####
+        self.view.display_welcome_message(player_name)
 
         used_words = set()
         available_words = set(vocabulary.keys())
