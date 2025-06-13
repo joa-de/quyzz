@@ -2,7 +2,7 @@
 import random
 from colorama import Fore, Style
 
-from views.cli_view import CLIView
+from views.base_view import BaseView
 from controllers.vocabulary_controller import VocabularyController
 from controllers.config_controller import ConfigController
 from controllers.player_controller import PlayerController
@@ -13,7 +13,7 @@ from models.language_model import LanguageModel
 class GameController:
     def __init__(
         self,
-        view: CLIView,
+        view: BaseView,
         lang_model: LanguageModel,
         config_controller: ConfigController,
         player_controller: PlayerController,

@@ -1,11 +1,11 @@
 # controller/score_controller.py
 
 from models.score_model import ScoreModel
-from views.cli_view import CLIView
+from views.base_view import BaseView
 
 
 class ScoreController:
-    def __init__(self, view: CLIView, score_model: ScoreModel = None):
+    def __init__(self, view: BaseView, score_model: ScoreModel = None):
         self.score_model = score_model or ScoreModel()
         self.view = view
 

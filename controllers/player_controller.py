@@ -1,6 +1,6 @@
 from models.player_model import PlayerModel
 from models.mastery_model import MasteryModel
-from views.cli_view import CLIView
+from views.cli_view import BaseView
 from models.language_model import LanguageModel
 from models.score_model import ScoreModel
 
@@ -12,7 +12,7 @@ class PlayerController:
         self,
         model: PlayerModel,
         mastery_model: MasteryModel,
-        view: CLIView,
+        view: BaseView,
         lang_manager: LanguageModel,
     ):
         """
