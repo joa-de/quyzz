@@ -7,7 +7,6 @@ from colorama import init, Fore, Style
 # Legacy imports
 from legacy.display_feedback import display_feedback
 from legacy.get_random_options import get_random_options
-from legacy.player_management import select_player
 from legacy.mastery_management import (
     load_mastery_data,
     save_mastery_data,
@@ -23,10 +22,13 @@ from legacy.config_manager import config_manager
 # MVC imports
 from models.language_model import LanguageModel
 from models.vocabulary_model import VocabularyModel
+from models.player_model import PlayerModel
 
 from views.cli_view import CLIView
 
 from controllers.vocabulary_controller import VocabularyController
+from controllers.config_controller import ConfigController
+from controllers.player_controller import PlayerController
 
 
 # Initialize colorama
@@ -214,60 +216,74 @@ def main():
     The loop continues until the player chooses not to play again.
     """
 
-    config = config_manager("config.yaml")
-    language_file = config.get("language_file")
-    total_questions = config.get("total_questions", 10)
-
     view = CLIView()
-    lang_manager = LanguageModel(language_file)
+
+    config_controller = ConfigController()
+    language_file = config_controller.get_language_file()
+    total_questions = config_controller.get_total_questions()
+
     vocabulary_model = VocabularyModel()
-    vocab_controller = VocabularyController(vocabulary_model, view, lang_manager)
+    lang_model = LanguageModel(language_file)
+
+    vocab_controller = VocabularyController(vocabulary_model, view, lang_model)
+
+    score_manager = ScoreManager()
+    player_model = PlayerModel()
+    player_controller = PlayerController(player_model, view, lang_model)
 
     # Displays the introduction to the game.
     view.display_roman_intro()
 
-    score_manager = ScoreManager()
-    # Load mastery data
-
     while True:
 
         # Prompts the player to enter their name.
-        player_name = select_player(lang_manager)
+        player_controller.select_player()
 
         # Load player vocabulary mastery data
-        mastery_data = load_mastery_data(player_name)
+        mastery_data = load_mastery_data(player_controller.get_current_player())
 
         # Displays the player's statistics.
-        score_manager.display_player_stats(player_name, lang_manager)
+        score_manager.display_player_stats(
+            player_controller.get_current_player(), lang_model
+        )
 
         # Loads the vocabulary for the quiz
         vocabulary, vocab_files = vocab_controller.load_vocabulary()
 
         # Prompts the player to select a difficulty level.
-        level = select_level(lang_manager)
+        level = select_level(lang_model)
 
         # play_quizz
         score, total_questions = play_quiz(
-            player_name, level, vocabulary, lang_manager, mastery_data, total_questions
+            player_controller.get_current_player(),
+            level,
+            vocabulary,
+            lang_model,
+            mastery_data,
+            total_questions,
         )
         percentage = (score / total_questions) * 100
 
         # Update score with vocabulary information
-        score_manager.update_score(player_name, vocab_files, level, percentage)
+        score_manager.update_score(
+            player_controller.get_current_player(), vocab_files, level, percentage
+        )
 
         # Displays the player's statistics.
         print(
-            f"\n{Fore.CYAN}{lang_manager.get('core.updated_statistics').format(player=player_name)}:{Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{lang_model.get('core.updated_statistics').format(player=player_controller.get_current_player())}:{Style.RESET_ALL}"
         )
-        score_manager.display_player_stats(player_name, lang_manager)
+        score_manager.display_player_stats(
+            player_controller.get_current_player(), lang_model
+        )
 
         # Ask the player if they want to play again
         play_again = input(
-            f"\n{Fore.CYAN}{lang_manager.get('core.play_again_prompt')} {Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{lang_model.get('core.play_again_prompt')} {Style.RESET_ALL}"
         ).lower()
         if play_again not in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]:
             print(
-                f"{Fore.GREEN}{lang_manager.get('core.thanks_for_playing')}{Style.RESET_ALL}"
+                f"{Fore.GREEN}{lang_model.get('core.thanks_for_playing')}{Style.RESET_ALL}"
             )
             break
 

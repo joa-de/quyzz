@@ -97,7 +97,7 @@ class CLIView:
         print("\n")
 
     @staticmethod
-    def select_player(lang_manager) -> str:
+    def input_player(lang_manager) -> str:
         """Prompt and return player name"""
         print(
             f"\n{Fore.CYAN}{lang_manager.get('core.welcome_message', 'Welcome to Latin Quiz!')}{Style.RESET_ALL}"
@@ -225,7 +225,6 @@ class CLIView:
 
     @staticmethod
     def display_player_stats(
-        self,
         player_name,
         player_data,
         players_with_scores,
@@ -312,3 +311,33 @@ class CLIView:
         table_data.append(avg_row)
 
         print(tabulate(table_data, headers=headers, tablefmt="grid", stralign="center"))
+
+    @staticmethod
+    def display_menu(title: str, options: list[str]):
+        """Display a menu with a title and options."""
+        print(f"\n{Fore.CYAN}{title}{Style.RESET_ALL}")
+        for i, option in enumerate(options, 1):
+            print(f"{i}. {option}")
+        print("-" * 50)
+
+    @staticmethod
+    def get_numeric_input(prompt: str, min_value: int, max_value: int) -> int:
+        """Get a numeric input from the user within a specified range."""
+        while True:
+            try:
+                choice = int(input(f"{prompt} ({min_value}-{max_value}): "))
+                if min_value <= choice <= max_value:
+                    return choice
+                print(f"Please enter a number between {min_value} and {max_value}.")
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
+
+    @staticmethod
+    def get_text_input(prompt: str) -> str:
+        """Get a text input from the user."""
+        return input(f"{prompt}: ").strip()
+
+    @staticmethod
+    def display_message(message: str):
+        """Display a message to the user."""
+        print(f"{Fore.CYAN}{message}{Style.RESET_ALL}")

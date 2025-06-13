@@ -27,7 +27,7 @@ class config_manager:
             )
             self.config = {}
 
-    def get(self, key, default=""):
+    def get(self, key):
         """
         Retrieve a config value by key, with an optional default.
         Key can be in format "section.key" for nested values.

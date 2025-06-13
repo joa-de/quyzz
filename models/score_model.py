@@ -6,7 +6,7 @@ from pathlib import Path
 PLAYER_DIR = Path("./user_data")
 
 
-class ScoreManager:
+class ScoreModel:
     def __init__(self, filename="player_scores.json", default_period=10):
         """
         Initialize the score manager.

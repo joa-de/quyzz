@@ -4,16 +4,19 @@ import yaml
 from typing import Any, Dict, Optional
 
 
-class ConfigManager:
+class ConfigModel:
     """Model for managing application configuration."""
 
-    def __init__(self, config_file: str = "config.yaml"):
+    def __init__(self, config_file: str = None):
         """
         Initialize ConfigManager with a specific config file.
 
         Args:
             config_file (str): Name of the config file to load
         """
+        if config_file is None:
+            config_file = "config.yaml"
+
         self._config_directory = Path(__file__).parent.parent / "config"
         self._config_file = self._config_directory / config_file
         self._config: Dict[str, Any] = {}
@@ -30,24 +33,19 @@ class ConfigManager:
         except (FileNotFoundError, yaml.YAMLError) as e:
             raise RuntimeError(f"Config file error: {e}")
 
-    def get(self, key: str, default: Optional[Any] = None) -> Any:
+    def get(self, key: str) -> Any:
         """
         Retrieve a configuration value, supporting nested keys.
 
         Args:
             key (str): Dot-separated key path
-            default (Any, optional): Value to return if key not found
 
-        Returns:
-            Configuration value or default
         """
         try:
-            value = self._config
-            for k in key.split("."):
-                value = value[k]
+            value = self._config[key]
             return value
-        except (KeyError, TypeError):
-            return default
+        except KeyError:
+            raise KeyError(f"Configuration key '{key}' not found.")
 
     def get_all(self) -> Dict[str, Any]:
         """
@@ -60,7 +58,7 @@ class ConfigManager:
 
 
 def main():
-    config = ConfigManager("config.yaml")
+    config = ConfigModel("config.yaml")
     key = "language_file"
     language_file = config.get(key)
     print(f" language file : {language_file}")
