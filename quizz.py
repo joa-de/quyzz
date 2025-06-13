@@ -2,7 +2,7 @@
 # Copyright (c) 2024 Denis Joassin
 # All rights reserved.
 
-# MVC imports
+# MVC imports: Importing models, views, and controllers for the application
 from models.language_model import LanguageModel
 from models.vocabulary_model import VocabularyModel
 from models.player_model import PlayerModel
@@ -18,32 +18,41 @@ from controllers.score_controller import ScoreController
 from controllers.game_controller import GameController
 
 
-# Initialize colorama
-
-
 def main():
     """
-    Main function to run the Latin quiz game.
-    This function displays the Roman introduction, initializes the score manager,
-    and enters a loop where the player can select their name, load vocabulary,
-    select a level, and play the quiz. After each quiz, the player's score is
-    updated and displayed. The player is then asked if they want to play again.
-    The loop continues until the player chooses not to play again.
+    Entry point for the Latijn Game application.
+    This function initializes all necessary controllers, models, and views required for the game.
+    It sets up configuration management, language and vocabulary models, player and score tracking,
+    and the command-line interface for user interaction. After all dependencies are initialized,
+    it starts the main game loop by invoking the GameController.
+    Steps performed:
+        1. Initialize configuration controller for managing settings and config files.
+        2. Set up models for language, vocabulary, player, mastery, and score.
+        3. Initialize the CLI view for user interaction.
+        4. Create controllers for player, vocabulary, and score management.
+        5. Instantiate the main GameController with all dependencies.
+        6. Start the game loop.
     """
 
+    # Initialize configuration controller to manage config files and settings
     config_controller = ConfigController()
 
+    # Initialize models for language, vocabulary, player, mastery, and score
     lang_model = LanguageModel(config_controller.get_language_file())
     vocabulary_model = VocabularyModel()
     player_model = PlayerModel()
     mastery_model = MasteryModel()
     score_model = ScoreModel()
 
+    # Initialize the CLI view with the language model for user interaction
     view = CLIView(lang_model)
+
+    # Initialize controllers for player, vocabulary, and score management
     player_controller = PlayerController(player_model, mastery_model, view, lang_model)
     vocab_controller = VocabularyController(vocabulary_model, view, lang_model)
     score_controller = ScoreController(view, score_model)
 
+    # Initialize the main game controller with all dependencies
     game = GameController(
         view,
         lang_model,
@@ -52,9 +61,10 @@ def main():
         vocab_controller,
         score_controller,
     )
+    # Start the game loop
     game.run()
 
 
 if __name__ == "__main__":
+    # Entry point: run the main function if this script is executed directly
     main()
-    input("Press Enter to exit...")

@@ -95,6 +95,25 @@ class PlayerController:
         """
         return self.current_player if hasattr(self, "current_player") else None
 
+    def set_current_player(self, user="web_user"):
+        """
+        Set the current player to a specific name.
+
+        Args:
+            player_name (str): Name of the player to set as current.
+        """
+        players = self.player_model.get_players()
+        self.current_player = user
+        if user not in players:
+            self.current_player = self.player_model.add_player(user)
+
+        self.mastery_data = self.load_mastery_data()
+        self._view.display_message(
+            self._lang.get("player_management.selected_player").format(
+                player=self.current_player
+            )
+        )
+
     def load_mastery_data(self) -> dict:
         """
         Load mastery data for the current player.

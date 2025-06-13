@@ -2,6 +2,7 @@ from colorama import init, Fore, Style
 from models.language_model import LanguageModel
 from tabulate import tabulate
 
+init()
 
 from views.base_view import BaseView
 
@@ -10,7 +11,6 @@ class CLIView(BaseView):
 
     def __init__(self, language_model: LanguageModel):
         super().__init__(language_model)
-        init()
 
     @staticmethod
     def cli_view_warning(message: str):
@@ -317,7 +317,10 @@ class CLIView(BaseView):
         print("-" * 50)
 
     def display_final_score(self, score, total_questions, player_name):
-        percentage = (score / total_questions) * 100
+        if total_questions == 0:
+            percentage = 0
+        else:
+            percentage = (score / total_questions) * 100
         print(
             f"\n{Fore.CYAN}{self.language_model.get('core.quiz_completed', 'Quiz completed')} {player_name}!"
         )
@@ -385,8 +388,6 @@ class CLIView(BaseView):
 
         Returns:
             int: The selected level (1, 2, 3, 4 or 5).
-
-        # note : update to use the language manager
         """
 
         print(f"\n{self.language_model.get('level_management.select_level_prompt')}")
@@ -422,10 +423,15 @@ class CLIView(BaseView):
 
     def ask_play_again(self) -> bool:
         """Ask if player wants to play again"""
-        play_again = input(
-            f"\n{Fore.CYAN}{self.language_model.get('core.play_again_prompt')} {Style.RESET_ALL}"
-        ).lower()
-        return play_again in ["yes", "y", "Y", "o", "O", "oui", "j", "J", "ja"]
+        play_again = (
+            input(
+                f"\n{Fore.CYAN}{self.language_model.get('core.play_again_prompt')} {Style.RESET_ALL}"
+            )
+            .strip()
+            .lower()
+        )
+        accepted_yes = {"yes", "y", "o", "oui", "j", "ja"}
+        return play_again in accepted_yes
 
     @staticmethod
     def get_text_input(prompt: str) -> str:

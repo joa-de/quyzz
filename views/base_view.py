@@ -114,3 +114,13 @@ class BaseView(ABC):
     @abstractmethod
     def get_numeric_input(prompt: str, min_value: int, max_value: int) -> int:
         pass
+
+    @abstractmethod
+    def display_available_files(self, files, min_id, max_id):
+        """Display a list of available files."""
+        pass
+
+    @abstractmethod
+    def get_user_vocabulary_choice(self) -> int:
+        """Get the user's choice of vocabulary file."""
+        pass

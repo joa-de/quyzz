@@ -100,24 +100,24 @@
             "hoofdstuck4": {
                 "levels": {
                     "0": {
-                        "ema": 20.0,
-                        "games_played": 1
+                        "ema": 80.3271484375,
+                        "games_played": 7
                     },
                     "1": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 90.0,
+                        "games_played": 1
                     },
                     "2": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 100.0,
+                        "games_played": 1
                     },
                     "3": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 100.0,
+                        "games_played": 1
                     },
                     "4": {
-                        "ema": 0.0,
-                        "games_played": 0
+                        "ema": 90.0,
+                        "games_played": 1
                     }
                 }
             },
@@ -194,7 +194,7 @@
                 }
             }
         },
-        "last_played": "2025-06-13 18:25:10"
+        "last_played": "2025-06-13 22:31:49"
     },
     "Z\u00e9lie": {
         "vocabularies": {
@@ -257,8 +257,8 @@
                         "games_played": 1
                     },
                     "3": {
-                        "ema": 90.0,
-                        "games_played": 1
+                        "ema": 92.5,
+                        "games_played": 2
                     },
                     "4": {
                         "ema": 80.0,
@@ -295,7 +295,7 @@
                 }
             }
         },
-        "last_played": "2025-06-09 15:37:46"
+        "last_played": "2025-06-13 21:40:19"
     },
     "test": {
         "vocabularies": {
@@ -309,5 +309,18 @@
             }
         },
         "last_played": "2025-06-13 15:24:44"
+    },
+    "web_user": {
+        "vocabularies": {
+            "hoofdstuck1": {
+                "levels": {
+                    "1": {
+                        "ema": 20.0,
+                        "games_played": 1
+                    }
+                }
+            }
+        },
+        "last_played": "2025-06-13 18:58:05"
     }
 }
