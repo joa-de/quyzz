@@ -225,57 +225,51 @@ class CLIView:
 
     @staticmethod
     def display_player_stats(
-        player_name,
-        player_data,
-        players_with_scores,
-        player_levels,
-        lang_manager: LanguageModel,
+        player_name, player_data, levels, lang_model: LanguageModel
     ):
-        """Display player's statistics in a formatted table with levels as rows, vocabularies as columns, and averages."""
-
-        if player_name not in players_with_scores:
+        if not player_data:
             print(
-                f"{Fore.CYAN}{lang_manager.get('score.no_score_available', 'No score avalaible')}{Style.RESET_ALL}"
+                f"{Fore.CYAN}{lang_model.get('score.no_score_available', 'No score available')}{Style.RESET_ALL}"
             )
             return
 
         print(
-            f"\n{Fore.CYAN}{lang_manager.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
+            f"\n{Fore.CYAN}{lang_model.get('score.statistics_for')} {player_name}:{Style.RESET_ALL}"
         )
         if player_data["last_played"]:
             print(
-                f"{lang_manager.get('score.last_played')}: {player_data['last_played']}"
+                f"{lang_model.get('score.last_played')}: {player_data['last_played']}"
             )
         print()
 
-        # Prepare table headers
         vocabularies = sorted(player_data["vocabularies"].keys())
         headers = (
-            [lang_manager.get("score.level")]
+            [lang_model.get("score.level")]
             + vocabularies
-            + [lang_manager.get("score.average")]
+            + [lang_model.get("score.average")]
         )
         table_data = []
-
-        # Collect totals for calculating averages
         vocabulary_totals = {vocab_id: 0 for vocab_id in vocabularies}
         vocabulary_counts = {vocab_id: 0 for vocab_id in vocabularies}
 
-        for level in player_levels[player_name]:
-            row = [f"{lang_manager.get('score.level')} {level}"]
+        for level in levels:
+            row = [f"{lang_model.get('score.level')} {level}"]
             level_total = 0
             level_count = 0
 
             for vocab_id in vocabularies:
                 vocab_data = player_data["vocabularies"][vocab_id]
-                # self.ensure_level_scores(vocab_data, level)
-                level_data = vocab_data["levels"][level]
+                if str(level) not in vocab_data["levels"]:
+                    vocab_data["levels"][str(level)] = {"ema": 0.0, "games_played": 0}
+
+                level_data = vocab_data["levels"][str(level)]
                 ema = level_data["ema"]
                 played = level_data["games_played"]
 
                 level_total += ema
                 level_count += 1
                 vocabulary_totals[vocab_id] += ema
+
                 if ema > 0:
                     vocabulary_counts[vocab_id] += 1
 
@@ -283,9 +277,8 @@ class CLIView:
                     score_str = f"{Fore.GREEN}{ema:.1f}%{Style.RESET_ALL} ({played})"
                 elif ema >= 60:
                     score_str = f"{Fore.YELLOW}{ema:.1f}%{Style.RESET_ALL} ({played})"
-
-                if ema == 0:
-                    score_str = f"{Fore.WHIAT}--{Style.RESET_ALL} ({played})"
+                elif ema == 0:
+                    score_str = f"{Fore.RED}--{Style.RESET_ALL} ({played})"
                 else:
                     score_str = f"{Fore.RED}{ema:.1f}%{Style.RESET_ALL} ({played})"
 
@@ -293,10 +286,10 @@ class CLIView:
 
             table_data.append(row)
 
-        avg_row = [lang_manager.get("score.average")]
+        avg_row = [lang_model.get("score.average")]
         for vocab_id in vocabularies:
-
-            vocab_avg = vocabulary_totals[vocab_id] / vocabulary_counts[vocab_id]
+            count = vocabulary_counts[vocab_id] or 1  # avoid div by 0
+            vocab_avg = vocabulary_totals[vocab_id] / count
             avg_color = (
                 f"{Fore.GREEN}{vocab_avg:.1f}%{Style.RESET_ALL}"
                 if vocab_avg >= 80
@@ -309,7 +302,6 @@ class CLIView:
             avg_row.append(avg_color)
 
         table_data.append(avg_row)
-
         print(tabulate(table_data, headers=headers, tablefmt="grid", stralign="center"))
 
     @staticmethod

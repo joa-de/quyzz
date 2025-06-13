@@ -10,10 +10,10 @@ from glob import glob
 
 class MasteryModel:
     def __init__(self):
-        pass
+        self.user_name = None
+        self.vocab_dir = "vocabularies"
 
-    @staticmethod
-    def load_mastery_data(user_name, vocab_dir="vocabularies"):
+    def load_mastery_data(self, user_name: str = None, vocab_dir: str = None):
         """
         Load or initialize the mastery data for the given user, ensuring it includes
         all words from the vocabulary files in the specified directory.
@@ -25,6 +25,11 @@ class MasteryModel:
         Returns:
             dict: Mastery data for all words in the vocabulary files.
         """
+        if user_name is None:
+            raise ValueError("User name must be provided.")
+        if vocab_dir is None:
+            vocab_dir = self.vocab_dir
+
         file_name = f"{user_name}_vocabulary_mastery.json"
         mastery_file = Path("./user_data") / file_name
 
@@ -63,6 +68,7 @@ class MasteryModel:
         with open(mastery_file, "w", encoding="utf-8") as file:
             json.dump(mastery_data, file, indent=4)
 
+        self.mastery_data = mastery_data
         return mastery_data
 
     @staticmethod
@@ -74,6 +80,30 @@ class MasteryModel:
         with open(mastery_file, "w", encoding="utf-8") as file:
             json.dump(mastery_data, file, indent=4)
 
+    @staticmethod
+    def unplayed_first_choice(available_words, mastery_data):
+        """
+        Select a word ID from the available words, prioritizing unplayed words first.
+
+        Args:
+            available_words (set): Set of available word IDs.
+            mastery_data (dict): User performance data.
+
+        Returns:
+            str: Selected word ID.
+        """
+        # First, check for unplayed words
+        for word_id in available_words:
+            if (
+                mastery_data.get(str(word_id), {"total_attempts": 0})["total_attempts"]
+                == 0
+            ):
+                return word_id
+
+        # If no unplayed words, return a random choice from available words
+        return random.choice(list(available_words))
+
+    @staticmethod
     def weighted_choice(available_words, mastery_data):
         """
         Select a word ID based on mastery data with weighting:

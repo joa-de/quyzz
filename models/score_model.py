@@ -121,3 +121,13 @@ class ScoreModel:
 
         self._save_scores()
         return level_data["ema"]
+
+    def get_display_data(self, player_name):
+        """Returns data needed to render the score table."""
+        if player_name not in self.players_with_scores:
+            return None
+
+        player_data = self.get_player_scores(player_name)
+        self._read_player_availaible_levels()
+        levels = self.player_levels[player_name]
+        return player_data, levels
