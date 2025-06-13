@@ -136,6 +136,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+zone_playground/
 
 # Spyder project settings
 .spyderproject
