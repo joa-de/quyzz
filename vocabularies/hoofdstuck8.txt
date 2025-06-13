@@ -1,0 +1,71 @@
+618|rēgnum|rēgnī|het koninkrijk; de heerschappij|Lat. rex regia regio|substantief
+619|sīgnum|sīgnī|het teken|Ndl. signaal; signe|substantief
+620|gēns|gentis, v.|het geslacht; de volksstam|gen(en) genre genesis|substantief
+621|sēdēs|sēd-is, v.|de zitplaats; de verblijfplaats|Lat. sedēre|substantief
+622|certāmen|certāmin-is, o.|de wedstrijd|lat. certare|substantief
+623|pectus|pector-is, o.|de borst; het hart; het verstand|pectoraux poitrine|substantief
+624|currus|currus, m.|de renwagen|Lat. currere|substantief
+625|cursus|cursus, m.|de loop; de koers|Lat. currere course colin cursus|substantief
+626|metus|metus, m.|de vrees|Lat. metuere|substantief
+627|fidēs|fideī, v.|de trouw; het vertrouwen; het gegeven woord|fideel fidèle|substantief
+628|spēs|speī, v.|de hoop|Lat. spectāre|substantief
+629|singulī|~ae, ~a|elk één; afzonderlijk|Fr. singulier|adjectief
+630|dulcis|~, dulce; dulc-is|zoet; lief|doux dolce lekker|adjectief
+631|tot|(onverbuigbaar adj.)|zoveel||adjectief
+632|certāre|certō|strijden|Lat. certamen|werkwoord
+633|pervenīre|perveniō|aankomen|Lat. per + venīre parvenir|werkwoord
+634|simul|(bijwoord)|tegelijk|simultaan simultanément|bijwoord
+635|quamquam|(voegwoord)|hoewel||voegwoord
+636|frūctus|frūctus, m.|de vrucht|Ndl. fruit nebus|substantief
+637|rēs|reī, v.|de zaak||substantief
+638|domus|domus, v.|het huis|domus domesticus|substantief
+639|manus|manus, v.|de hand; de groep|Ndl. de manicure Fr. la main|substantief
+640|cāsus|cāsus|de val; het voorval; het toeval|Lat. cadere cas|substantief
+641|eventus|eventus|de afloop|Lat. e + ventus; évenement|substantief
+642|exercitus|exercitus|het leger|Lat. exercēre|substantief
+643|magistrātus|magistrātus|het ambt; de magistraat||substantief
+644|passus|passus|de pas (als lengtemaat: 1,5 m)||substantief
+645|senātus|senātus|de senaat||substantief
+646|tumultus|tumultus|het tumult||substantief
+647|vultus|vultus|het gezicht||substantief
+648|diēs|diēī, m./v.|de dag|lundi mardi ... officiele postbode|substantief
+649|faciēs|faciēī|het gezicht; het uitzicht|Fr. la façade / Eng. the face|substantief
+650|aliēnus|~a, ~um|van een ander; vreemd|Eng. alien|adjectief
+651|dexter|dextra, dextrum|rechts|shelf Lat. aestival immortel|adjectief
+652|rēgius|~a, ~um|koninklijk|Lat. rex regnum segue|adjectief
+653|familiāris|~, familiāre; familiār-is|van het gezin; goede bekende|Lat. familia|adjectief
+654|turpis|~, turpe; turp-is|lelijk; schandelijk||adjectief
+655|alere|alō|voeden|alimentaire aliment (alle)|werkwoord
+656|committere|committō|begaan; toevertrouwen; beginnen|commencer commettre lo commit|werkwoord
+657|fallere|fallō|misleiden; ontgaan|Ndl. vals|werkwoord
+658|pellere|pellō|verdrijven||werkwoord
+659|statuere|statuō|plaatsen; vaststellen; beslissen|constituer|werkwoord
+660|trādere|trādō|overhandigen; toevertrouwen|to trade; tradition|werkwoord
+661|īnferī|īnferōrum|de onderwereld|inférieur; inferieur; infero|substantief
+662|marītus|marītī|de echtgenoot|Fr. le mari|substantief
+663|morbus|morbī|de ziekte|morbide|substantief
+664|mēnsis|mēns-is, m.|de maand|mensualité; mensuel;menstruel|substantief
+665|aetās|aetat-is, v.|de leeftijd; de periode||substantief
+666|suādēre|suādeō|aanraden|persuader|werkwoord
+667|carpere|carpō|plukken|carpediem |werkwoord
+668|claudere|claudō|sluiten|Ndl. de claustrofobie; to close; porte close; santa klaus(saint nicolas) est fermé |werkwoord
+669|crēscere|crēscō|groeien|Ndl. crescendo; croissant; croissance|werkwoord
+670|occīdere|occīdō|doden|Lat.caedere; accident|werkwoord
+671|prōcēdere|prōcēdō|vooruitgaan|Lat. pro + cedere; Ndl. processie|werkwoord
+672|tangere|tangō|aanraken; bereiken; treffen|tangible|werkwoord
+673|prōdesse|prōsum|nuttig zijn|Lat. prō +esse|werkwoord
+674|perīre|pereō|ten onder gaan|Lat. per +ire|werkwoord
+675|quandō?|(bijwoord)|wanneer?|Fr. quand?|bijwoord
+676|rūrsus|(bijwoord)|opnieuw||bijwoord
+677|somnium|somniī|de droom|sommeil; somnambule|substantief
+678|imber|imbr-is, m.|de regenbui||substantief
+679|tālis|~, tāle; tāl-is|zodanig||adjectief
+680|īdem|eadem, īdem; eiusdem|dezelfde, hetzelfde||adjectief
+681|haud|(bijwoord)|helemaal niet||bijwoord
+682|inde|(bijwoord)|vandaar; daarna; daarom||bijwoord
+683|plērumque|(bijwoord)|meestal||bijwoord
+684|hic|haec, hoc; huius|deze, dit||adjectief
+685|iste|ista, istud; istīus|die, dat||adjectief
+686|ille|illa, illud; illīus|die, dat; hij, zij|Fr. il, elle; le, la|adjectief
+687|epistula|epistulae|de brief||substantief
+688|praetereā|(bijwoord)|bovendien||bijwoord

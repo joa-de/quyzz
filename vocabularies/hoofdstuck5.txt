@@ -1,0 +1,89 @@
+385|mēnsa|mēnsae|de tafel|mesa|zelfstandig naamwoord
+386|nāvis|nāvis, v.|het schip|Ndl. de navigator; Fr. Navire|zelfstandig naamwoord
+387|cupidus|~a, ~um|vol verlangen naar|Lat. Cupere Cupio|bijvoeglijk naamwoord
+388|mīrus|~a, ~um|wonderlijk|Ndl. mirakel|bijvoeglijk naamwoord
+389|nūllus|~a, ~um|geen|Ndl. nul|bijvoeglijk naamwoord
+390|paucī|~ae, ~a|weinig; enkele|Ndl. peu pauvres|bijvoeglijk naamwoord
+391|agere|agō|(voort)drijven; doen|Ndl. de agent; agenda|werkwoord
+392|bibere|bibō|drinken|biberon|werkwoord
+393|cognōscere|cognōscō|leren kennen; vernemen|Fr. connaître incognito|werkwoord
+394|dēsinere|dēsinō|ophouden|—|werkwoord
+395|dīcere|dīcō|zeggen; spreken; noemen|Ndl. de dictie; Fr. dire|werkwoord
+396|emere|emō|kopen|—|werkwoord
+397|intellegere|intellegō|begrijpen|Ndl. intellect; intelligent|werkwoord
+398|legere|legō|lezen; kiezen; verzamelen|Ndl. bloemlezing; Fr. élection|werkwoord
+399|ostendere|ostendō|tonen|Fr. ostentatoire|werkwoord
+400|quaerere|quaerō|zoeken; vragen|Fr. la question|werkwoord
+401|sūmere|sūmō|nemen|Fr. consommer|werkwoord
+402|vendere|vendō|verkopen|Fr. vendre|werkwoord
+403|vīvere|vīvō|leven|Fr. vivre|werkwoord
+404|hospes|hospit-is, m.|de gast; de gastheer|hospitality, hospitaal|zelfstandig naamwoord
+405|pōns|pont-is, m.|de brug|le pont|zelfstandig naamwoord
+406|aestās|aestāt-is, v.|de zomer|l'été|zelfstandig naamwoord
+407|audēre|audeō|durven|oser|werkwoord
+408|docēre|doceō|onderwijzen|docent|werkwoord
+409|tegere|tegō|bedekken; beschermen|detectif|werkwoord
+410|metuere|metuō|vrezen||werkwoord
+411|cōnsīdere|cōnsīdō|gaan zitten||werkwoord
+412|discere|discō|studeren|discipel|werkwoord
+413|dūcere|dūcō|leiden||werkwoord
+414|lūdere|lūdō|spelen; bespotten||werkwoord
+415|mittere|mittō|zenden; laten gaan||werkwoord
+416|pōnere|pōnō|plaatsen; neerleggen|positie|werkwoord
+417|dēpōnere|dēpōnō|neerleggen||werkwoord
+418|relinquere|relinquō|achterlaten; verlaten|de+|werkwoord
+419|vertere|vertō|(om)keren; veranderen in||werkwoord
+420|vincere|vincō|overwinnen; overtreffen|voir|werkwoord
+421|vīsere|vīsō|bezoeken|visite(r), to visit|werkwoord
+422|recipere|recipiō|ontvangen|receptie|werkwoord
+423|hīc|(bijwoord)|hier||bijwoord
+424|īra|īrae|de woede||zelfstandig naamwoord
+425|poena|poenae|de boete; de straf|penalty, to punish|zelfstandig naamwoord
+426|studium|studii|de studie; de sympathie; de ijver|studeren|zelfstandig naamwoord
+427|famēs|fam-is, v.|de honger|la faim, affamé|zelfstandig naamwoord
+428|fraus|fraud-is, v.|het bedrog|fraude|zelfstandig naamwoord
+429|iubēre|iubeō|bevelen||werkwoord
+430|surgere|surgō|opstaan|surgir, la résurrection|werkwoord
+431|sentire|sentiō|voelen; merken; menen|sensation, sentence, sense|werkwoord
+432|audācia|audāciae|de moed|audere|zelfstandig naamwoord
+433|cōnstantia|cōnstantiae|de volharding|constant|zelfstandig naamwoord
+434|silentium|silentii|de stilte|le silence, the silence|zelfstandig naamwoord
+435|hiems|hiem-is, v.|de winter|hiver|zelfstandig naamwoord
+436|virtūs|virtūt-is, v.|de kwaliteit; de dapperheid|virtueel, viz|zelfstandig naamwoord
+437|angustus|-a, -um|smal||bijvoeglijk naamwoord
+438|tūtus|-a, -um|veilig|tutor|bijvoeglijk naamwoord
+439|cadere|cadō|vallen|cascadeur, cascade|werkwoord
+440|currere|currō|lopen|cursor, course, cursus|werkwoord
+441|petere|petō|gaan naar; vragen|petitie|werkwoord
+442|poscere|poscō|eisen|postulare|werkwoord
+443|errāre|errō|zwerven; zich vergissen|the error, erreur|werkwoord
+444|flēre|fleō|wenen (om)||werkwoord
+445|canere|canō|zingen; bezingen|chanter|werkwoord
+446|fingere|fingō|vormen; verzinnen|fictie|werkwoord
+447|fluere|fluō|vloeien||werkwoord
+448|ubi?|(bijwoord)|waar?||bijwoord
+449|ad + acc.|(voorzetstel)|naar (toe), bij|AI hint: Fr. "à",  Engl. "at/to"
+450|ante + acc.|(voorzetstel)|vóór|AI hint: "antecedent" (Ce qui s'est produit avant)
+451|apud + acc.|(voorzetstel)|bij|
+452|inter + acc.|(voorzetstel)|tussen|AI hint: International = entre nations
+453|per + acc.|(voorzetstel)|door, gedurende|AI hint: "Percoler" = couler à travers
+454|post + acc.|(voorzetstel)|achter, na|AI hint: "postérieur"
+455|praeter + acc.|(voorzetstel)|voorbij, behalve|
+456|cum + abl.|(voorzetstel)|met|AI hint: "accompagner" (être avec)
+457|de + abl.|(voorzetstel)|van, over|AI hint: Think "décrire" (parler de quelque chose)
+458|e/ex + abl.|(voorzetstel)|uit, vanaf|AI hint: "exit" 
+459|sine + abl.|(voorzetstel)|zonder|AI hint: "sine die" (sans date)
+460|sub + abl.|(voorzetstel)|onder, omstreeks|AI hint: "submarine" (sous l'eaur)
+461|in + acc.|(voorzetstel)|naar tegen|
+462|in + abl.|(voorzetstel)|in, op|
+463|saxum|saxi|het rotsblok||zelfstandig naamwoord
+464|celeritas|celeritāt-is, v.|de snelheid||zelfstandig naamwoord
+465|hūmānus|~a, ~um|menselijk; beschaafd|Lat.|bijvoeglijk naamwoord
+466|līberāre|līberō|bevrijden|Lat.|werkwoord
+467|volāre|volō|vliegen|Fr. voler|werkwoord
+468|caedere|caedō|hakken; doden||werkwoord
+469|dēscendere|dēscendō|afdalen|Fr. descendre|werkwoord
+470|haurire|hauriō|uitscheppen; opslokken||werkwoord
+471|dēicere|dēiciō|naar beneden werpen; verdrijven|Lat. de +|werkwoord
+472|sē|(persoonlijk vnw.)|zich|Fr.|voornaamwoord
+473|ūnā|(bijwoord)|samen||bijwoord

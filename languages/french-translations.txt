@@ -273,3 +273,416 @@
 273|considérer
 274|suffisamment
 275|immédiatement
+276|les armes
+277|le camp
+278|les parents
+279|devenir; être fait
+280|aller
+281|s'en aller
+282|aller vers; visiter
+283|sortir; finir
+284|entrer; commencer
+285|passer
+286|retourner
+287|traverser
+288|la forêt
+289|la vie
+290|le lion
+291|la part; le côté
+292|tuer
+293|combattre
+294|se taire
+295|tenir
+296|pourquoi?
+297|auparavant
+298|quotidiennement
+299|demain
+300|hier
+301|aujourd'hui
+302|le matin
+303|plus tard
+304|le jour suivant
+305|un certain jour
+306|le légat
+307|le jeu; l'école
+308|le peuple
+309|l'empereur
+310|le soleil
+311|la légion
+312|la paix
+313|le droit
+314|la tâche; le don
+315|nu
+316|exciter
+317|commander
+318|confier
+319|porter
+320|avoir l'habitude
+321|lier
+322|presque
+323|quand
+324|le garçon
+325|les enfants
+326|l'homme
+327|le champ
+328|le livre
+329|le maître
+330|libre
+331|misérable
+332|malade
+333|noir
+334|beau
+335|sacré
+336|notre
+337|votre
+338|la nourriture
+339|la gloire
+340|le combat
+341|la victoire
+342|le bienfait
+343|la récompense
+344|maximal; le plus grand
+345|louer, faire l'éloge
+346|annoncer
+347|souhaiter, désirer
+348|obéir
+349|offrir, fournir
+350|qui?
+351|quoi?
+352|fille, jeune fille
+353|connu, notoire
+354|vrai, véritable
+355|essayer, tenter, mettre à l'épreuve
+356|brûler
+357|être couché, être étendu
+358|plaire
+359|rapidement
+360|où? (avec mouvement)
+361|donc, par conséquent
+362|l'œil
+363|l'aide; le secours  
+364|le bras  
+365|le mot; le verbe  
+366|l'oreille  
+367|dur  
+368|triste  
+369|vivant  
+370|prier; supplier  
+371|pleurer; déplorer  
+372|le lieu; l'occasion  
+373|la branche  
+374|la cause; la raison; le procès  
+375|le dîner; le repas du soir  
+376|l'heure  
+377|la villa; le domaine  
+378|le conseil; le plan  
+379|le prix  
+380|la fleur  
+381|l'arbre  
+382|plein  
+383|inviter  
+384|être attaché; adhérer
+385|la table
+386|le navire; le bateau
+387|désireux; avide
+388|merveilleux; extraordinaire
+389|aucun; nul
+390|peu nombreux; quelques-uns
+391|pousser; faire; agir
+392|boire
+393|apprendre à connaître; reconnaître
+394|cesser; arrêter
+395|dire; nommer; prononcer
+396|acheter
+397|comprendre; saisir
+398|lire; choisir; recueillir
+399|montrer; présenter
+400|chercher; demander
+401|prendre; assumer
+402|vendre
+403|vivre; exister
+404|l'hôte; l'invité
+405|le pont
+406|l'été
+407|oser
+408|enseigner
+409|couvrir; protéger
+410|craindre; redouter
+411|s'asseoir
+412|apprendre; étudier
+413|conduire; mener
+414|jouer; se moquer
+415|envoyer; laisser partir
+416|poser; placer
+417|déposer
+418|abandonner; quitter
+419|tourner; transformer
+420|vaincre; surpasser
+421|visiter
+422|recevoir
+423|ici
+424|la colère
+425|la peine; la punition
+426|l'étude; la sympathie; le zèle
+427|la faim
+428|la fraude; la tromperie
+429|ordonner; commander
+430|se lever; surgir
+431|sentir; remarquer; penser
+432|le courage; l'audace
+433|la constance; la persévérance
+434|le silence
+435|l'hiver
+436|la vertu; la qualité; la bravoure
+437|étroit
+438|sûr; en sécurité
+439|tomber
+440|courir
+441|demander; se diriger vers
+442|exiger; réclamer
+443|errer; se tromper
+444|pleurer
+445|chanter; célébrer
+446|former; inventer
+447|couler; s'écouler
+448|où?
+449|à, vers
+450|avant, devant
+451|auprès de, chez
+452|entre, parmi
+453|par, pendant
+454|après, derrière
+455|au-delà de, excepté
+456|avec
+457|de, au sujet de
+458|de, depuis
+459|sans
+460|sous, vers
+461|vers, contre
+462|dans, sur
+463|le rocher
+464|la rapidité; la célérité
+465|humain; civilisé
+466|libérer
+467|voler (dans les airs)
+468|trancher; tuer
+469|descendre
+470|puiser; engloutir
+471|jeter vers le bas; chasser
+472|se (pronom réfléchi)
+473|ensemble
+474|la quantité; l'occasion
+475|la conversation; l'usage de la langue
+476|le devin; le poète
+477|la volonté
+478|doré
+479|central; le milieu de
+480|sombre; insignifiant
+481|court; bref
+482|mortel
+483|noble; célèbre
+484|entier; chaque
+485|tous
+486|triste
+487|courageux; téméraire
+488|riche
+489|féroce; provocant
+490|énorme; gigantesque
+491|sage; intelligent
+492|rapide
+493|encourager; inciter
+494|remplir
+495|jusqu'à maintenant; encore toujours
+496|longtemps
+497|courageux; fort
+498|le butin; la proie
+499|cruel
+500|difficile
+501|facile
+502|lourd; grave
+503|léger
+504|semblable à; ressemblant à
+505|utile
+506|terrible; atroce
+507|heureux
+508|pauvre
+509|vieux
+510|aigu; vif
+511|le serviteur
+512|le sort; la condition
+513|l'artisanat; l'art
+514|l'âne
+515|l'or
+516|la colline
+517|l'ennemi
+518|la liberté
+519|le vêtement
+520|l'être vivant; l'animal
+521|douter; hésiter
+522|placer sur; imposer
+523|porter; apporter
+524|apporter
+525|emporter; enlever
+526|offrir
+527|rapporter; faire rapport
+528|transférer
+529|vouloir
+530|préférer
+531|ne pas vouloir
+532|bientôt
+533|la ruse
+534|la chaleur
+535|l'oiseau
+536|le chant; le poème
+537|le froid
+538|la mer
+539|les remparts
+540|éternel
+541|conquérir
+542|autrement
+543|facilement
+544|beaucoup
+545|et
+546|l'aile
+547|les troupes
+548|le gardien
+549|la citadelle
+550|extraordinaire
+551|deuxième; favorable
+552|silencieux
+553|aller; céder
+554|se séparer; partir
+555|cultiver; habiter; vénérer
+556|garder
+557|pendant ce temps
+558|l'esprit; l'âme; le courage
+559|le médecin
+560|la bête sauvage
+561|la fuite
+562|la langue; la langue (idiome)
+563|la blessure
+564|tous
+565|lent
+566|tranquille
+567|sauvage; cruel
+568|bouger; influencer
+569|s'approcher
+570|saisir
+571|faire descendre; emmener
+572|renvoyer; laisser partir
+573|soi-même; précisément
+574|celui-ci, celle-ci, ceci
+575|loin; de loin
+576|de; par
+577|le vent
+578|l'exemple
+579|le temps; la tempête
+580|la côte
+581|rassembler; contraindre
+582|briser
+583|rendre; faire (devenir)
+584|excepter; recueillir
+585|et ne pas; non plus
+586|ni... ni
+587|le doigt
+588|la main droite
+589|le bouclier
+590|la peau
+591|la région
+592|le bétail
+593|blesser
+594|porter; mener
+595|revêtir; vêtir de
+596|tirer; traîner
+597|finir; limiter
+598|paraître
+599|parce que
+600|comme; que
+601|situé en bas
+602|s'approcher
+603|espérer
+604|désespérer
+605|assiéger; occuper
+606|promettre
+607|écrire
+608|autrefois
+609|le vainqueur
+610|l'autre
+611|l'un... l'autre
+612|très nombreux
+613|si grand
+614|tourmenter
+615|exercer
+616|le commencement
+617|le jugement; le procès
+618|le royaume; la souveraineté
+619|le signe
+620|le sexe; le genre
+621|le siège; la résidence
+622|le combat
+623|la poitrine; le cœur; l'intelligence
+624|le char
+625|la course; le parcours
+626|la peur
+627|la fidélité; la confiance; la parole donnée
+628|l'espoir
+629|chacun; séparément
+630|doux; aimable
+631|tant
+632|lutter
+633|arriver
+634|en même temps
+635|bien que
+636|le fruit
+637|la chose
+638|la maison
+639|la main; le groupe
+640|la chute; l'événement; le hasard
+641|le résultat
+642|l'armée
+643|la magistrature; le magistrat
+644|le pas
+645|le sénat
+646|le tumulte
+647|le visage
+648|le jour
+649|le visage; l'aspect
+650|d'autrui; étranger
+651|droit
+652|royal
+653|de famille; familier
+654|laid; honteux
+655|nourrir
+656|commettre; confier; commencer
+657|tromper; échapper
+658|chasser
+659|placer; établir; décider
+660|livrer; confier
+661|les Enfers
+662|l'époux
+663|la maladie
+664|le mois
+665|l'âge; l'époque
+666|conseiller
+667|cueillir
+668|fermer
+669|croître
+670|tuer
+671|avancer
+672|toucher; atteindre; frapper
+673|être utile
+674|périr
+675|quand?
+676|de nouveau
+677|le rêve
+678|l'averse
+679|tel
+680|le même
+681|nullement; pas du tout
+682|de là; ensuite; c'est pourquoi
+683|le plus souvent
+684|ce; cet; cette
+685|ce; cet; cette
+686|ce; cet; cette; il; elle
+687|la lettre
+688|en outre

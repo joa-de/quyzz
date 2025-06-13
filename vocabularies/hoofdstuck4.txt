@@ -1,0 +1,79 @@
+306|legatus|legati, m.|de gezant; de onderbevelhebber||zelfstandig naamwoord
+307|ludus|ludi, m.|het spel; de school|Lat. ludicium; Ndl. ludiek|zelfstandig naamwoord
+308|populus|populi, m.|het volk|Fr. population; Ndl. populair|zelfstandig naamwoord
+309|imperator|imperatoris, m.|de opperbevelhebber|Lat. imperium|zelfstandig naamwoord
+310|sol|solis, m.|de zon|Fr. le soleil|zelfstandig naamwoord
+311|legio|legionis, v.|het legioen|Fr. la légion|zelfstandig naamwoord
+312|pax|pacis, v.|de vrede|Lat. pax romana; Fr. la paix|zelfstandig naamwoord
+313|ius|iur-is,o|het recht|Ndl.justis Lat. iudex, iustus|zelfstandig naamwoord
+314|munus|muneris, o.|de taak; het geschenk||zelfstandig naamwoord
+315|nudus|nuda, nudum|naakt; beroofd van|Ndl. nudist|bijvoeglijk naamwoord
+316|excitare|excito|(op)wekken|Engl. exciting, Fr. exciter|werkwoord
+317|imperare|impero|bevelen; opeisen|Lat. imperium, Fr. Imperatif, Harry Potter: Imperio|werkwoord
+318|mandare|mando|toevertrouwen; opdragen|Nl. mandaat, Fr. Mandater|werkwoord
+319|portare|porto|dragen|Fr. porter; Engl. portable|werkwoord
+320|solere|soleo|gewoon zijn||werkwoord
+321|vincire|vincio|binden; boeien||werkwoord
+322|fere|bijwoord|bijna; meestal||bijwoord
+323|ubi|voegwoord|toen; wanneer||voegwoord
+324|puer|pueri, m.|de jongen|Fr. le pueril|zelfstandig naamwoord
+325|liberi|liberorum, m. mv.|de kinderen||zelfstandig naamwoord
+326|vir|viri, m.|de man||zelfstandig naamwoord
+327|ager|agri, m.|het veld|Nl. akker; Fr. agriculture|zelfstandig naamwoord
+328|liber|libri, m.|het boek|Fr. le livre|zelfstandig naamwoord
+329|magister|magistri, m.|de meester|Ndl. magistratuur|zelfstandig naamwoord
+330|liber|libera, liberum|vrij|Fr. libre|bijvoeglijk naamwoord
+331|miser|misera, miserum|ongelukkig|Ndl. de miserie|bijvoeglijk naamwoord
+332|aeger|aegra, aegrum|ziek||bijvoeglijk naamwoord
+333|niger|nigra, nigrum|zwart|Fr. le Niger, le Nigeria|bijvoeglijk naamwoord
+334|pulcher|pulchra, pulchrum|mooi||bijvoeglijk naamwoord
+335|sacer|sacra, sacrum|heilig; gewijd|Ndl. het sacrament|bijvoeglijk naamwoord
+336|noster|nostra, nostrum|ons, onze|Lat. pater noster|bijvoeglijk naamwoord
+337|vester|vestra, vestrum|jullie||bijvoeglijk naamwoord
+338|cibus|cibi, m.|het voedsel||zelfstandig naamwoord
+339|gloria|gloriae, v.|de roem|Fr. la gloire; Engl. glory|zelfstandig naamwoord
+340|pugna|pugnae, v.|het gevecht|Lat. pugnare|zelfstandig naamwoord
+341|victoria|victoriae, v.|de overwinning|Fr. la victoire; Engl. the victory|zelfstandig naamwoord
+342|beneficium|beneficii, o.|de weldaad|Lat. bene + facere, Fr. Bénéfice|zelfstandig naamwoord
+343|praemium|praemii, o.|de beloning|Ndl. de premie|zelfstandig naamwoord
+344|maximus|~a, ~um|zeer groot; grootste|Lat. max magnus, Ndl. maximaal maxime|bijvoeglijk naamwoord
+345|laudāre|laudō|prijzen|loven, lauwerkrans |werkwoord
+346|nūntiāre|nūntiō|melden|Lat. nuntius|werkwoord
+347|optāre|optō|wensen|Ndl. de optie|werkwoord
+348|pārēre|pāreō|gehoorzamen|(Parentes)|werkwoord
+349|praebēre|praebēo|aanbieden||werkwoord
+350|quis?|(vragend vnw.)|wie?|Fr. qui?|voornaamwoord
+351|quid?|(vragend vnw.)|wat?|Fr. quoi?|voornaamwoord
+352|puella|puellae|het meisje|puer|zelfstandig naamwoord
+353|nōtus|~a, ~um|bekend|nota, notie, incognita |bijvoeglijk naamwoord
+354|vērus|~a, ~um|waar; echt|Fr. vrai, verité|bijvoeglijk naamwoord
+355|temptāre|temptō|proberen; op de proef stellen|temptation, tentation|werkwoord
+356|ārdēre|ārdēo|branden|ardent, la cité ardente|werkwoord
+357|iacēre|iaceō|liggen| <-> iacēre = werpen|werkwoord
+358|placēre|placeō|bevallen; aanstaan|iacio|werkwoord
+359|citō|(bijwoord)|snel|citius, altius, fortius|bijwoord
+360|quō?|(bijwoord)|waarheen?||bijwoord
+361|ergō|(voegwoord)|dus|cogito ergo sum|voegwoord
+362|oculus|oculi|het oog|Fr. œil; "oculiste"|zelfstandig naamwoord  
+363|auxilium|auxilii|de hulp|Fr. le verbe auxiliaire|zelfstandig naamwoord  
+364|bracchium|bracchii|de arm|Fr. le bras|zelfstandig naamwoord  
+365|verbum|verbi|het woord|Fr. le verbe|zelfstandig naamwoord  
+366|auris|aur-is, v.|het oor|Fr. oreille; "auditive"|zelfstandig naamwoord  
+367|durus|~a, ~um|hard|Fr. dur|bijvoeglijk naamwoord  
+368|maestus|~a, ~um|treurig|Lat. maerere|bijvoeglijk naamwoord  
+369|vivus|~a, ~um|levend|Lat. vita, vive|bijvoeglijk naamwoord  
+370|orare|oro|bidden; smeken|Lat. ora pro nobis|werkwoord  
+371|maerere|maereo|treuren (om)|Lat. maestus|werkwoord  
+372|locus|loci|de plaats; de gelegenheid|Ndl. het lokaal|zelfstandig naamwoord  
+373|ramus|rami|de tak|Fr. la ramée; Lat. ramus|zelfstandig naamwoord  
+374|causa|causae|de oorzaak; de reden; het proces|Fr. causal; "cause"|zelfstandig naamwoord  
+375|cena|cenae|het avondmaal|Fr. l’ultima cena; de maaltijd|zelfstandig naamwoord  
+376|hora|horae|het uur|Fr. l’heure; l’horloge|zelfstandig naamwoord  
+377|villa|villae|de villa; het landgoed|Fr. la villa|zelfstandig naamwoord  
+378|consilium|consilii|het overleg; de raad; het plan|Fr. conseil consultatif|zelfstandig naamwoord  
+379|pretium|pretii|de prijs|Fr. prix|zelfstandig naamwoord  
+380|flos|flor-is, m.|de bloem|Fr. fleur; Lat. flos|zelfstandig naamwoord  
+381|arbor|arbor-is, v.|de boom|Fr. l’arbre|zelfstandig naamwoord  
+382|plenus|~a, ~um|vol|Ndl. vol|bijvoeglijk naamwoord  
+383|invitare|invito|uitnodigen|Ndl. inviteren|werkwoord  
+384|haerere|haereo|vastzitten|Ndl. hechten|werkwoord  

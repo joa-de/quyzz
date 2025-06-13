@@ -1,0 +1,84 @@
+474|cōpia|cōpiae|de hoeveelheid; de gelegenheid|kopie, kopieren, (Fr. copieux)|zelfstandig naamwoord
+475|sermō|sermon-is (m)|het gesprek; het taalgebruik|sermoen, Fr. serment|zelfstandig naamwoord
+476|vātēs|vāt-is, m.|de waarzegger; de dichter||zelfstandig naamwoord
+477|voluntās|voluntāt-is, v.|de wil|volunteer, Fr. volonté|zelfstandig naamwoord
+478|aureus|~a, ~um|gouden|aureool, Fr. or, doré, auréole |bijvoeglijk naamwoord
+479|medius|~a, ~um|middelste; het midden van|Ndl. de mediaan|bijvoeglijk naamwoord
+480|obscūrus|~a, ~um|duister; onbeduidend|obscuur, Fr. obscur, (claire - obscur)|bijvoeglijk naamwoord
+481|brevis|~, breve; brev-is|kort|Fr. bref|bijvoeglijk naamwoord
+482|mortālis|~, mortāle; mortāl-is|sterfelijk|Fr. mortel, Lat. Mors|bijvoeglijk naamwoord
+483|nōbilis|~, nōbile; nōbil-is|adellijk; beroemd|Ndl. nobel|bijvoeglijk naamwoord
+484|omnis|~, omne; omn-is|geheel; elk|omnisport|bijvoeglijk naamwoord
+485|omnēs|~, omnia; omn-ium|alle|omnium (wielerwedstrijd)|bijvoeglijk naamwoord
+486|tristis|~, triste; trist-is|droevig|Ndl. triestig|bijvoeglijk naamwoord
+487|audāx|~, ~; audāc-is|moedig; overmoedig|Lat. audacia, audere, (Fr. audace)|bijvoeglijk naamwoord
+488|dives|~, ~; divit-is|rijk|diva|bijvoeglijk naamwoord
+489|ferōx|~, ~; ferōc-is|woest; uitdagend|féroce|bijvoeglijk naamwoord
+490|ingēns|~, ~; ingent-is|reusachtig|géant|bijvoeglijk naamwoord
+491|sapiens|~, ~; sapient-is|wijs; verstandig|Lat. homo sapiens|bijvoeglijk naamwoord
+492|celer|celeris, celere; celer-is|snel|Lat. celeritas|bijvoeglijk naamwoord
+493|incitāre|incitō|aanvuren|inciter|werkwoord
+494|complēre|compleo|vullen|Ndl. compleet|werkwoord
+495|adhūc|(bijwoord)|tot nu toe; nog altijd||bijwoord
+496|diū|(bijwoord)|lange tijd||bijwoord
+497|fortis|~, forte; fort-is|dapper; sterk|Fr. fort|bijvoeglijk naamwoord
+498|praeda|praedae|de buit; de prooi|Fr. proie, prédateur|zelfstandig naamwoord
+499|crudelis|~, crudele; crudel-is|wreed|Fr./Eng. cruel, Cruella, cruelle de Vie|bijvoeglijk naamwoord
+500|difficilis|~, difficile; difficil-is|moeilijk|Fr. difficile|bijvoeglijk naamwoord
+501|facilis|~, facile; facil-is|gemakkelijk|Fr. facile|bijvoeglijk naamwoord
+502|gravis|~, grave; grav-is|zwaar; ernstig|Fr. grave|bijvoeglijk naamwoord
+503|levis|~, leve; lev-is|licht|léger, legère|bijvoeglijk naamwoord
+504|similis|~, simile; simil-is|gelijk aan; gelijkend op|similair, simulatie, Sims|bijvoeglijk naamwoord
+505|utilis|~, utile; util-is|nuttig|util, to use|bijvoeglijk naamwoord
+506|atrox|~,~; atroc-is|vreselijk|atroce|bijvoeglijk naamwoord
+507|felix|~,~; felic-is|gelukkig|Ndl. feliciteren, Esp. feliz|bijvoeglijk naamwoord
+508|pauper|~,~; pauper-is|arm|Fr. pauvre, poor,lat Pauci|bijvoeglijk naamwoord
+509|vetus|~,~; veter-is|oud|Ndl. veteraan, vieux|bijvoeglijk naamwoord
+510|acer|acris, acre; acr-is|scherp; fel||bijvoeglijk naamwoord
+511|minister|ministri|de dienaar|Ndl. minister|zelfstandig naamwoord
+512|fortuna|fortunae|het lot; de toestand|Ndl. fortuin|zelfstandig naamwoord
+513|ars|art-is, v.|het vakmanschap; de kunst|Ndl. de artiest, Fr. l'art, Eng. the art|zelfstandig naamwoord
+514|asinus|asinī|de ezel||substantief
+515|aurum|aurī|het goud|Fr. or|substantief
+516|collis|coll-is, m.|de heuvel|Fr. colline|substantief
+517|hostis|host-is, m.|de vijand|Fr. hostile|substantief
+518|libertās|libertāt-is, v.|de vrijheid|Fr. la liberté|substantief
+519|vestis|vest-is, v.|de kleding|Ndl. vestiaire|substantief
+520|animal|animal-is, o.|het levend wezen; het dier|Fr. l'animal|substantief
+521|dubitāre|dubitō|twijfelen; aarzelen||werkwoord
+522|impōnere|impōnō|plaatsen op; opleggen|Lat. in + ponere|werkwoord
+523|ferre|ferō|dragen; brengen||werkwoord
+524|afferre|afferō|brengen|Lat. ad + ferre|werkwoord
+525|auferre|auferō|wegnemen; wegbrengen|Lat. ab + ferre|werkwoord
+526|offerre|offerō|aanbieden|Ndl. het offer|werkwoord
+527|referre|referō|terugbrengen; rapporteren|Ndl. het referendum|werkwoord
+528|trānsferre|trānsferō|overbrengen|Ndl. transfer|werkwoord
+529|velle|volō|willen||werkwoord
+530|mālle|mālō|liever willen|Lat. magis + velle|werkwoord
+531|nōlle|nōlō|niet willen|Lat. nōn + velle|werkwoord
+532|mox|(bijwoord)|weldra||bijwoord
+533|dolus|dolī|de list||substantief
+534|calor|calōr-is, m.|de warmte|Fr. chaleur|substantief
+535|avis|av-is, v.|de vogel|Fr. avion|substantief
+536|carmen|carmin-is, o.|het lied; het gedicht|Lat. canere|substantief
+537|frīgus|frīgor-is, o.|de koude|Lat. frigidus|substantief
+538|mare|mar-is, o.|de zee|Fr. la mer|substantief
+539|moenia|moeni-um, o. mv.|de stadsmuren||substantief
+540|aeternus|~, ~a, ~um|eeuwig||adjectief
+541|expugnāre|expugnō|veroveren||werkwoord
+542|aliter|(bijwoord)|anders||bijwoord
+543|facile|(bijwoord)|gemakkelijk||bijwoord
+544|multum of multō|(bijwoord)|veel||bijwoord
+545|ac of atque|(voegwoord)|en||voegwoord
+546|āla|ālae|de vleugel|Fr. aile|substantief
+547|cōpiae|cōpiārum|de troepen|Lat. copia|substantief
+548|custōs|custōd-is, m.|de bewaker|Lat. custodia|substantief
+549|arx|arc-is, v.|de burcht|Fr. arc|substantief
+550|ēgregius|~, ~a, ~um|buitengewoon|Lat. e(x) + grex|adjectief
+551|secundus|~, ~a, ~um|tweede; gunstig|Ndl. de seconde|adjectief
+552|tacitus|~, ~a, ~um|zwijgend|Lat. tacere|adjectief
+553|cēdere|cēdō|gaan; wijken||werkwoord
+554|discēdere|discēdō|uiteengaan; weggaan||werkwoord
+555|colere|colō|bewerken; bewonen; vereren||werkwoord
+556|custōdīre|custōdiō|bewaken|Lat. custos|werkwoord
+557|interim|(bijwoord)|intussen||bijwoord
