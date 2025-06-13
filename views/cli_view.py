@@ -14,6 +14,10 @@ class CLIView:
         """Set the language model for the view."""
         self.language_model = language_model
 
+    def cli_view_warning(self, message: str):
+        """Display a warning message in the CLI."""
+        print(Fore.RED + Style.BRIGHT + message + Style.RESET_ALL)
+
     def display_available_files(self, files, min_id, max_id):
         print(f"\n{self.language_model.get('vocabulary_management.available_lists')}")
         print(

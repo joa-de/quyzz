@@ -1,4 +1,5 @@
 import os
+import logging
 
 
 class VocabularyController:
@@ -12,8 +13,10 @@ class VocabularyController:
         files = [f for f in os.listdir(directory) if f.endswith(".txt")]
 
         if not files:
-            print(self.lang_manager.get("vocabulary_management.no_files_found"))
-            return {}, []
+            logging.error(self.lang_manager.get("vocabulary_management.no_files_found"))
+            raise FileNotFoundError(
+                self.lang_manager.get("vocabulary_management.no_files_found")
+            )
 
         min_id, max_id = self.vocabulary_model.get_word_id_range(files)
 
@@ -32,6 +35,8 @@ class VocabularyController:
             elif choice == -1:
                 custom_range = self.view.get_custom_range(min_id, max_id)
                 if custom_range:
-                    return self.vocabulary_model.load(files, custom_range), files
+                    self.vocabulary_model.load(files, custom_range), files
             else:
-                print(self.lang_manager.get("vocabulary_management.invalid_choice"))
+                message = self.lang_manager.get("vocabulary_management.invalid_choice")
+                logging.warning(message)
+                self.view.cli_view_warning(message)

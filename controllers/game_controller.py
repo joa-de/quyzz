@@ -125,7 +125,6 @@ class GameController:
         """Refactored play_quiz logic inside GameController."""
         score = 0
         player_name = self.player_controller.get_current_player()
-
         self.view.display_welcome_message(player_name)
 
         used_words = set()
@@ -162,44 +161,15 @@ class GameController:
             self.view.display_question_header(question_num + 1, total_questions)
             self.view.display_latin_word(word_data)
 
-            if level == 1 or level == 0:
-                print(
-                    f"{self.lang_model.get('core.hint', 'Hint')}: {word_data['hint']}"
-                )
+            if level in [0, 1]:
+                self.view.display_hint(word_data["hint"])
 
-            if level == 0:
-                for i, (opt, opt_id) in enumerate(zip(options, options_id), 1):
-                    translation = self.lang_model.translations.get(
-                        int(opt_id), "Unknown"
-                    )
-                    print(f"{i}. {opt} - {Fore.CYAN}{translation}{Style.RESET_ALL}")
-            else:
-                for i, opt in enumerate(options, 1):
-                    print(f"{i}. {opt}")
+            self.view.display_options(options, options_id if level == 0 else None)
 
-            # Get user input
-            while True:
-                try:
-                    answer = int(
-                        input(
-                            f"\n{self.lang_model.get('core.enter_answer', 'Enter your answer')} (1-4): "
-                        )
-                    )
-                    if 1 <= answer <= 4:
-                        break
-                except ValueError:
-                    pass
-                print(
-                    self.lang_model.get(
-                        "core.enter_valid_number",
-                        "Please enter a valid number between 1 and 4.",
-                    )
-                )
+            answer = self.view.ask_for_answer()
 
             if level in [2, 3, 4]:
-                print(
-                    f"{self.lang_model.get('core.hint', 'Hint')}: {word_data['hint']}"
-                )
+                self.view.display_hint(word_data["hint"])
 
             is_correct = options[answer - 1] == word_data["translation"]
             if is_correct:

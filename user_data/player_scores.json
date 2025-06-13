@@ -164,8 +164,8 @@
                         "games_played": 4
                     },
                     "4": {
-                        "ema": 98.59375,
-                        "games_played": 6
+                        "ema": 97.333984375,
+                        "games_played": 8
                     }
                 }
             },
@@ -194,7 +194,7 @@
                 }
             }
         },
-        "last_played": "2025-06-13 16:01:36"
+        "last_played": "2025-06-13 17:11:57"
     },
     "Z\u00e9lie": {
         "vocabularies": {
