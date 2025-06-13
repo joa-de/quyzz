@@ -372,7 +372,6 @@ class CLIView(BaseView):
                 )
             )
 
-    # TODO not used yet
     def select_level(self):
         """
         Prompts the user to select a difficulty level for the quiz.

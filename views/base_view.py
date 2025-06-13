@@ -19,7 +19,6 @@ class BaseView(ABC):
         pass
 
     @abstractmethod
-    @staticmethod
     def display_roman_intro():
         pass
 
@@ -67,7 +66,6 @@ class BaseView(ABC):
         pass
 
     @abstractmethod
-    @staticmethod
     def display_question(
         question_num: int, word_data: dict, options: list[str], level: int
     ):
@@ -82,12 +80,10 @@ class BaseView(ABC):
         pass
 
     @abstractmethod
-    @staticmethod
     def display_menu(title: str, options: list[str]):
         pass
 
     @abstractmethod
-    @staticmethod
     def display_message(message: str):
         pass
 
@@ -112,11 +108,9 @@ class BaseView(ABC):
         pass
 
     @abstractmethod
-    @staticmethod
     def get_text_input(prompt: str) -> str:
         pass
 
     @abstractmethod
-    @staticmethod
     def get_numeric_input(prompt: str, min_value: int, max_value: int) -> int:
         pass

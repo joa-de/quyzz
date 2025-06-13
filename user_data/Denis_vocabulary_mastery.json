@@ -2480,12 +2480,12 @@
         "total_attempts": 5
     },
     "621": {
-        "correct_attempts": 2,
-        "total_attempts": 2
+        "correct_attempts": 3,
+        "total_attempts": 3
     },
     "622": {
-        "correct_attempts": 4,
-        "total_attempts": 5
+        "correct_attempts": 5,
+        "total_attempts": 6
     },
     "623": {
         "correct_attempts": 2,
@@ -2528,8 +2528,8 @@
         "total_attempts": 2
     },
     "633": {
-        "correct_attempts": 3,
-        "total_attempts": 3
+        "correct_attempts": 4,
+        "total_attempts": 4
     },
     "634": {
         "correct_attempts": 4,
@@ -2553,15 +2553,15 @@
     },
     "639": {
         "correct_attempts": 2,
-        "total_attempts": 2
+        "total_attempts": 3
     },
     "640": {
         "correct_attempts": 2,
         "total_attempts": 2
     },
     "641": {
-        "correct_attempts": 2,
-        "total_attempts": 2
+        "correct_attempts": 3,
+        "total_attempts": 3
     },
     "642": {
         "correct_attempts": 3,
@@ -2572,8 +2572,8 @@
         "total_attempts": 2
     },
     "644": {
-        "correct_attempts": 2,
-        "total_attempts": 2
+        "correct_attempts": 3,
+        "total_attempts": 3
     },
     "645": {
         "correct_attempts": 3,
@@ -2588,8 +2588,8 @@
         "total_attempts": 4
     },
     "648": {
-        "correct_attempts": 3,
-        "total_attempts": 4
+        "correct_attempts": 4,
+        "total_attempts": 5
     },
     "649": {
         "correct_attempts": 1,
@@ -2680,8 +2680,8 @@
         "total_attempts": 1
     },
     "671": {
-        "correct_attempts": 3,
-        "total_attempts": 3
+        "correct_attempts": 4,
+        "total_attempts": 4
     },
     "672": {
         "correct_attempts": 2,
@@ -2708,8 +2708,8 @@
         "total_attempts": 5
     },
     "678": {
-        "correct_attempts": 3,
-        "total_attempts": 3
+        "correct_attempts": 4,
+        "total_attempts": 4
     },
     "679": {
         "correct_attempts": 2,
@@ -2748,7 +2748,7 @@
         "total_attempts": 3
     },
     "688": {
-        "correct_attempts": 1,
-        "total_attempts": 1
+        "correct_attempts": 2,
+        "total_attempts": 2
     }
 }
