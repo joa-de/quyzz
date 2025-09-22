@@ -95,7 +95,12 @@ class CLIView(BaseView):
             self.language_model.get("vocabulary_management.enter_range").format(
                 min_id=min_id, max_id=max_id
             )
-        )
+        ).strip()
+
+        # Check if input contains exactly one dash
+        if range_input.count("-") != 1:
+            print(self.language_model.get("vocabulary_management.invalid_range_format"))
+            return None
         try:
             start, end = map(int, range_input.split("-"))
             if start < min_id or end > max_id:
@@ -104,10 +109,12 @@ class CLIView(BaseView):
                         "vocabulary_management.invalid_range"
                     ).format(min_id=min_id, max_id=max_id)
                 )
+                return None
             elif start > end:
                 print(
                     self.language_model.get("vocabulary_management.invalid_range_order")
                 )
+                return None
             else:
                 return start, end
         except ValueError:
@@ -132,7 +139,7 @@ class CLIView(BaseView):
 
     def display_latin_word(self, word_data):
         print(
-            f"{self.language_model.get('core.latin_word', 'Latin word')}: {Fore.MAGENTA}{word_data['word']} ({word_data['form']}){Style.RESET_ALL}"
+            f"{self.language_model.get('core.latin_word', 'Latin word')}: {Style.BRIGHT} {Fore.MAGENTA}{word_data['word']} ({word_data['form']}){Style.RESET_ALL}"
         )
         if "word_type" in word_data:
             print(
@@ -148,7 +155,9 @@ class CLIView(BaseView):
                 translation = self.language_model.translations.get(
                     int(opt_id), "Unknown"
                 )
-                print(f"{i}. {opt} - {Fore.CYAN}{translation}{Style.RESET_ALL}")
+                print(
+                    f"{i}. {Fore.WHITE}{opt}{Style.RESET_ALL} - {Fore.BLUE}{translation}{Style.RESET_ALL}"
+                )
         else:
             for i, opt in enumerate(options, 1):
                 print(f"{i}. {opt}")

@@ -35,7 +35,7 @@ class VocabularyController:
             elif choice == -1:
                 custom_range = self.view.get_custom_range(min_id, max_id)
                 if custom_range:
-                    self.vocabulary_model.load(files, custom_range), files
+                    return self.vocabulary_model.load(files, custom_range), files
             else:
                 message = self.lang_manager.get("vocabulary_management.invalid_choice")
                 logging.warning(message)
